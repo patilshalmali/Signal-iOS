@@ -1,0 +1,118 @@
+name: Build Unsigned IPA
+
+# Builds an UNSIGNED .ipa on a macOS runner. The artifact is meant to be
+# re-signed off-CI with your own certificate (e.g. via Feather) before
+# installing. No signing secrets are used or required here.
+
+on:
+  push:
+    branches:
+      - fork-port
+      - main
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      configuration:
+        description: "Xcode build configuration"
+        required: false
+        default: "Release"
+        type: choice
+        options:
+          - Release
+          - Debug
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  build_ipa:
+    name: Build Unsigned IPA
+    # Free standard runner (macos-26-xlarge is a paid larger runner). Slower,
+    # but macOS minutes are free for public repositories.
+    runs-on: macos-26
+    timeout-minutes: 120
+    env:
+      CONFIGURATION: ${{ github.event.inputs.configuration || 'Release' }}
+
+    steps:
+      - name: Select Xcode 26
+        run: |
+          # Pick the newest installed Xcode 26.x; fall back to xcode-select default.
+          XC=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
+          if [ -n "$XC" ]; then
+            echo "DEVELOPER_DIR=$XC" >> "$GITHUB_ENV"
+            echo "Using $XC"
+          fi
+
+      - uses: actions/checkout@v6
+
+      - name: Check Xcode version (non-fatal)
+        run: Scripts/check_xcode_version.py --relaxed || true
+
+      - name: Download Metal toolchain
+        run: xcodebuild -downloadComponent MetalToolchain || true
+
+      - name: Download iOS platform
+        run: xcodebuild -downloadPlatform iOS || true
+
+      - uses: ./.github/actions/clone-everything
+        with:
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Archive (unsigned)
+        run: |
+          set -o pipefail
+          mkdir -p build
+          xcodebuild \
+            -workspace Signal.xcworkspace \
+            -scheme Signal \
+            -configuration "$CONFIGURATION" \
+            -destination 'generic/platform=iOS' \
+            -archivePath build/Signal.xcarchive \
+            -disableAutomaticPackageResolution \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            AD_HOC_CODE_SIGNING_ALLOWED=YES \
+            archive \
+            2>&1 | xcbeautify --renderer github-actions || {
+              echo "::error::Archive failed"; exit 1;
+            }
+
+      - name: Package unsigned .ipa
+        run: |
+          APP_PATH="build/Signal.xcarchive/Products/Applications/Signal.app"
+          if [ ! -d "$APP_PATH" ]; then
+            echo "::error::Signal.app not found in archive"; ls -R build/Signal.xcarchive/Products || true; exit 1;
+          fi
+          rm -rf build/Payload build/*.ipa
+          mkdir -p build/Payload
+          cp -R "$APP_PATH" build/Payload/
+          # Strip any code signatures so Feather starts from a clean slate.
+          find build/Payload -name "_CodeSignature" -type d -prune -exec rm -rf {} + || true
+          ( cd build && zip -qry "Signal-unsigned.ipa" Payload )
+          echo "Built:"; ls -lh build/Signal-unsigned.ipa
+
+      - name: Upload unsigned IPA
+        uses: actions/upload-artifact@v6
+        with:
+          name: Signal-unsigned-ipa
+          path: build/Signal-unsigned.ipa
+          if-no-files-found: error
+
+      - name: Upload build logs on failure
+        uses: actions/upload-artifact@v6
+        if: failure()
+        with:
+          name: build-logs
+          path: |
+            build/**/*.log
+            ~/Library/Logs/Signal-CI
+          if-no-files-found: ignore
