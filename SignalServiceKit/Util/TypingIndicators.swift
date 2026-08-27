@@ -266,6 +266,11 @@ public class TypingIndicatorsImpl: NSObject, TypingIndicators {
             // or show typing indicators for other users.
             guard delegate.areTypingIndicatorsEnabled() else { return }
 
+            // Stealth: never broadcast our own typing indicator. Incoming typing
+            // is still received and displayed (that path doesn't run through here),
+            // so leave the setting above ON to keep seeing others type.
+            guard !ForkFlags.suppressOutgoingTypingIndicators else { return }
+
             Task {
                 do {
                     let databaseStorage = SSKEnvironment.shared.databaseStorageRef

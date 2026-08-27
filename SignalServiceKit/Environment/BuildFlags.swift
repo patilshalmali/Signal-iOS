@@ -90,6 +90,47 @@ public enum BuildFlags {
     public static let improvedNotifications = build <= .dev
 }
 
+// MARK: - Fork Flags
+
+/// Toggles for the privacy/anti-ephemerality behaviors this fork adds on top of
+/// upstream Signal. Centralized here so intent is reviewable in one place.
+///
+/// These are immutable defaults today (the behavior is always on, matching the
+/// reference forks). A later change can back any of them with a persisted user
+/// setting without touching the call sites, which only read these accessors.
+public enum ForkFlags {
+
+    // MARK: Stealth (asymmetric)
+
+    /// Never transmit our own read/viewed receipts to anyone, while still
+    /// receiving and displaying receipts others send us.
+    ///
+    /// The receive/display side is still gated by the normal "Read Receipts"
+    /// setting (`OWSReceiptManager.areReadReceiptsEnabled`), so turn that ON to
+    /// see who read your messages — outgoing receipts stay suppressed either way.
+    public static let suppressOutgoingReadReceipts = true
+
+    /// Never broadcast our own typing indicator, while still showing others'.
+    ///
+    /// Leave the normal "Typing Indicators" setting ON so incoming typing is
+    /// still displayed; only the outgoing broadcast is suppressed.
+    public static let suppressOutgoingTypingIndicators = true
+
+    // MARK: Content preservation
+
+    /// Keep view-once media viewable and re-openable after it has been viewed,
+    /// instead of deleting the attachment on first view.
+    public static let preserveViewOnceMedia = true
+
+    /// When a message is deleted for everyone (including by a group admin),
+    /// keep the original content and annotate it as deleted instead of wiping it.
+    public static let preserveRemotelyDeletedContent = true
+
+    /// When a disappearing message's timer fires, keep the message and mark it
+    /// expired instead of deleting the row.
+    public static let preserveExpiredMessages = true
+}
+
 // MARK: -
 
 extension BuildFlags {

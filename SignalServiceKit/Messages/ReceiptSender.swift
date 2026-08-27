@@ -141,6 +141,13 @@ public class ReceiptSender: NSObject {
             owsFailDebug("Invalid timestamp.")
             return
         }
+        // Stealth: never transmit our own read/viewed receipts. Delivery receipts
+        // are unaffected, and incoming receipts from others are still processed
+        // and displayed elsewhere. This is the single chokepoint through which
+        // both direct and pending (message-request) receipts flow.
+        if ForkFlags.suppressOutgoingReadReceipts, receiptType == .read || receiptType == .viewed {
+            return
+        }
         let pendingTask = pendingTasks.buildPendingTask()
         let persistedSet = fetchReceiptSet(receiptType: receiptType, aci: aci, tx: tx)
         persistedSet.insert(timestamp: timestamp, messageUniqueId: messageUniqueId)
