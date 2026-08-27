@@ -120,6 +120,12 @@ typedef NS_CLOSED_ENUM(NSInteger, TSEditState) {
 @property (nonatomic, readonly) BOOL isViewOnceComplete;
 @property (nonatomic, readonly) BOOL wasRemotelyDeleted;
 
+/// Fork: YES for a disappearing message whose timer has fired but whose content
+/// we deliberately retained (see `markAsExpiredAndRetainWithTransaction:`).
+/// Detected via the otherwise-impossible state expireStartedAt > 0 while
+/// expiresInSeconds == 0.
+@property (nonatomic, readonly) BOOL isMarkedExpired;
+
 /// If `true`, indicates that this message represents an SMS message restored
 /// from a Backup created by an Android.
 ///
@@ -231,6 +237,13 @@ NS_DESIGNATED_INITIALIZER NS_SWIFT_NAME(init(grdbId:uniqueId:receivedAtTimestamp
 #pragma mark - View Once
 
 - (void)updateWithViewOnceCompleteAndRemoveRenderableContentWithTransaction:(DBWriteTransaction *)transaction;
+
+/// Fork: called instead of deleting a disappearing message when its timer fires.
+/// Keeps the row and its renderable content, clearing only the expiration timer
+/// so the message is never re-selected for expiration, and leaving an
+/// `isMarkedExpired` marker for the UI.
+- (void)markAsExpiredAndRetainWithTransaction:(DBWriteTransaction *)transaction
+    NS_SWIFT_NAME(markAsExpiredAndRetain(tx:));
 
 #pragma mark - Remote Delete
 

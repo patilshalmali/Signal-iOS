@@ -129,6 +129,14 @@ public enum ForkFlags {
     /// When a disappearing message's timer fires, keep the message and mark it
     /// expired instead of deleting the row.
     public static let preserveExpiredMessages = true
+
+    // MARK: Retained-message labels
+
+    /// Grey annotation shown under a disappearing message we kept past its timer.
+    public static let expiredLabel = "(만료됨)"
+
+    /// Grey annotation shown under a message someone deleted for everyone that we kept.
+    public static let remotelyDeletedLabel = "(삭제됨)"
 }
 
 // MARK: -

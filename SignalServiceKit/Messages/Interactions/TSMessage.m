@@ -581,6 +581,14 @@ static const NSUInteger OWSMessageSchemaVersion = 4;
     return _expireStartedAt > 0 && _expiresInSeconds > 0;
 }
 
+- (BOOL)isMarkedExpired
+{
+    // A disappearing message's timer only ever starts when expiresInSeconds > 0,
+    // so expireStartedAt > 0 with expiresInSeconds == 0 is otherwise impossible
+    // and uniquely identifies a message we retained after its timer fired.
+    return _expireStartedAt > 0 && _expiresInSeconds == 0;
+}
+
 - (BOOL)shouldUseReceiptDateForSorting
 {
     return YES;
@@ -660,6 +668,23 @@ static const NSUInteger OWSMessageSchemaVersion = 4;
 }
 
 #endif
+
+#pragma mark - Disappearing Messages (Fork: retain on expiry)
+
+- (void)markAsExpiredAndRetainWithTransaction:(DBWriteTransaction *)transaction
+{
+    OWSAssertDebug(transaction);
+
+    [self anyUpdateMessageWithTransaction:transaction
+                                    block:^(TSMessage *message) {
+                                        // Clear the timer so the message is never re-selected for
+                                        // expiration and cannot re-arm (ensurePerConversationExpiration
+                                        // only re-starts a timer while expiresInSeconds > 0).
+                                        // Keep expireStartedAt > 0 as the isMarkedExpired marker.
+                                        message->_expiresInSeconds = 0;
+                                        message->_expiresAt = 0;
+                                    }];
+}
 
 #pragma mark - View Once
 

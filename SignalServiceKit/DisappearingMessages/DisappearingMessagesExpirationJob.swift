@@ -31,6 +31,14 @@ public final class DisappearingMessagesExpirationJob: ExpirationJob<ExpiringInte
     }
 
     override public func deleteExpiredElement(_ interaction: ExpiringInteraction, tx: DBWriteTransaction) {
+        // Fork: keep expired chat messages instead of deleting them. This clears
+        // the timer (so the message won't be re-selected here) and leaves an
+        // `isMarkedExpired` marker for the UI. Calls and other expiring elements
+        // are not TSMessages and fall through to normal deletion.
+        if ForkFlags.preserveExpiredMessages, let message = interaction as? TSMessage {
+            message.markAsExpiredAndRetain(tx: tx)
+            return
+        }
         interactionDeleteManager.delete(
             interaction,
             sideEffects: .custom(associatedCallDelete: .localDeleteOnly),

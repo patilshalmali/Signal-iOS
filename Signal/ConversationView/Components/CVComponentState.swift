@@ -1265,6 +1265,12 @@ private extension CVComponentState.Builder {
             return build()
         }
 
+        if message.isMarkedExpired {
+            // Fork: a disappearing message we kept past its timer. Render it like a
+            // normal message but annotate it as expired.
+            self.bottomLabel = ForkFlags.expiredLabel
+        }
+
         if message.isViewOnceMessage {
             return try buildViewOnceMessage(message: message)
         }
