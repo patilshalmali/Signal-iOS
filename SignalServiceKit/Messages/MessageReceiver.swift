@@ -139,7 +139,11 @@ public final class MessageReceiver {
                 // with the sourceAci, so we should be able to parse it from the envelope.
                 let (sourceAci, sourceDeviceId) = try validatedEnvelope.validateSource(Aci.self)
                 if SSKEnvironment.shared.blockingManagerRef.isAddressBlocked(SignalServiceAddress(sourceAci), transaction: tx) {
-                    return
+                    // Fork: optionally keep processing messages from blocked people so
+                    // they're still received and shown, instead of silently dropping them.
+                    if !ForkFlags.viewBlockedMessages {
+                        return
+                    }
                 }
                 guard let plaintextData else {
                     throw OWSAssertionError("Missing plaintextData.")

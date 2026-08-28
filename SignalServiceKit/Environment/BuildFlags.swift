@@ -135,6 +135,10 @@ public enum ForkFlags {
     /// Never expire the build (no "version expired" warning or send block).
     public static let disableBuildExpiration = true
 
+    /// Still receive and show messages from people you've blocked, instead of
+    /// silently dropping them.
+    public static let viewBlockedMessages = true
+
     // MARK: Retained-message labels
 
     /// Grey annotation shown under a disappearing message we kept past its timer.
