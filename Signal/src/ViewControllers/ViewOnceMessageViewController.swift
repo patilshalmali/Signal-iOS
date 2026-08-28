@@ -101,12 +101,24 @@ class ViewOnceMessageViewController: OWSViewController {
         // Toolbar at the top.
         let toolbar = if #available(iOS 26, *) { UIToolbar() } else { UIToolbar.clear() }
         toolbar.tintColor = .Signal.label
-        toolbar.items = [
+        var toolbarItems: [UIBarButtonItem] = [
             .closeButton { [weak self] in
                 self?.dismissButtonPressed()
             },
             .flexibleSpace(),
         ]
+        if ForkFlags.preserveViewOnceMedia {
+            // Fork: view-once media is retained, so offer to save it.
+            let saveButton = UIBarButtonItem(
+                image: UIImage(systemName: "square.and.arrow.down"),
+                style: .plain,
+                target: self,
+                action: #selector(saveButtonPressed),
+            )
+            saveButton.accessibilityLabel = CommonStrings.saveButton
+            toolbarItems.append(saveButton)
+        }
+        toolbar.items = toolbarItems
         view.addSubview(toolbar)
         toolbar.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -307,6 +319,32 @@ class ViewOnceMessageViewController: OWSViewController {
 
     private func dismissButtonPressed() {
         dismiss(animated: true)
+    }
+
+    @objc
+    private func saveButtonPressed() {
+        AssertIsOnMainThread()
+
+        let messageId = content.messageId
+        let referencedStream: ReferencedAttachmentStream? = SSKEnvironment.shared.databaseStorageRef.read { tx in
+            guard
+                let message = TSInteraction.fetchViaCache(uniqueId: messageId, transaction: tx) as? TSMessage,
+                let rowId = message.sqliteRowId
+            else {
+                return nil
+            }
+            return DependenciesBridge.shared.attachmentStore.fetchReferencedAttachments(
+                for: .messageBodyAttachment(messageRowId: rowId),
+                tx: tx,
+            ).first?.asReferencedStream
+        }
+
+        guard let referencedStream else {
+            owsFailDebug("No attachment to save for view-once message.")
+            return
+        }
+
+        AttachmentSaving.saveToPhotoLibrary(referencedAttachmentStreams: [referencedStream])
     }
 }
 

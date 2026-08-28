@@ -111,6 +111,12 @@ public class ViewOnceMessages: NSObject {
             owsFailDebug("Not a view-once message.")
             return
         }
+        // Fork: never consume view-once media. Leaving the message incomplete keeps
+        // its attachment intact and re-openable. This single chokepoint covers the
+        // viewer, linked-device transcript sync, and the auto-complete path.
+        guard !ForkFlags.preserveViewOnceMedia else {
+            return
+        }
         guard !message.isViewOnceComplete else {
             // Already completed, no need to complete again.
             return
