@@ -61,7 +61,7 @@ actor CallLinkFetchJobRunner: DatabaseChangeDelegate {
                 return
             }
             do {
-                Logger.info("Refreshing \(callLinkToFetch.rootKey); pendingFetchCounter = \(callLinkToFetch.pendingFetchCounter)…")
+                Logger.info("Refreshing call link root key; pendingFetchCounter = \(callLinkToFetch.pendingFetchCounter)…")
                 _ = try await callLinkStateUpdater.readCallLink(rootKey: callLinkToFetch.rootKey)
                 sequentialFailureCount = 0
             } catch {
