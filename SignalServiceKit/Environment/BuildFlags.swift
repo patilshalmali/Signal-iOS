@@ -95,9 +95,11 @@ public enum BuildFlags {
 /// Toggles for the privacy/anti-ephemerality behaviors this fork adds on top of
 /// upstream Signal. Centralized here so intent is reviewable in one place.
 ///
-/// These are immutable defaults today (the behavior is always on, matching the
-/// reference forks). A later change can back any of them with a persisted user
-/// setting without touching the call sites, which only read these accessors.
+/// The booleans are mutable so a settings UI can flip them at runtime; they
+/// default to the fork behavior (on). They're `nonisolated(unsafe)` because
+/// they're simple config flags read from many contexts -- treat writes as
+/// best-effort. The call sites only read these accessors, so a later change can
+/// back any of them with a persisted store without touching those sites.
 public enum ForkFlags {
 
     // MARK: Stealth (asymmetric)
@@ -108,36 +110,36 @@ public enum ForkFlags {
     /// The receive/display side is still gated by the normal "Read Receipts"
     /// setting (`OWSReceiptManager.areReadReceiptsEnabled`), so turn that ON to
     /// see who read your messages — outgoing receipts stay suppressed either way.
-    public static let suppressOutgoingReadReceipts = true
+    nonisolated(unsafe) public static var suppressOutgoingReadReceipts = true
 
     /// Never broadcast our own typing indicator, while still showing others'.
     ///
     /// Leave the normal "Typing Indicators" setting ON so incoming typing is
     /// still displayed; only the outgoing broadcast is suppressed.
-    public static let suppressOutgoingTypingIndicators = true
+    nonisolated(unsafe) public static var suppressOutgoingTypingIndicators = true
 
     // MARK: Content preservation
 
     /// Keep view-once media viewable and re-openable after it has been viewed,
     /// instead of deleting the attachment on first view.
-    public static let preserveViewOnceMedia = true
+    nonisolated(unsafe) public static var preserveViewOnceMedia = true
 
     /// When a message is deleted for everyone (including by a group admin),
     /// keep the original content and annotate it as deleted instead of wiping it.
-    public static let preserveRemotelyDeletedContent = true
+    nonisolated(unsafe) public static var preserveRemotelyDeletedContent = true
 
     /// When a disappearing message's timer fires, keep the message and mark it
     /// expired instead of deleting the row.
-    public static let preserveExpiredMessages = true
+    nonisolated(unsafe) public static var preserveExpiredMessages = true
 
     // MARK: Misc
 
     /// Never expire the build (no "version expired" warning or send block).
-    public static let disableBuildExpiration = true
+    nonisolated(unsafe) public static var disableBuildExpiration = true
 
     /// Still receive and show messages from people you've blocked, instead of
     /// silently dropping them.
-    public static let viewBlockedMessages = true
+    nonisolated(unsafe) public static var viewBlockedMessages = true
 
     // MARK: Retained-message labels
 
