@@ -210,6 +210,29 @@ struct ScrubbingLogFormatterTest {
     }
 
     @Test
+    func testFilePathsScrubbed() {
+        let testCases: [String: String] = [
+            "Deleting file: /var/mobile/Containers/Data/Application/12ABCDEF/Documents/attachment.jpg":
+                "Deleting file: …/attachment.jpg",
+            "Could not delete old temp directory: /private/var/tmp/org.signal.temp":
+                "Could not delete old temp directory: …/org.signal.temp",
+            "path=/var/mobile/Library/Caches/signal.sqlite": "path=…/signal.sqlite",
+            "/var/mobile/Containers/foo.txt at start": "…/foo.txt at start",
+            // URLs must be left alone: their path components are never
+            // preceded by a delimiter that the file path pattern accepts.
+            "connecting to https://chat.signal.org/v1/websocket":
+                "connecting to https://chat.signal.org/v1/websocket",
+            // Relative paths and non-path slashes are left alone.
+            "loaded a/b": "loaded a/b",
+            "mime type image/png": "mime type image/png",
+        ]
+
+        for (input, expectedOutput) in testCases {
+            #expect(format(input) == expectedOutput, "Failed redaction: \(input)")
+        }
+    }
+
+    @Test
     func testNotScrubbed() {
         let input = "Some unfiltered string"
         #expect(format(input) == input)

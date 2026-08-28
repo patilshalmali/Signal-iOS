@@ -129,6 +129,18 @@ public class ScrubbingLogFormatter: NSObject, DDLogFormatter {
             kind: .template("x.x.x.$1"),
         )
 
+        /// Matches absolute file paths and keeps only the last path component
+        /// (like `URL(fileURLWithPath:).lastPathComponent`). Sandbox container
+        /// paths embed a per-install UUID that can fingerprint an
+        /// installation. The match must start at the beginning of the string
+        /// or after a delimiter, so URL paths (whose components are preceded
+        /// by "//" or a hostname) are left alone. Must run after the base64
+        /// replacements, which match within URL paths.
+        static let filePath: Replacement = Replacement(
+            pattern: #"(^|[\s:"'(=,])(?:/[^\s/]+)+/([^\s/]+)"#,
+            kind: .template("$1…/$2"),
+        )
+
         static let hex: Replacement = Replacement(
             pattern: "[\\da-f]{11,}([\\da-f]{3})",
             options: .caseInsensitive,
@@ -151,6 +163,7 @@ public class ScrubbingLogFormatter: NSObject, DDLogFormatter {
         .hex,
         .base64(prefix: "", length: 32),
         .base64(prefix: "", length: 16),
+        .filePath,
     ]
 
     /// The `LoggingKey` to use for `loggingKeyHash` replacements, if a key is
