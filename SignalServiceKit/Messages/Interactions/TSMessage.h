@@ -249,6 +249,13 @@ NS_DESIGNATED_INITIALIZER NS_SWIFT_NAME(init(grdbId:uniqueId:receivedAtTimestamp
 
 - (void)updateWithRemotelyDeletedAndRemoveRenderableContentWithTransaction:(DBWriteTransaction *)transaction;
 
+/// Fork: mark a message as remotely deleted while keeping its renderable
+/// content, so it can be shown annotated as deleted instead of wiped. Used
+/// instead of `updateWithRemotelyDeletedAndRemoveRenderableContent...` when
+/// content preservation is enabled.
+- (void)markRemotelyDeletedButRetainContentWithTransaction:(DBWriteTransaction *)transaction
+    NS_SWIFT_NAME(markRemotelyDeletedButRetainContent(tx:));
+
 @end
 
 NS_ASSUME_NONNULL_END

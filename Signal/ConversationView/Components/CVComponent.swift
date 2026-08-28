@@ -287,6 +287,15 @@ extension CVComponentBase: CVNode {
     public var thread: TSThread { itemModel.thread }
     public var interaction: TSInteraction { itemModel.interaction }
     public var componentState: CVComponentState { itemModel.componentState }
+
+    // Fork: a remote-deleted message whose content we retained is rendered like a
+    // normal message (annotated via bottomLabel), so it should not be treated as a
+    // tombstone by the rendering/interaction logic. This shadows the default
+    // `CVNode.wasRemotelyDeleted` for component subclasses.
+    public var wasRemotelyDeleted: Bool {
+        guard (interaction as? TSMessage)?.wasRemotelyDeleted == true else { return false }
+        return componentState.bottomLabel != ForkFlags.remotelyDeletedLabel
+    }
     public var itemViewState: CVItemViewState { itemModel.itemViewState }
     public var messageCellType: CVMessageCellType { componentState.messageCellType }
     public var conversationStyle: ConversationStyle { itemModel.conversationStyle }

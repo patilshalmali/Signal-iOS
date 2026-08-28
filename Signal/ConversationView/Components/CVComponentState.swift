@@ -1259,10 +1259,17 @@ private extension CVComponentState.Builder {
     ) throws -> CVComponentState {
 
         if message.wasRemotelyDeleted {
-            // If the message has been remotely deleted, suppress everything else.
-            let remoteDeleteAuthor = message.displayNameForDeleteMessage(localAci: localAci, transaction: transaction)
-            self.bodyText = .remotelyDeleted(deleteAuthor: remoteDeleteAuthor)
-            return build()
+            if ForkFlags.preserveRemotelyDeletedContent,
+               message.isRemotelyDeletedButRetained(tx: transaction) {
+                // Fork: keep showing the original content, annotated as deleted.
+                // Fall through to normal rendering below.
+                self.bottomLabel = ForkFlags.remotelyDeletedLabel
+            } else {
+                // If the message has been remotely deleted, suppress everything else.
+                let remoteDeleteAuthor = message.displayNameForDeleteMessage(localAci: localAci, transaction: transaction)
+                self.bodyText = .remotelyDeleted(deleteAuthor: remoteDeleteAuthor)
+                return build()
+            }
         }
 
         if message.isMarkedExpired {

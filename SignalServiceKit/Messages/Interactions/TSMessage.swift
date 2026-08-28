@@ -494,10 +494,25 @@ public extension TSMessage {
             deleteEditRecords: false,
             tx: transaction,
             processMessage: { message in
-                message.updateWithRemotelyDeletedAndRemoveRenderableContent(with: transaction)
+                if ForkFlags.preserveRemotelyDeletedContent {
+                    // Fork: keep the content and just flag it as remotely deleted.
+                    message.markRemotelyDeletedButRetainContent(tx: transaction)
+                } else {
+                    message.updateWithRemotelyDeletedAndRemoveRenderableContent(with: transaction)
+                }
             },
         )
-        SSKEnvironment.shared.notificationPresenterRef.cancelNotifications(messageIds: [self.uniqueId])
+        if !ForkFlags.preserveRemotelyDeletedContent {
+            SSKEnvironment.shared.notificationPresenterRef.cancelNotifications(messageIds: [self.uniqueId])
+        }
+    }
+
+    /// Fork: true when this message was remotely deleted but we kept its content
+    /// (so it should be rendered normally with a "deleted" annotation rather than
+    /// as a tombstone). False for messages whose content was actually stripped.
+    public func isRemotelyDeletedButRetained(tx: DBReadTransaction) -> Bool {
+        guard wasRemotelyDeleted, let rowId = sqliteRowId else { return false }
+        return insertedMessageHasRenderableContent(rowId: rowId, tx: tx)
     }
 
     // MARK: - Preview text
@@ -628,7 +643,9 @@ public extension TSMessage {
             ))
         }
 
-        if self.wasRemotelyDeleted {
+        // Fork: if we retained the content of a remotely-deleted message, show the
+        // real preview (the actual body/media) instead of a "deleted" placeholder.
+        if self.wasRemotelyDeleted, !isRemotelyDeletedButRetained(tx: tx) {
             guard let localAci = tsAccountManager.localIdentifiers(tx: tx)?.aci else {
                 owsFailDebug("Local user not registered when trying to find delete author")
                 return .remotelyDeleted(OWSLocalizedString("THIS_MESSAGE_WAS_DELETED", comment: "text indicating the message was remotely deleted"))

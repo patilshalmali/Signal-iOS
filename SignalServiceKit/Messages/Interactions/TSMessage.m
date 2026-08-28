@@ -713,6 +713,16 @@ static const NSUInteger OWSMessageSchemaVersion = 4;
                                  messageUpdateBlock:^(TSMessage *message) { message.wasRemotelyDeleted = YES; }];
 }
 
+- (void)markRemotelyDeletedButRetainContentWithTransaction:(DBWriteTransaction *)transaction
+{
+    OWSAssertDebug(transaction);
+
+    // Keep reactions, pins, attachments, body -- everything. Only record that a
+    // remote delete was received so the UI can annotate it.
+    [self anyUpdateMessageWithTransaction:transaction
+                                    block:^(TSMessage *message) { message.wasRemotelyDeleted = YES; }];
+}
+
 #pragma mark - Remove Renderable Content
 
 - (void)removeAllRenderableContentWithTransaction:(DBWriteTransaction *)transaction

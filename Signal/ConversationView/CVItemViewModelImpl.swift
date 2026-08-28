@@ -122,7 +122,10 @@ public class CVItemViewModelImpl: CVComponentStateWrapper {
     public var wasRemotelyDeleted: Bool {
         AssertIsOnMainThread()
 
-        return (interaction as? TSMessage)?.wasRemotelyDeleted == true
+        guard (interaction as? TSMessage)?.wasRemotelyDeleted == true else { return false }
+        // Fork: a retained (annotated) remote-deleted message behaves like a normal
+        // message here -- so replying, forwarding, etc. stay enabled.
+        return componentState.bottomLabel != ForkFlags.remotelyDeletedLabel
     }
 
     public var audioAttachmentStream: AttachmentStream? {
