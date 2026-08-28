@@ -130,6 +130,11 @@ public enum ForkFlags {
     /// expired instead of deleting the row.
     public static let preserveExpiredMessages = true
 
+    // MARK: Misc
+
+    /// Never expire the build (no "version expired" warning or send block).
+    public static let disableBuildExpiration = true
+
     // MARK: Retained-message labels
 
     /// Grey annotation shown under a disappearing message we kept past its timer.

@@ -174,7 +174,12 @@ public final class AppExpiry {
         }
     }
 
-    public func isExpired(now: Date) -> Bool { expirationDate < now }
+    public func isExpired(now: Date) -> Bool {
+        // Fork: never treat the build as expired, so there's no "version expired"
+        // warning or send block.
+        if ForkFlags.disableBuildExpiration { return false }
+        return expirationDate < now
+    }
 
     public static let defaultExpirationInterval: TimeInterval = 90 * .day
 
