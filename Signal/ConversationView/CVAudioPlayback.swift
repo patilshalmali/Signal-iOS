@@ -9,7 +9,9 @@ public import SignalUI
 
 protocol CVAudioPlayerListener {
     func audioPlayerStateDidChange(attachmentId: Attachment.IDType)
-    func audioPlayerDidFinish(attachmentId: Attachment.IDType)
+    // Attachments are deduplicated by content across conversations, so
+    // attachmentId alone is not enough to identify which message finished.
+    func audioPlayerDidFinish(attachmentId: Attachment.IDType, forInteractionId interactionId: String?)
     func audioPlayerDidMarkViewed(attachmentId: Attachment.IDType)
 }
 
@@ -294,7 +296,10 @@ extension CVAudioPlayer: CVAudioPlaybackDelegate {
         progressCache[audioPlayback.attachmentId] = 0
 
         for listener in listeners.elements {
-            listener.audioPlayerDidFinish(attachmentId: audioPlayback.attachmentId)
+            listener.audioPlayerDidFinish(
+                attachmentId: audioPlayback.attachmentId,
+                forInteractionId: audioPlayback.owningInteractionId,
+            )
         }
     }
 }
@@ -316,6 +321,7 @@ private class CVAudioPlayback: NSObject, AudioPlayerDelegate {
     fileprivate weak var delegate: CVAudioPlaybackDelegate?
 
     fileprivate let uniqueThreadId: String?
+    fileprivate let owningInteractionId: String?
     fileprivate let attachmentId: Attachment.IDType
 
     private let audioPlayer: AudioPlayer
@@ -391,6 +397,7 @@ private class CVAudioPlayback: NSObject, AudioPlayerDelegate {
 
         audioPlayer = AudioPlayer(attachment: attachmentStream.attachmentStream, audioBehavior: .audioMessagePlayback)
         uniqueThreadId = attachment.owningMessage?.uniqueThreadId
+        owningInteractionId = attachment.owningMessage?.uniqueId
 
         super.init()
 

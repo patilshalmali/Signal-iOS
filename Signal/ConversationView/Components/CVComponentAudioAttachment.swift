@@ -357,8 +357,12 @@ public class CVComponentAudioAttachment: CVComponentBase, CVComponent {
 extension CVComponentAudioAttachment: CVAudioPlayerListener {
     func audioPlayerStateDidChange(attachmentId: Attachment.IDType) {}
 
-    func audioPlayerDidFinish(attachmentId: Attachment.IDType) {
+    func audioPlayerDidFinish(attachmentId: Attachment.IDType, forInteractionId interactionId: String?) {
         guard attachmentId == audioAttachment.attachment.id else { return }
+        // Prevent a stale listener in a different conversation (sharing the
+        // same deduplicated attachment) from incorrectly triggering autoplay
+        // of its own, unrelated "next" message.
+        guard interactionId == self.interaction.uniqueId else { return }
         AppEnvironment.shared.cvAudioPlayerRef.autoplayNextAudioAttachmentIfNeeded(nextAudioAttachment)
     }
 

@@ -492,7 +492,7 @@ class AudioMessageView: ManualStackView, CVAudioPlayerListener {
         updateContents(animated: true)
     }
 
-    func audioPlayerDidFinish(attachmentId: Attachment.IDType) {
+    func audioPlayerDidFinish(attachmentId: Attachment.IDType, forInteractionId interactionId: String?) {
         AssertIsOnMainThread()
 
         guard attachmentId == attachment.id else { return }
