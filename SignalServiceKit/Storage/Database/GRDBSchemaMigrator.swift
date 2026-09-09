@@ -362,6 +362,7 @@ public class GRDBSchemaMigrator {
         case addShouldNotifyWhenMutedColumns
         case preserveCallsWhenMutedForExistingUsers
         case migrateSomeKeyValueStores
+        case addAttachmentLocalDeduplicationHash
 
         // NOTE: Every time we add a migration id, consider
         // incrementing grdbSchemaVersionLatest.
@@ -491,7 +492,7 @@ public class GRDBSchemaMigrator {
     }
 
     public static let grdbSchemaVersionDefault: UInt = 0
-    public static let grdbSchemaVersionLatest: UInt = 160
+    public static let grdbSchemaVersionLatest: UInt = 161
 
     private class DatabaseMigratorWrapper {
         // Run with immediate (or disabled) foreign key checks so that pre-existing
@@ -5631,6 +5632,27 @@ public class GRDBSchemaMigrator {
                 let migrator = KeyValueStoreMigrator(collection: "BackupOversizeTextCacheStore")
                 try migrator.migrateInt64("lastRestoredRowIdKey", tx: tx)
             }
+            return .success(())
+        }
+
+        migrator.registerMigration(.addAttachmentLocalDeduplicationHash) { tx in
+            // A hash applied before non-deterministic processing that happens
+            // locally before an attachment is created, so that future attachment
+            // creations from the same source can be deduplicated even if their
+            // post-processed content (and content hash) end up different.
+            // Existing rows are kept nil; this is an optimization and applies
+            // only to new attachments going forward.
+            try tx.database.alter(table: "Attachment") { table in
+                table.add(column: "localDeduplicationHash", .blob)
+            }
+
+            try tx.database.create(
+                index: "index_attachment_on_localDeduplicationHash",
+                on: "Attachment",
+                columns: ["localDeduplicationHash"],
+                condition: Column("localDeduplicationHash") != nil,
+            )
+
             return .success(())
         }
 

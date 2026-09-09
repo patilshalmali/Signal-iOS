@@ -114,6 +114,7 @@ extension Attachment.Record {
         mimeType: String = MimeType.imageJpeg.rawValue,
         encryptionKey: AttachmentKey = .generate(),
         plaintextHash: Data = Randomness.generateRandomBytes(32),
+        localDeduplicationHash: Data? = nil,
         streamInfo: Attachment.StreamInfo? = nil,
     ) -> Attachment.Record {
         return .forInsertingStream(
@@ -126,6 +127,7 @@ extension Attachment.Record {
                 encryptionKey: encryptionKey,
             ),
             plaintextHash: plaintextHash,
+            localDeduplicationHash: localDeduplicationHash,
         )
     }
 }
@@ -137,6 +139,7 @@ extension Attachment {
         mimeType: String = MimeType.applicationOctetStream.rawValue,
         encryptionKey: Data = Randomness.generateRandomBytes(64),
         plaintextHash: Data? = nil,
+        localDeduplicationHash: Data? = nil,
         streamInfo: Attachment.StreamInfo? = nil,
         transitTierInfo: Attachment.TransitTierInfo? = nil,
         mediaTierInfo: Attachment.MediaTierInfo? = nil,
@@ -152,6 +155,7 @@ extension Attachment {
             contentType: Attachment.ContentType(mimeType: mimeType),
             encryptionKey: encryptionKey,
             plaintextHash: plaintextHash ?? streamInfo?.plaintextHash,
+            localDeduplicationHash: localDeduplicationHash,
             localRelativeFilePathThumbnail: localRelativeFilePathThumbnail,
             streamInfo: streamInfo,
             latestTransitTierInfo: transitTierInfo,

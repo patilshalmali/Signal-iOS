@@ -620,6 +620,8 @@ public class AttachmentManagerImpl: AttachmentManager {
                 encryptionKey: pendingAttachment.encryptionKey,
                 streamInfo: streamInfo,
                 plaintextHash: pendingAttachment.plaintextHash,
+                // TODO
+                localDeduplicationHash: nil,
             )
 
             let hasOrphanRecord = orphanedAttachmentStore.orphanAttachmentExists(

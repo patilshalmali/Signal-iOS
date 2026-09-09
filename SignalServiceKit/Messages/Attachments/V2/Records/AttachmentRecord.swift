@@ -14,6 +14,7 @@ extension Attachment {
         var sqliteId: IDType?
         let blurHash: String?
         let plaintextHash: Data?
+        let localDeduplicationHash: Data?
         let encryptedByteCount: UInt32?
         let unencryptedByteCount: UInt32?
         let mimeType: String
@@ -88,6 +89,7 @@ extension Attachment {
             case blurHash
             case mimeType
             case plaintextHash = "sha256ContentHash"
+            case localDeduplicationHash
             case encryptedByteCount
             case unencryptedByteCount
             case contentType
@@ -149,6 +151,7 @@ extension Attachment {
                 contentType: attachment.contentType,
                 encryptionKey: attachment.encryptionKey,
                 plaintextHash: attachment.plaintextHash,
+                localDeduplicationHash: attachment.localDeduplicationHash,
                 localRelativeFilePathThumbnail: attachment.localRelativeFilePathThumbnail,
                 streamInfo: attachment.streamInfo,
                 latestTransitTierInfo: attachment.latestTransitTierInfo,
@@ -167,6 +170,7 @@ extension Attachment {
             contentType: Attachment.ContentType,
             encryptionKey: Data,
             plaintextHash: Data?,
+            localDeduplicationHash: Data?,
             localRelativeFilePathThumbnail: String?,
             streamInfo: Attachment.StreamInfo?,
             latestTransitTierInfo: Attachment.TransitTierInfo?,
@@ -179,6 +183,7 @@ extension Attachment {
             self.sqliteId = sqliteId
             self.blurHash = blurHash
             self.plaintextHash = plaintextHash
+            self.localDeduplicationHash = localDeduplicationHash
             self.encryptedByteCount = streamInfo?.encryptedByteCount
             self.unencryptedByteCount = streamInfo?.unencryptedByteCount
             self.mimeType = mimeType
@@ -252,6 +257,7 @@ extension Attachment {
                 contentType: contentType,
                 encryptionKey: encryptionKey,
                 plaintextHash: nil,
+                localDeduplicationHash: nil,
                 localRelativeFilePathThumbnail: nil,
                 streamInfo: nil,
                 latestTransitTierInfo: latestTransitTierInfo,
@@ -271,6 +277,7 @@ extension Attachment {
             encryptionKey: Data,
             streamInfo: Attachment.StreamInfo,
             plaintextHash: Data,
+            localDeduplicationHash: Data?,
         ) -> Record {
             return Record(
                 sqliteId: nil,
@@ -279,6 +286,7 @@ extension Attachment {
                 contentType: contentType,
                 encryptionKey: encryptionKey,
                 plaintextHash: plaintextHash,
+                localDeduplicationHash: localDeduplicationHash,
                 localRelativeFilePathThumbnail: nil,
                 streamInfo: streamInfo,
                 latestTransitTierInfo: nil,
@@ -307,6 +315,7 @@ extension Attachment {
                 contentType: contentType,
                 encryptionKey: encryptionKey,
                 plaintextHash: plaintextHash,
+                localDeduplicationHash: nil,
                 localRelativeFilePathThumbnail: nil,
                 streamInfo: nil,
                 latestTransitTierInfo: latestTransitTierInfo,
@@ -333,6 +342,7 @@ extension Attachment {
                 // encryption key we use is irrelevant. Just generate a new one.
                 encryptionKey: AttachmentKey.generate().combinedKey,
                 plaintextHash: nil,
+                localDeduplicationHash: nil,
                 localRelativeFilePathThumbnail: nil,
                 streamInfo: nil,
                 latestTransitTierInfo: nil,
@@ -359,6 +369,7 @@ extension Attachment {
                 contentType: thumbnailContentType,
                 encryptionKey: thumbnailEncryptionKey,
                 plaintextHash: nil,
+                localDeduplicationHash: nil,
                 localRelativeFilePathThumbnail: nil,
                 streamInfo: nil,
                 latestTransitTierInfo: thumbnailTransitTierInfo,

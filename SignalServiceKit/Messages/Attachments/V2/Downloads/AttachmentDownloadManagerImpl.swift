@@ -2272,6 +2272,10 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                         encryptionKey: pendingAttachment.encryptionKey,
                         streamInfo: streamInfo,
                         plaintextHash: pendingAttachment.plaintextHash,
+                        // Local deduplication hash is only used for local
+                        // attachments created from a file we later transcode,
+                        // not for anything we download.
+                        localDeduplicationHash: nil,
                     )
 
                     let attachment = try self.attachmentStore.insert(
@@ -2445,6 +2449,10 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                         encryptionKey: pendingThumbnailAttachment.encryptionKey,
                         streamInfo: streamInfo,
                         plaintextHash: pendingThumbnailAttachment.plaintextHash,
+                        // Local deduplication hash is only used for local
+                        // attachments created from a file we later transcode,
+                        // not for anything we download.
+                        localDeduplicationHash: nil,
                     )
 
                     let newAttachment = try self.attachmentStore.insert(
