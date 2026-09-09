@@ -1962,6 +1962,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                     mimeType: mimeType.rawValue,
                     renderingFlag: .borderless,
                     sourceFilename: nil,
+                    localDeduplicationHash: nil,
                 )
             }
         }
@@ -2123,6 +2124,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                         pendingAttachmentOrphanRecordId: pendingAttachment.orphanRecordId,
                         pendingAttachmentLatestTransitTierInfo: attachmentWeJustDownloaded.latestTransitTierInfo,
                         pendingAttachmentOriginalTransitTierInfo: attachmentWeJustDownloaded.originalTransitTierInfo,
+                        pendingAttachmentLocalDeduplicationHash: nil,
                         attachmentStore: attachmentStore,
                         orphanedAttachmentCleaner: orphanedAttachmentCleaner,
                         orphanedAttachmentStore: orphanedAttachmentStore,
@@ -2317,6 +2319,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                             pendingAttachmentOrphanRecordId: pendingAttachment.orphanRecordId,
                             pendingAttachmentLatestTransitTierInfo: nil,
                             pendingAttachmentOriginalTransitTierInfo: nil,
+                            pendingAttachmentLocalDeduplicationHash: nil,
                             attachmentStore: attachmentStore,
                             orphanedAttachmentCleaner: orphanedAttachmentCleaner,
                             orphanedAttachmentStore: orphanedAttachmentStore,
@@ -2498,6 +2501,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                             pendingAttachmentOrphanRecordId: pendingThumbnailAttachment.orphanRecordId,
                             pendingAttachmentLatestTransitTierInfo: nil,
                             pendingAttachmentOriginalTransitTierInfo: nil,
+                            pendingAttachmentLocalDeduplicationHash: nil,
                             attachmentStore: attachmentStore,
                             orphanedAttachmentCleaner: orphanedAttachmentCleaner,
                             orphanedAttachmentStore: orphanedAttachmentStore,

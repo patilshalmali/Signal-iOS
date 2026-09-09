@@ -188,6 +188,22 @@ public struct AttachmentStore {
         }
     }
 
+    /// Fetch every existing Attachment record made from a local file with the
+    /// given hash. Unlike the plaintext hash this is not guaranteed unique: two rows with
+    /// different plaintext hashes (post-transcription) can come from the same original file,
+    /// and any of them may since have stopped being a stream.
+    public func fetchAttachmentRecords(
+        localDeduplicationHash: Data,
+        tx: DBReadTransaction,
+    ) -> [Attachment.Record] {
+        let query = Attachment.Record
+            .filter(Column(Attachment.Record.CodingKeys.localDeduplicationHash) == localDeduplicationHash)
+
+        return failIfThrows {
+            try query.fetchAll(tx.database)
+        }
+    }
+
     // MARK: -
 
     /// Fetch an arbitrary referenced attachment for the provided owner.
@@ -731,10 +747,14 @@ public struct AttachmentStore {
     /// Call this IFF the existing attachment has a media name/plaintext hash but not stream info
     /// (if it was restored from a backup), but the new copy has stream
     /// info that we should keep by merging into the existing attachment.
+    ///
+    /// - Parameter localDeduplicationHash: The hash carried by the new copy, if any.
+    /// An existing hash is preferred when the old copy has one.
     public func merge(
         streamInfo: Attachment.StreamInfo,
         into attachment: Attachment,
         encryptionKey: Data,
+        localDeduplicationHash: Data?,
         latestTransitTierInfo: Attachment.TransitTierInfo?,
         originalTransitTierInfo: Attachment.TransitTierInfo?,
         mediaTierInfo: Attachment.MediaTierInfo?,
@@ -751,6 +771,7 @@ public struct AttachmentStore {
         attachment.latestTransitTierInfo = latestTransitTierInfo
         attachment.originalTransitTierInfo = originalTransitTierInfo
         attachment.plaintextHash = streamInfo.plaintextHash
+        attachment.localDeduplicationHash = attachment.localDeduplicationHash ?? localDeduplicationHash
         attachment.mediaTierInfo = mediaTierInfo
         attachment.thumbnailMediaTierInfo = thumbnailMediaTierInfo
         attachment.localRelativeFilePathThumbnail = nil

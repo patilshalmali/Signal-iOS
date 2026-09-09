@@ -212,6 +212,8 @@ extension AttachmentContentValidator {
             mimeType: sendableAttachment.mimeType,
             renderingFlag: sendableAttachment.renderingFlag,
             sourceFilename: sendableAttachment.sourceFilename?.rawValue ?? (shouldUseDefaultFilename ? sendableAttachment.defaultFilename : nil),
+            // TODO
+            localDeduplicationHash: nil,
         )
         return .pendingAttachment(pendingAttachment)
     }

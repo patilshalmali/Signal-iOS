@@ -35,6 +35,7 @@ public class AttachmentContentValidatorImpl: AttachmentContentValidator {
         mimeType: String,
         renderingFlag: AttachmentReference.RenderingFlag,
         sourceFilename: String?,
+        localDeduplicationHash: Data?,
     ) async throws -> PendingAttachment {
         let inputType: InputType = .unencryptedFile(dataSource.fileUrl)
         let primaryFilePlaintextHash = try computePlaintextHash(inputType: inputType)
@@ -47,6 +48,7 @@ public class AttachmentContentValidatorImpl: AttachmentContentValidator {
             renderingFlag: renderingFlag,
             sourceFilename: sourceFilename,
             shouldComputeBlurHash: true,
+            localDeduplicationHash: localDeduplicationHash,
         ))
         try dataSource.consumeAndDeleteIfNecessary()
         return pendingAttachment
@@ -69,6 +71,7 @@ public class AttachmentContentValidatorImpl: AttachmentContentValidator {
             renderingFlag: renderingFlag,
             sourceFilename: sourceFilename,
             shouldComputeBlurHash: true,
+            localDeduplicationHash: nil,
         ))
         return pendingAttachment
     }
@@ -109,6 +112,7 @@ public class AttachmentContentValidatorImpl: AttachmentContentValidator {
             sourceFilename: sourceFilename,
             // We use the sender-provided blurHash.
             shouldComputeBlurHash: false,
+            localDeduplicationHash: nil,
         ))
     }
 
@@ -138,6 +142,7 @@ public class AttachmentContentValidatorImpl: AttachmentContentValidator {
                 sourceFilename: nil,
                 // Revalidation doesn't touch the existing blurHash.
                 shouldComputeBlurHash: false,
+                localDeduplicationHash: nil,
             ),
         )
         return try await prepareAttachmentContentTypeFiles(
@@ -195,6 +200,7 @@ public class AttachmentContentValidatorImpl: AttachmentContentValidator {
             sourceFilename: sourceFilename,
             // We use the blurHash from the Backup proto.
             shouldComputeBlurHash: false,
+            localDeduplicationHash: nil,
         ))
     }
 
@@ -247,6 +253,7 @@ public class AttachmentContentValidatorImpl: AttachmentContentValidator {
                 sourceFilename: nil,
                 // Oversize text never has a blurHash.
                 shouldComputeBlurHash: false,
+                localDeduplicationHash: nil,
             )
         }
 
@@ -318,6 +325,7 @@ public class AttachmentContentValidatorImpl: AttachmentContentValidator {
         /// An attachment's blurHash is the sender's responsibility, so we only
         /// compute one for outgoing media.
         let shouldComputeBlurHash: Bool
+        let localDeduplicationHash: Data?
 
         init(
             type: InputType,
@@ -327,6 +335,7 @@ public class AttachmentContentValidatorImpl: AttachmentContentValidator {
             renderingFlag: AttachmentReference.RenderingFlag,
             sourceFilename: String?,
             shouldComputeBlurHash: Bool,
+            localDeduplicationHash: Data?,
         ) {
             self.type = type
             self.primaryFilePlaintextHash = primaryFilePlaintextHash
@@ -335,6 +344,7 @@ public class AttachmentContentValidatorImpl: AttachmentContentValidator {
             self.renderingFlag = renderingFlag
             self.sourceFilename = sourceFilename
             self.shouldComputeBlurHash = shouldComputeBlurHash
+            self.localDeduplicationHash = localDeduplicationHash
         }
 
         var byteSize: Int {
@@ -813,6 +823,7 @@ public class AttachmentContentValidatorImpl: AttachmentContentValidator {
             let contentResult = preparedContentResult.contentResult
             pendingAttachments[key] = PendingAttachment(
                 plaintextHash: input.primaryFilePlaintextHash,
+                localDeduplicationHash: input.localDeduplicationHash,
                 encryptedByteCount: primaryFile.encryptedLength,
                 unencryptedByteCount: primaryFile.plaintextLength,
                 mimeType: input.mimeType,
