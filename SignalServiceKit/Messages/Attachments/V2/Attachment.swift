@@ -54,6 +54,16 @@ public class Attachment {
     /// Nonnull if downloaded OR possibly if restored from a backup (which we trust to have validated).
     public var plaintextHash: Data?
 
+    /// Sha256 hash of the original local source (e.g. Photos asset) a locally-created stream came from,
+    /// before any transcoding. Note: MUST be invalidated by any edits applied by the user.
+    /// Used to deduplicate outgoing media that isn't byte-stable post transcoding, which
+    /// would otherwise get a fresh ``plaintextHash`` (and so a fresh row and upload) every pick.
+    ///
+    /// Only set for a stream created locally from media on this device. Always nil for downloaded
+    /// pointers, backup-restored rows, quoted reply thumbnails, stickers, link previews and
+    /// oversize text.
+    public var localDeduplicationHash: Data?
+
     /// MediaName used for backups (but assigned even if backups disabled).
     /// Nonnull if downloaded OR if restored from a backup.
     public var mediaName: String? {
@@ -281,6 +291,7 @@ public class Attachment {
         self.encryptionKey = record.encryptionKey
         self.originalAttachmentIdForQuotedReply = record.originalAttachmentIdForQuotedReply
         self.plaintextHash = record.plaintextHash
+        self.localDeduplicationHash = record.localDeduplicationHash
         self.localRelativeFilePathThumbnail = record.localRelativeFilePathThumbnail
         self.lastFullscreenViewTimestamp = record.lastFullscreenViewTimestamp
 

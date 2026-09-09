@@ -16,6 +16,7 @@ open class AttachmentContentValidatorMock: AttachmentContentValidator {
         mimeType: String,
         renderingFlag: AttachmentReference.RenderingFlag,
         sourceFilename: String?,
+        localDeduplicationHash: Data?,
     ) async throws -> PendingAttachment {
         throw OWSAssertionError("Unimplemented")
     }

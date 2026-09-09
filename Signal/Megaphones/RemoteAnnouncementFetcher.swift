@@ -95,6 +95,7 @@ public class RemoteAnnouncementFetcher: RemoteReleaseNotesFetcher<RemoteAnnounce
                     mimeType: mimeType,
                     renderingFlag: .default,
                     sourceFilename: nil,
+                    localDeduplicationHash: nil,
                 )
             }
 

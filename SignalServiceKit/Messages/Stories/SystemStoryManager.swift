@@ -52,6 +52,7 @@ public class OnboardingStoryManagerStoryMessageFactory {
             mimeType: mimeType,
             renderingFlag: .default,
             sourceFilename: nil,
+            localDeduplicationHash: nil,
         )
         guard case .image = pendingAttachment.contentType else {
             throw OWSAssertionError("onboarding story isn't valid")

@@ -1031,6 +1031,129 @@ class AttachmentStoreTests: XCTestCase {
         }
     }
 
+    // MARK: - Local deduplication hash
+
+    func testFetchByLocalDeduplicationHash() throws {
+        let localDeduplicationHash = Randomness.generateRandomBytes(32)
+
+        let matchingId = insertStream(localDeduplicationHash: localDeduplicationHash)
+        _ = insertStream(localDeduplicationHash: nil)
+
+        let matches = db.read { tx in
+            attachmentStore.fetchAttachmentRecords(
+                localDeduplicationHash: localDeduplicationHash,
+                tx: tx,
+            )
+        }
+        XCTAssertEqual(matches.map(\.sqliteId), [matchingId])
+
+        let nonMatches = db.read { tx in
+            attachmentStore.fetchAttachmentRecords(
+                localDeduplicationHash: Randomness.generateRandomBytes(32),
+                tx: tx,
+            )
+        }
+        XCTAssertTrue(nonMatches.isEmpty)
+    }
+
+    /// Unlike the plaintext hash, the local deduplication hash is not unique;
+    /// the same source file transcodes to different bytes every time.
+    func testMultipleRowsShareLocalDeduplicationHash() throws {
+        let localDeduplicationHash = Randomness.generateRandomBytes(32)
+
+        let firstId = insertStream(localDeduplicationHash: localDeduplicationHash)
+        let secondId = insertStream(localDeduplicationHash: localDeduplicationHash)
+
+        let matches = db.read { tx in
+            attachmentStore.fetchAttachmentRecords(
+                localDeduplicationHash: localDeduplicationHash,
+                tx: tx,
+            )
+        }
+        XCTAssertEqual(Set(matches.map(\.sqliteId)), [firstId, secondId])
+    }
+
+    /// Every update rebuilds the row from the `Attachment`, so an update through
+    /// an unrelated method must not drop the hash.
+    func testLocalDeduplicationHashSurvivesUnrelatedUpdate() throws {
+        let localDeduplicationHash = Randomness.generateRandomBytes(32)
+        let attachmentId = insertStream(localDeduplicationHash: localDeduplicationHash)
+
+        db.write { tx in
+            let stream = attachmentStore.fetch(id: attachmentId, tx: tx)!.asStream()!
+            attachmentStore.saveLatestTransitTierInfo(
+                attachmentStream: stream,
+                transitTierInfo: .mock(),
+                tx: tx,
+            )
+        }
+
+        let attachment = db.read { tx in attachmentStore.fetch(id: attachmentId, tx: tx)! }
+        XCTAssertEqual(attachment.localDeduplicationHash, localDeduplicationHash)
+    }
+
+    func testMergeCarriesLocalDeduplicationHash() throws {
+        let localDeduplicationHash = Randomness.generateRandomBytes(32)
+        let attachmentId = insertPointer()
+
+        db.write { tx in
+            let attachment = attachmentStore.fetch(id: attachmentId, tx: tx)!
+            attachmentStore.merge(
+                streamInfo: .mock(),
+                into: attachment,
+                encryptionKey: attachment.encryptionKey,
+                localDeduplicationHash: localDeduplicationHash,
+                latestTransitTierInfo: nil,
+                originalTransitTierInfo: nil,
+                mediaTierInfo: nil,
+                thumbnailMediaTierInfo: nil,
+                tx: tx,
+            )
+        }
+
+        let attachment = db.read { tx in attachmentStore.fetch(id: attachmentId, tx: tx)! }
+        XCTAssertEqual(attachment.localDeduplicationHash, localDeduplicationHash)
+    }
+
+    func testUpdateLocalDeduplicationHashAndMergeWithoutOne() throws {
+        let localDeduplicationHash = Randomness.generateRandomBytes(32)
+        let newLocalDeduplicationHash = Randomness.generateRandomBytes(32)
+        let attachmentId = insertPointer()
+
+        db.write { tx in
+            attachmentStore.updateLocalDeduplicationHash(
+                attachment: attachmentStore.fetch(id: attachmentId, tx: tx)!,
+                localDeduplicationHash: localDeduplicationHash,
+                tx: tx,
+            )
+        }
+
+        XCTAssertEqual(
+            db.read { tx in attachmentStore.fetch(id: attachmentId, tx: tx)!.localDeduplicationHash },
+            localDeduplicationHash,
+        )
+
+        // A merge from a copy with a hash keeps the one we already have.
+        db.write { tx in
+            attachmentStore.merge(
+                streamInfo: .mock(),
+                into: attachmentStore.fetch(id: attachmentId, tx: tx)!,
+                encryptionKey: attachmentStore.fetch(id: attachmentId, tx: tx)!.encryptionKey,
+                localDeduplicationHash: newLocalDeduplicationHash,
+                latestTransitTierInfo: nil,
+                originalTransitTierInfo: nil,
+                mediaTierInfo: nil,
+                thumbnailMediaTierInfo: nil,
+                tx: tx,
+            )
+        }
+
+        XCTAssertEqual(
+            db.read { tx in attachmentStore.fetch(id: attachmentId, tx: tx)!.localDeduplicationHash },
+            localDeduplicationHash,
+        )
+    }
+
     // MARK: - Helpers
 
     private func insertThreadAndInteraction() -> (threadRowId: Int64, interactionRowId: Int64) {
@@ -1038,6 +1161,30 @@ class AttachmentStoreTests: XCTestCase {
             let thread = insertThread(tx: tx)
             let interactionRowId = insertInteraction(thread: thread, tx: tx)
             return (thread.sqliteRowId!, interactionRowId)
+        }
+    }
+
+    private func insertStream(localDeduplicationHash: Data?) -> Attachment.IDType {
+        return insert(record: .mockStream(localDeduplicationHash: localDeduplicationHash))
+    }
+
+    private func insertPointer() -> Attachment.IDType {
+        return insert(record: .mockPointer())
+    }
+
+    private func insert(record: Attachment.Record) -> Attachment.IDType {
+        let (threadId, messageId) = insertThreadAndInteraction()
+        var record = record
+        return try! db.write { tx in
+            try attachmentStore.insert(
+                &record,
+                reference: .mockMessageBodyAttachmentReference(
+                    attachmentRecord: record,
+                    messageRowId: messageId,
+                    threadRowId: threadId,
+                ),
+                tx: tx,
+            ).id
         }
     }
 

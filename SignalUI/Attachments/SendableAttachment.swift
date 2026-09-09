@@ -19,18 +19,22 @@ public struct SendableAttachment {
     public let sourceFilename: FilteredFilename?
     public let mimeType: String
     public let renderingFlag: AttachmentReference.RenderingFlag
+    /// See ``SignalAttachment/localDeduplicationHash``.
+    public let localDeduplicationHash: Data?
 
     private init(
         dataSource: DataSourcePath,
         dataUTI: String,
         mimeType: String,
         renderingFlag: AttachmentReference.RenderingFlag,
+        localDeduplicationHash: Data?,
     ) {
         self.dataSource = dataSource
         self.dataUTI = dataUTI
         self.sourceFilename = dataSource.sourceFilename.map(FilteredFilename.init(rawValue:))
         self.mimeType = mimeType
         self.renderingFlag = renderingFlag
+        self.localDeduplicationHash = localDeduplicationHash
     }
 
     private init(nonImagePreviewableAttachment previewableAttachment: PreviewableAttachment) {
@@ -39,6 +43,7 @@ public struct SendableAttachment {
             dataUTI: previewableAttachment.dataUTI,
             mimeType: previewableAttachment.mimeType,
             renderingFlag: previewableAttachment.renderingFlag,
+            localDeduplicationHash: previewableAttachment.localDeduplicationHash,
         )
     }
 
@@ -56,6 +61,7 @@ public struct SendableAttachment {
                 dataUTI: attachment.dataUTI,
                 mimeType: attachment.mimeType,
                 renderingFlag: attachment.renderingFlag,
+                localDeduplicationHash: nil,
             )
         case .animatedImage:
             // Other animated images aren't re-encoded.
@@ -67,6 +73,7 @@ public struct SendableAttachment {
                 dataUTI: finalizedImage.dataUTI,
                 mimeType: MimeTypeUtil.mimeTypeForDataSource(finalizedImage.dataSource, dataUTI: finalizedImage.dataUTI),
                 renderingFlag: attachment.renderingFlag,
+                localDeduplicationHash: nil,
             )
         case .other:
             break
@@ -212,6 +219,7 @@ extension AttachmentContentValidator {
             mimeType: sendableAttachment.mimeType,
             renderingFlag: sendableAttachment.renderingFlag,
             sourceFilename: sendableAttachment.sourceFilename?.rawValue ?? (shouldUseDefaultFilename ? sendableAttachment.defaultFilename : nil),
+            localDeduplicationHash: sendableAttachment.localDeduplicationHash,
         )
         return .pendingAttachment(pendingAttachment)
     }

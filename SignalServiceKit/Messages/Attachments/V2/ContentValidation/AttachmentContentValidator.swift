@@ -25,6 +25,7 @@ public enum AttachmentIntegrityCheck: Equatable {
 
 public struct PendingAttachment {
     let plaintextHash: Data
+    let localDeduplicationHash: Data?
     let encryptedByteCount: UInt32
     let unencryptedByteCount: UInt32
     let mimeType: String
@@ -93,6 +94,7 @@ public protocol AttachmentContentValidator {
         mimeType: String,
         renderingFlag: AttachmentReference.RenderingFlag,
         sourceFilename: String?,
+        localDeduplicationHash: Data?,
     ) async throws -> PendingAttachment
 
     /// Validate and prepare a Data's contents, based on the provided mimetype.

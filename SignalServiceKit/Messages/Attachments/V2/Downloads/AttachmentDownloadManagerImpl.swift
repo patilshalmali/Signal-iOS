@@ -1962,6 +1962,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                     mimeType: mimeType.rawValue,
                     renderingFlag: .borderless,
                     sourceFilename: nil,
+                    localDeduplicationHash: nil,
                 )
             }
         }
@@ -2123,6 +2124,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                         pendingAttachmentOrphanRecordId: pendingAttachment.orphanRecordId,
                         pendingAttachmentLatestTransitTierInfo: attachmentWeJustDownloaded.latestTransitTierInfo,
                         pendingAttachmentOriginalTransitTierInfo: attachmentWeJustDownloaded.originalTransitTierInfo,
+                        pendingAttachmentLocalDeduplicationHash: nil,
                         attachmentStore: attachmentStore,
                         orphanedAttachmentCleaner: orphanedAttachmentCleaner,
                         orphanedAttachmentStore: orphanedAttachmentStore,
@@ -2272,6 +2274,10 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                         encryptionKey: pendingAttachment.encryptionKey,
                         streamInfo: streamInfo,
                         plaintextHash: pendingAttachment.plaintextHash,
+                        // Local deduplication hash is only used for local
+                        // attachments created from a file we later transcode,
+                        // not for anything we download.
+                        localDeduplicationHash: nil,
                     )
 
                     let attachment = try self.attachmentStore.insert(
@@ -2313,6 +2319,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                             pendingAttachmentOrphanRecordId: pendingAttachment.orphanRecordId,
                             pendingAttachmentLatestTransitTierInfo: nil,
                             pendingAttachmentOriginalTransitTierInfo: nil,
+                            pendingAttachmentLocalDeduplicationHash: nil,
                             attachmentStore: attachmentStore,
                             orphanedAttachmentCleaner: orphanedAttachmentCleaner,
                             orphanedAttachmentStore: orphanedAttachmentStore,
@@ -2445,6 +2452,10 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                         encryptionKey: pendingThumbnailAttachment.encryptionKey,
                         streamInfo: streamInfo,
                         plaintextHash: pendingThumbnailAttachment.plaintextHash,
+                        // Local deduplication hash is only used for local
+                        // attachments created from a file we later transcode,
+                        // not for anything we download.
+                        localDeduplicationHash: nil,
                     )
 
                     let newAttachment = try self.attachmentStore.insert(
@@ -2490,6 +2501,7 @@ public class AttachmentDownloadManagerImpl: AttachmentDownloadManager {
                             pendingAttachmentOrphanRecordId: pendingThumbnailAttachment.orphanRecordId,
                             pendingAttachmentLatestTransitTierInfo: nil,
                             pendingAttachmentOriginalTransitTierInfo: nil,
+                            pendingAttachmentLocalDeduplicationHash: nil,
                             attachmentStore: attachmentStore,
                             orphanedAttachmentCleaner: orphanedAttachmentCleaner,
                             orphanedAttachmentStore: orphanedAttachmentStore,
