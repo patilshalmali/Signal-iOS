@@ -44,6 +44,9 @@ public struct PreviewableAttachment {
     public var isVisualMedia: Bool { self.rawValue.isVisualMedia }
     public var isAudio: Bool { self.rawValue.isAudio }
 
+    /// See ``SignalAttachment/localDeduplicationHash``.
+    public var localDeduplicationHash: Data? { self.rawValue.localDeduplicationHash }
+
     // Factory method for an image attachment.
     public static func imageAttachment(dataSource: DataSourcePath, dataUTI: String, canBeBorderless: Bool = false) throws -> Self {
         assert(!dataUTI.isEmpty)
@@ -151,6 +154,10 @@ public struct PreviewableAttachment {
     ) async throws -> Self {
         let startTime = MonotonicDate()
 
+        // Hash the source file while the export runs. This provides a source-stable hash
+        // as the transcode below isn't byte-stable, so post-transcode hashing isn't stable.
+        async let localDeduplicationHash = computeLocalDeduplicationHash(ofFileAt: (asset as? AVURLAsset)?.url)
+
         guard let exportSession = AVAssetExportSession(asset: asset, presetName: AVAssetExportPreset640x480) else {
             throw SignalAttachmentError.couldNotConvertToMpeg4
         }
@@ -203,7 +210,27 @@ public struct PreviewableAttachment {
         let formattedDuration = OWSOperation.formattedNs((endTime - startTime).nanoseconds)
         Logger.info("transcoded video in \(formattedDuration)s")
 
-        return try videoAttachment(dataSource: dataSource, dataUTI: UTType.mpeg4Movie.identifier, attachmentLimits: attachmentLimits)
+        let attachment = try videoAttachment(dataSource: dataSource, dataUTI: UTType.mpeg4Movie.identifier, attachmentLimits: attachmentLimits)
+        attachment.rawValue.localDeduplicationHash = await localDeduplicationHash
+        return attachment
+    }
+
+    /// Computes ``SignalAttachment/localDeduplicationHash`` for a pre-transcode
+    /// source file, off the main actor.
+    ///
+    /// Returns nil when there's no source file or the read fails. Failing to hash never fails a transcode,
+    /// as this local deduplication hash is always an optional optimization.
+    @concurrent
+    private static func computeLocalDeduplicationHash(ofFileAt fileUrl: URL?) async -> Data? {
+        guard let fileUrl else {
+            return nil
+        }
+        do {
+            return try Cryptography.computeSHA256DigestOfFile(at: fileUrl)
+        } catch {
+            Logger.warn("Couldn't hash video source: \(error)")
+            return nil
+        }
     }
 
     // MARK: Audio Attachments

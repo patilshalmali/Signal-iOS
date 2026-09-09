@@ -84,6 +84,14 @@ public class SignalAttachment: CustomDebugStringConvertible {
 
     public var isVoiceMessage = false
 
+    /// See ``SignalAttachment/localDeduplicationHash``.
+    /// Sha256 of the local source file as it was before transcoding.
+    ///
+    /// Typically only set (and only meaningful) for video.
+    /// Transcoding may not be byte-stable, so this is what lets the same source media picked twice
+    /// reuse one attachment stream.
+    public internal(set) var localDeduplicationHash: Data?
+
     public static let maxAttachmentsAllowed: Int = 32
 
     // MARK: Constructor
