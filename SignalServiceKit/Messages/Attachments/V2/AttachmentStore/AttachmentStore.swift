@@ -10,6 +10,11 @@ public enum AttachmentInsertError: Error {
     /// attachment a duplicate. Callers should instead create a new owner reference to
     /// the same existing attachment.
     case duplicatePlaintextHash(existingAttachmentId: Attachment.IDType)
+    /// An existing attachment was found with the same local deduplication hash, making the new
+    /// attachment a duplicate. Callers should instead create a new owner reference to
+    /// the same existing attachment, which is always a stream. Matched non-stream attachments
+    /// are ignored.
+    case duplicateLocalDeduplicationHash(existingAttachmentStreamId: Attachment.IDType)
 }
 
 // MARK: -
@@ -1109,6 +1114,31 @@ public struct AttachmentStore {
             )?.sqliteId
         {
             throw AttachmentInsertError.duplicatePlaintextHash(existingAttachmentId: existingAttachmentId)
+        }
+
+        // Find if there is already an attachment with the same local deduplication hash.
+        if
+            let localDeduplicationHash = pendingAttachment.localDeduplicationHash,
+            let existingAttachment = self
+                .fetchAttachmentRecords(
+                    localDeduplicationHash: localDeduplicationHash,
+                    tx: tx
+                )
+                .lazy
+                .sorted(by: {
+                    // Prefer most recently uploaded in case of many matches,
+                    // we take the first result a few lines below
+                    ($0.latestTransitUploadTimestamp ?? 0)
+                        > ($1.latestTransitUploadTimestamp ?? 0)
+                })
+                .map({ Attachment(record: $0) })
+                // Only match against streams
+                .first(where: { $0.asStream() != nil })
+        {
+            Logger.info("Reusing existing attachment stream with matching local deduplication hash")
+            throw AttachmentInsertError.duplicateLocalDeduplicationHash(
+                existingAttachmentId: existingAttachment.id
+            )
         }
 
         let attachment = failIfThrows {

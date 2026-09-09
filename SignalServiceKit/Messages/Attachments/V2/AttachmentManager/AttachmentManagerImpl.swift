@@ -469,6 +469,8 @@ public class AttachmentManagerImpl: AttachmentManager {
             }
         } catch {
             switch error {
+            case .duplicateLocalDeduplicationHash:
+                owsFail("Backup attachments cannot have local deduplication hash")
             case .duplicatePlaintextHash(let existingAttachmentId):
                 // Ideally, exporting clients would dedupe by plaintext hash, merging
                 // any duplicates so every copy with the same plaintext hash in the
@@ -620,8 +622,7 @@ public class AttachmentManagerImpl: AttachmentManager {
                 encryptionKey: pendingAttachment.encryptionKey,
                 streamInfo: streamInfo,
                 plaintextHash: pendingAttachment.plaintextHash,
-                // TODO
-                localDeduplicationHash: nil,
+                localDeduplicationHash: pendingAttachment.localDeduplicationHash,
             )
 
             let hasOrphanRecord = orphanedAttachmentStore.orphanAttachmentExists(
@@ -743,6 +744,8 @@ public class AttachmentManagerImpl: AttachmentManager {
         } catch {
             let existingAttachmentId: Attachment.IDType
             switch error {
+            case .duplicateLocalDeduplicationHash:
+                owsFail("Backup attachments cannot have local deduplication hash")
             case .duplicatePlaintextHash(let id):
                 existingAttachmentId = id
             }
@@ -810,15 +813,26 @@ public class AttachmentManagerImpl: AttachmentManager {
         dateProvider: @escaping DateProvider,
         tx: DBWriteTransaction,
     ) throws -> Attachment.IDType {
-        let existingAttachmentId: Attachment.IDType
+        let existingAttachment: Attachment
         switch error {
+        case .duplicateLocalDeduplicationHash(let id):
+            // We only deal with local deduplication hash for streams
+            guard
+                let _existingAttachment = attachmentStore
+                    .fetch(id: existingAttachmentId, tx: tx)?
+                    .asStream()
+            else {
+                throw OWSAssertionError("Matched attachment stream missing")
+            }
+            existingAttachment = _existingAttachment
         case .duplicatePlaintextHash(let id):
-            existingAttachmentId = id
+            guard let _existingAttachment = attachmentStore.fetch(id: existingAttachmentId, tx: tx) else {
+                throw OWSAssertionError("Matched attachment missing")
+            }
+            existingAttachment = _existingAttachment
         }
 
-        guard let existingAttachment = attachmentStore.fetch(id: existingAttachmentId, tx: tx) else {
-            throw OWSAssertionError("Matched attachment missing")
-        }
+        let existingAttachmentId = existingAttachment.id
 
         guard existingAttachment.asStream() == nil else {
             // We're adding a new owner, who may have made this attachment
