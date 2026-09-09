@@ -1118,7 +1118,7 @@ public struct AttachmentStore {
 
         // Find if there is already an attachment with the same local deduplication hash.
         if
-            let localDeduplicationHash = pendingAttachment.localDeduplicationHash,
+            let localDeduplicationHash = attachmentRecord.localDeduplicationHash,
             let existingAttachment = self
                 .fetchAttachmentRecords(
                     localDeduplicationHash: localDeduplicationHash,
@@ -1137,7 +1137,7 @@ public struct AttachmentStore {
         {
             Logger.info("Reusing existing attachment stream with matching local deduplication hash")
             throw AttachmentInsertError.duplicateLocalDeduplicationHash(
-                existingAttachmentId: existingAttachment.id
+                existingAttachmentStreamId: existingAttachment.id
             )
         }
 

@@ -818,15 +818,15 @@ public class AttachmentManagerImpl: AttachmentManager {
         case .duplicateLocalDeduplicationHash(let id):
             // We only deal with local deduplication hash for streams
             guard
-                let _existingAttachment = attachmentStore
-                    .fetch(id: existingAttachmentId, tx: tx)?
+                let existingAttachmentStream = attachmentStore
+                    .fetch(id: id, tx: tx)?
                     .asStream()
             else {
                 throw OWSAssertionError("Matched attachment stream missing")
             }
-            existingAttachment = _existingAttachment
+            existingAttachment = existingAttachmentStream.attachment
         case .duplicatePlaintextHash(let id):
-            guard let _existingAttachment = attachmentStore.fetch(id: existingAttachmentId, tx: tx) else {
+            guard let _existingAttachment = attachmentStore.fetch(id: id, tx: tx) else {
                 throw OWSAssertionError("Matched attachment missing")
             }
             existingAttachment = _existingAttachment
