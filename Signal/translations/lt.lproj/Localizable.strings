@@ -3167,16 +3167,16 @@
 "DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "Atnaujinkite į naujausią „Signal“ versiją ir bandykite dar kartą.";
 
 /* Body of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "To transfer your account, pair this device with your old device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "Norėdami perkelti paskyrą, susiekite šį įrenginį su senuoju.";
 
 /* Title of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Pair With Your New Device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Susiekite su naujuoju įrenginiu";
 
 /* Body of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "To transfer your account, pair this device with your new device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "Norėdami perkelti paskyrą, susiekite šį įrenginį su naujuoju.";
 
 /* Title of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Pair With Your Old Device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Susiekite su senuoju įrenginiu";
 
 /* The explanation on the view that shows receiving progress */
 "DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "Laikykite įrenginius vieną šalia kito. Neišjunkite įrenginių ir palikite „Signal“ atvertą. Perkėlimai yra šifruoti ištisiniu būdu.";
@@ -3197,7 +3197,7 @@
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Senąjį įrenginį turėkite šalia ir pasirūpinkite, kad būtų įjungtas „Wi-Fi“ ir „Bluetooth“. Pasirinkite šį įrenginį iš įrenginių sąrašo senajame įrenginyje.  Jei įrenginio nematote senajame įrenginyje, pasirinkite „Susieti naują įrenginį“.";
 
 /* Title for paring an old device to transfer to. */
-"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Pair This Device";
+"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Susieti šį įrenginį";
 
 /* Status message on new device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_STARTING" = "Laukiama, kol bus prisijungta prie senojo įrenginio…";
@@ -3227,7 +3227,7 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Naująjį įrenginį turėkite šalia ir pasirūpinkite, kad būtų įjungtas „Wi-Fi“ ir „Bluetooth“.";
 
 /* Title for paring an new device to transfer to. */
-"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Pair With New Device";
+"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Susieti su naujuoju įrenginiu";
 
 /* Status message on old device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING" = "Laukiama, kol bus prisijungta prie naujojo įrenginio…";
@@ -3239,19 +3239,19 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING_WIFI_AWARE_MESSAGE" = "Pasirinkite naują įrenginį iš toliau pateikto susietų įrenginių sąrašo. Jei naujo įrenginio nematote, pasirinkite „Susieti naują įrenginį“, kad pradėtumėte procesą.";
 
 /* Message informing the user to continue on the old device */
-"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Continue on your old device";
+"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Tęskite senajame įrenginyje.";
 
 /* Message informing the user to enable wifi and bluetooth on device */
-"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Enable Wifi and Bluetooth on both devices";
+"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Įjunkite „WiFi“ ir „Bluetooth“ abiejuose įrenginiuose.";
 
 /* Message informing the user to select the new device when prompted */
-"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Select your new device when prompted";
+"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Paraginti pasirinkite naująjį įrenginį.";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Tap “Pair This Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Bakstelėkite „Susieti šį įrenginį“ toliau.";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Tap “Pair With New Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Bakstelėkite „Susieti su naujuoju įrenginiu“ toliau.";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "Dingstančios žinutės";
@@ -6794,10 +6794,10 @@
 "OUTGOING_DEVICE_TRANSFER_CONFIRM_BODY" = "Jūsų paskyra bus perkelta į naują įrenginį. Šis įrenginys galės matyti jūsų grupes ir adresatus, gauti prieigą prie jūsų pokalbių bei siųsti žinutes jūsų vardu.";
 
 /* Title of prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Transfer Account to \"%1$@\"?";
+"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Perkelti paskyrą į „%1$@“?";
 
 /* Action prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Start Transfer";
+"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Pradėti perkėlimą";
 
 /* info message text in conversation view */
 "OUTGOING_MISSED_VIDEO_CALL" = "Neatsakytas vaizdo skambutis";

@@ -3167,16 +3167,16 @@
 "DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "Suiteáil an leagan is déanaí de Signal agus bain triail eile as";
 
 /* Body of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "To transfer your account, pair this device with your old device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "Le do chuntas a aistriú, péireáil an gléas seo le do sheanghléas";
 
 /* Title of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Pair With Your New Device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Péireáil le do Ghléas Nua";
 
 /* Body of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "To transfer your account, pair this device with your new device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "Le do chuntas a aistriú, péireáil an gléas seo le do ghléas nua";
 
 /* Title of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Pair With Your Old Device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Péireáil le do Sheanghléas";
 
 /* The explanation on the view that shows receiving progress */
 "DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "Coinnigh an dá ghléas i ngar dá chéile. Ná múch ceachtar acu, agus coinnigh Signal oscailte orthu. Tá an t-aistriú criptithe ó cheann go ceann.";
@@ -3197,7 +3197,7 @@
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Tabhair do sheanghléas gar dó, agus cinntigh go bhfuil Wi-Fi agus Bluetooth cumasaithe. Roghnaigh an gléas seo ó liosta na ngléasanna ar an seanghléas.  Mura bhfuil an gléas infheicthe ar an seanghléas, roghnaigh 'Péireáil gléas nua' thíos.";
 
 /* Title for paring an old device to transfer to. */
-"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Pair This Device";
+"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "An Gléas Seo a Phéireáil";
 
 /* Status message on new device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_STARTING" = "Ag feitheamh le ceangal leis an seanghléas…";
@@ -3227,7 +3227,7 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Tabhair do ghléas nua gar dó, agus cinntigh go bhfuil Wi-Fi agus Bluetooth cumasaithe.";
 
 /* Title for paring an new device to transfer to. */
-"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Pair With New Device";
+"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Péireáil le Gléas Nua";
 
 /* Status message on old device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING" = "Ag feitheamh le ceangal leis an ngléas nua…";
@@ -3239,19 +3239,19 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING_WIFI_AWARE_MESSAGE" = "Roghnaigh an gléas nua ó liosta na ngléasanna péireáilte thíos. Mura bhfuil an gléas nua infheicthe, roghnaigh 'Péireáil gléas nua' le tosú ar an bpróiseas.";
 
 /* Message informing the user to continue on the old device */
-"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Continue on your old device";
+"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Lean leis ar do sheanghléas";
 
 /* Message informing the user to enable wifi and bluetooth on device */
-"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Enable Wifi and Bluetooth on both devices";
+"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Cumasaigh Wifi agus Bluetooth ar an dá ghléas";
 
 /* Message informing the user to select the new device when prompted */
-"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Select your new device when prompted";
+"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Roghnaigh do ghléas nua nuair a thugtar leid";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Tap “Pair This Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Tapáil \"Péireáil an Gléas Seo\" thíos";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Tap “Pair With New Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Tapáil \"Péireáil le Gléas Nua\" thíos";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "Teachtaireachtaí Gearrshaolacha";
@@ -5093,7 +5093,7 @@
 "INCOMING_DEVICE_TRANSFER_CONTINUE_BODY" = "Lean le haistriú do chuntais ar do ghléas eile.";
 
 /* Title of prompt notifying device transfer will continue on other device. */
-"INCOMING_DEVICE_TRANSFER_CONTINUE_TITLE" = "Lean ar aghaidh ar do ghléas eile";
+"INCOMING_DEVICE_TRANSFER_CONTINUE_TITLE" = "Lean leis ar do ghléas eile";
 
 /* info message text in conversation view */
 "INCOMING_VIDEO_CALL" = "Físghlao isteach";
@@ -6791,13 +6791,13 @@
 "OUTGOING_DEVICE_TRANSFER_COMPLETE_TITLE" = "Aistriú críochnaithe";
 
 /* Body of prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_CONFIRM_BODY" = "Déanfar do chuntas a aistriú chuig gléas nua. Beidh an gléas sin in ann do ghrúpaí agus teagmhálaithe a fheiceáil, do chomhráite a rochtain, agus teachtaireachtaí a sheoladh faoi d'ainm féin.";
+"OUTGOING_DEVICE_TRANSFER_CONFIRM_BODY" = "Déanfar do chuntas a aistriú chuig gléas nua. Beidh an gléas sin in ann do ghrúpaí agus do theagmhálaithe a fheiceáil, do chomhráite a rochtain, agus teachtaireachtaí a sheoladh faoi d'ainm féin.";
 
 /* Title of prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Transfer Account to \"%1$@\"?";
+"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Aistrigh an Cuntas chuig \"%1$@\"?";
 
 /* Action prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Start Transfer";
+"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Tosaigh ar an aistriú";
 
 /* info message text in conversation view */
 "OUTGOING_MISSED_VIDEO_CALL" = "Físghlao nár freagraíodh";
@@ -9098,10 +9098,10 @@
 "SETTINGS_NAV_BAR_TITLE" = "Socruithe";
 
 /* Label for the setting controlling whether the app icon badge counts unread messages or unread chats. */
-"SETTINGS_NOTIFICATION_BADGE_COUNT" = "Suaitheantas Uimhreach";
+"SETTINGS_NOTIFICATION_BADGE_COUNT" = "Suaitheantas uimhreach";
 
 /* Explanation for the setting controlling whether the app icon badge counts unread messages or unread chats. */
-"SETTINGS_NOTIFICATION_BADGE_COUNT_FOOTER" = "Roghnaigh má thaispeánann an comhaireamh suaitheantas líon na dteachtaireachtaí neamhléite nó líon na gcomhráite neamhléite";
+"SETTINGS_NOTIFICATION_BADGE_COUNT_FOOTER" = "Roghnaigh má thaispeánann an suaitheantas uimhreach líon na dteachtaireachtaí neamhléite nó líon na gcomhráite neamhléite";
 
 /* A setting controlling whether muted conversations are shown in the badge count */
 "SETTINGS_NOTIFICATION_BADGE_COUNT_INCLUDES_MUTED_CONVERSATIONS" = "Cuir Comhráite Balbhaithe san Áireamh";
@@ -9821,7 +9821,7 @@
 "SETTINGS_WHILE_MUTED_CALLS_CHAT_FOOTER" = "Buail nó tabhair fógra nuair a thosaítear glao agus an comhrá seo balbhaithe.";
 
 /* Explanation for the switch controlling whether calls ring or notify in muted chats. */
-"SETTINGS_WHILE_MUTED_CALLS_FOOTER" = "Buail nó tabhair fógra nuair a chuirtear tús le glao i gcomhráite balbhaithe.";
+"SETTINGS_WHILE_MUTED_CALLS_FOOTER" = "Buail nó tabhair fógra nuair a thosaítear glao i gcomhráite balbhaithe.";
 
 /* Label for the switch controlling whether mentions of you notify in muted chats. */
 "SETTINGS_WHILE_MUTED_MENTIONS" = "Nuair a luaitear mé";

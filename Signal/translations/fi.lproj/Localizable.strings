@@ -3167,16 +3167,16 @@
 "DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "Päivitä Signal uusimpaan versioon ja yritä uudelleen";
 
 /* Body of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "To transfer your account, pair this device with your old device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "Voit siirtää tilisi, kun muodostat laitteesta parin vanhan laitteesi kanssa";
 
 /* Title of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Pair With Your New Device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Liitä uusi laite pariksi";
 
 /* Body of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "To transfer your account, pair this device with your new device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "Voit siirtää tilisi, kun luot laitteesta parin uuden laitteesi kanssa";
 
 /* Title of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Pair With Your Old Device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Muodosta pari vanhan laitteen kanssa";
 
 /* The explanation on the view that shows receiving progress */
 "DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "Pidä laitteet lähellä toisiaan. Älä sammuta niitä ja pidä Signal avoinna. Siirrot salataan täysin.";
@@ -3197,7 +3197,7 @@
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Tuo vanha laitteesi lähelle ja varmista, että Wi-Fi ja Bluetooth ovat käytössä. Valitse laite vanhan laitteesi laiteluettelosta.  Jos uusi laite ei näy vanhalla laitteellasi, valitse Liitä uusi laite alta.";
 
 /* Title for paring an old device to transfer to. */
-"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Pair This Device";
+"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Muodosta laitteesta pari";
 
 /* Status message on new device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_STARTING" = "Odotetaan yhteyden muodostamista vanhaan laitteeseen…";
@@ -3227,7 +3227,7 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Tuo uusi laitteesi lähelle ja varmista, että Wi-Fi ja Bluetooth ovat käytössä.";
 
 /* Title for paring an new device to transfer to. */
-"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Pair With New Device";
+"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Muodosta pari uuden laitteen kanssa";
 
 /* Status message on old device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING" = "Odotetaan yhteyden muodostamista uuteen laitteeseen…";
@@ -3239,19 +3239,19 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING_WIFI_AWARE_MESSAGE" = "Valitse uusi laite pariksi liitettyjen laitteiden luettelosta alta. Jos uusi laite ei ole näkyvissä, valitse Liitä uusi laite aloittaaksesi.";
 
 /* Message informing the user to continue on the old device */
-"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Continue on your old device";
+"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Jatka vanhalla laitteellasi";
 
 /* Message informing the user to enable wifi and bluetooth on device */
-"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Enable Wifi and Bluetooth on both devices";
+"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Ota Wifi ja Bluetooth käyttöön molemmissa laitteissa";
 
 /* Message informing the user to select the new device when prompted */
-"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Select your new device when prompted";
+"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Valitse uusi laite, kun sitä pyydetään";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Tap “Pair This Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Napauta alla kohtaa Muodosta laitteesta pari";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Tap “Pair With New Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Napauta alla kohtaa Muodosta laitteesta pari";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "Katoavat viestit";
@@ -6794,10 +6794,10 @@
 "OUTGOING_DEVICE_TRANSFER_CONFIRM_BODY" = "Tilisi siirretään uuteen laitteeseen. Uusi laite voi jatkossa nähdä ryhmäsi ja yhteystietosi, lukea kaikki keskustelusi ja lähettää viestejä sinun nimissäsi.";
 
 /* Title of prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Transfer Account to \"%1$@\"?";
+"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Siirretäänkö tili laitteeseen %1$@?";
 
 /* Action prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Start Transfer";
+"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Aloita siirto";
 
 /* info message text in conversation view */
 "OUTGOING_MISSED_VIDEO_CALL" = "Vastaamaton videopuhelu";

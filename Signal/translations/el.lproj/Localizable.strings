@@ -3167,16 +3167,16 @@
 "DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "Ενημέρωσε το Signal στην τελευταία έκδοση και δοκίμασε ξανά";
 
 /* Body of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "To transfer your account, pair this device with your old device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "Για να μεταφέρεις τον λογαριασμού σου, πραγματοποίησε σύζευξη αυτής της συσκευής με την παλιά σου συσκευή";
 
 /* Title of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Pair With Your New Device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Σύζευξη με τη νέα σου συσκευή";
 
 /* Body of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "To transfer your account, pair this device with your new device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "Για να μεταφέρεις τον λογαριασμού σου, πραγματοποίησε σύζευξη αυτής της συσκευής με τη νέα σου συσκευή";
 
 /* Title of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Pair With Your Old Device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Σύζευξη με την παλιά σου συσκευή";
 
 /* The explanation on the view that shows receiving progress */
 "DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "Κράτησε τις δύο συσκευές κοντά. Μην σβήσεις καμία συσκευή και κράτησε το Signal ανοικτό. Οι μεταφορές είναι κρυπτογραφημένες απ' άκρη σ' άκρη.";
@@ -3197,7 +3197,7 @@
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Φέρε την παλιά σου συσκευή κοντά και βεβαιώσου ότι είναι ενεργοποιημένο το Wi-Fi και το Bluetooth. Επίλεξε αυτή τη συσκευή από τη λίστα συσκευών στην παλιά συσκευή.  Εάν η συσκευή δεν εμφανίζεται στην παλιά συσκευή, επίλεξε «Σύζευξη νέας συσκευής» παρακάτω.";
 
 /* Title for paring an old device to transfer to. */
-"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Pair This Device";
+"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Σύζευξη αυτής της συσκευής";
 
 /* Status message on new device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_STARTING" = "Αναμονή για σύνδεση με παλιά συσκευή...";
@@ -3227,7 +3227,7 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Φέρε τη νέα σου συσκευή κοντά σου και βεβαιώσου ότι είναι ενεργοποιημένο το Wi-Fi και το Bluetooth.";
 
 /* Title for paring an new device to transfer to. */
-"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Pair With New Device";
+"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Σύζευξη με νέα συσκευή";
 
 /* Status message on old device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING" = "Αναμονή για σύνδεση με νέα συσκευή...";
@@ -3239,19 +3239,19 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING_WIFI_AWARE_MESSAGE" = "Επίλεξε τη νέα συσκευή από τη λίστα των συσκευών σε σύζευξη παρακάτω. Εάν η νέα συσκευή σου δεν είναι ορατή, επίλεξε «Σύζευξη μιας νέας συσκευής» για να ξεκινήσεις τη διαδικασία.";
 
 /* Message informing the user to continue on the old device */
-"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Continue on your old device";
+"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Συνέχεια στην παλιά σου συσκευή";
 
 /* Message informing the user to enable wifi and bluetooth on device */
-"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Enable Wifi and Bluetooth on both devices";
+"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Ενεργοποίησε το WiFi και το Bluetooth και στις δύο συσκευές";
 
 /* Message informing the user to select the new device when prompted */
-"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Select your new device when prompted";
+"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Επίλεξε τη νέα σου συσκευή όταν σου ζητηθεί";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Tap “Pair This Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Πάτα \"Συζευξη αυτής της συσκευής\" παρακάτω";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Tap “Pair With New Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Πάτα \"Σύζευξη με νέα συσκευή\" παρακάτω";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "Μηνύματα που εξαφανίζονται";
@@ -6794,10 +6794,10 @@
 "OUTGOING_DEVICE_TRANSFER_CONFIRM_BODY" = "Ο λογαριασμός σου θα μεταφερθεί σε μια νέα συσκευή. Αυτή η συσκευή θα μπορεί να βλέπει τις ομάδες και τις επαφές σου, να έχει πρόσβαση στις συνομιλίες σου και να στέλνει μηνύματα σαν να είναι εσύ.";
 
 /* Title of prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Transfer Account to \"%1$@\"?";
+"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Μεταφορά λογαριασμού στη συσκευή \"%1$@\";";
 
 /* Action prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Start Transfer";
+"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Έναρξη μεταφοράς";
 
 /* info message text in conversation view */
 "OUTGOING_MISSED_VIDEO_CALL" = "Αναπάντητη βιντεοκλήση";

@@ -587,7 +587,7 @@
 "BACKUP_CONFIRM_KEY_PW_MGR_SHEET_CONFIRM_BUTTON_TITLE" = "Herstelsleutel bevestigen";
 
 /* Message for a sheet shown to confirm the user's Recovery Key after it was saved to their password manager. */
-"BACKUP_CONFIRM_KEY_PW_MGR_SHEET_MESSAGE" = "Bevestig dat je herstelsleutel juist is vastgelegd. In de volgende stap word je gevraagd je opgeslagen herstelsleutel in te voeren.";
+"BACKUP_CONFIRM_KEY_PW_MGR_SHEET_MESSAGE" = "Bevestig dat je herstelsleutel juist is vastgelegd. In de volgende stap wordt je gevraagd je opgeslagen herstelsleutel in te voeren.";
 
 /* Title for a button that returns the user to view their Recovery Key, in a sheet shown after it was saved to their password manager. */
 "BACKUP_CONFIRM_KEY_PW_MGR_SHEET_SEE_KEY_AGAIN_BUTTON_TITLE" = "Sleutel opnieuw weergeven";
@@ -3167,16 +3167,16 @@
 "DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "Werk bij naar de meest recente versie van Signal en probeer het opnieuw";
 
 /* Body of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "To transfer your account, pair this device with your old device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "Om je account over te zetten, verbind dit apparaat met je oude apparaat";
 
 /* Title of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Pair With Your New Device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Met je nieuwe apparaat verbinden";
 
 /* Body of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "To transfer your account, pair this device with your new device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "Om je account over te zetten, verbind dit apparaat met je nieuwe apparaat";
 
 /* Title of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Pair With Your Old Device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Met je oude apparaat verbinden";
 
 /* The explanation on the view that shows receiving progress */
 "DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "Houd de apparaten bij elkaar in de buurt en houd de Signal-app open op beide apparaten. Het overzetten is beveiligd via een end-to-end versleutelde verbinding.";
@@ -3197,7 +3197,7 @@
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Houd je oude apparaat in de buurt en zorg ervoor dat wifi en bluetooth op beide apparaten zijn ingeschakeld. Selecteer dit apparaat in de lijst op het oude apparaat.  Is het apparaat niet zichtbaar op het oude apparaat, selecteer dan hieronder ‘Nieuw apparaat verbinden’.";
 
 /* Title for paring an old device to transfer to. */
-"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Pair This Device";
+"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Dit apparaat verbinden";
 
 /* Status message on new device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_STARTING" = "Wachten op verbinding met het oude apparaat…";
@@ -3227,7 +3227,7 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Houd je nieuwe apparaat in de buurt en zorg ervoor dat wifi en bluetooth op beide apparaten zijn ingeschakeld.";
 
 /* Title for paring an new device to transfer to. */
-"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Pair With New Device";
+"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Met nieuw apparaat verbinden";
 
 /* Status message on old device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING" = "Wachten op verbinding met het nieuwe apparaat…";
@@ -3239,19 +3239,19 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING_WIFI_AWARE_MESSAGE" = "Selecteer het nieuwe apparaat in de onderstaande lijst met verbonden apparaten. Is het nieuwe apparaat niet zichtbaar, selecteer dan ‘Een nieuw apparaat verbinden’ om het proces te starten.";
 
 /* Message informing the user to continue on the old device */
-"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Continue on your old device";
+"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Ga verder op je oude apparaat";
 
 /* Message informing the user to enable wifi and bluetooth on device */
-"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Enable Wifi and Bluetooth on both devices";
+"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Schakel wifi en bluetooth in op beide apparaten";
 
 /* Message informing the user to select the new device when prompted */
-"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Select your new device when prompted";
+"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Selecteer je nieuwe apparaat wanneer je daarom wordt gevraagd";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Tap “Pair This Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Tik hieronder op ‘Dit apparaat verbinden’";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Tap “Pair With New Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Tik hieronder op ‘Met nieuw apparaat verbinden’";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "Verdwijnende berichten";
@@ -3785,7 +3785,7 @@
 "ENABLE_LOCAL_FILE_BACKUPS_HERO_SHEET_BUTTON" = "Lokale back-ups inschakelen";
 
 /* Message for a sheet asking the user if they want to enable local file backups. */
-"ENABLE_LOCAL_FILE_BACKUPS_HERO_SHEET_MESSAGE" = "Om lokale back-ups te blijven gebruiken moet je deze voor dit account inschakelen. Je kunt dit elk moment doen in Instellingen > Back-ups.";
+"ENABLE_LOCAL_FILE_BACKUPS_HERO_SHEET_MESSAGE" = "Om lokale back-ups te blijven gebruiken moet je deze voor dit account inschakelen. Je kunt dit op elk moment doen in Instellingen > Back-ups.";
 
 /* Title for a sheet asking the user if they want to enable local file backups. */
 "ENABLE_LOCAL_FILE_BACKUPS_HERO_SHEET_TITLE" = "Lokale back-ups inschakelen?";
@@ -5501,7 +5501,7 @@
 "LOCAL_BACKUPS_SELECT_HERO_SHEET_BULLET_1" = "Selecteer de hoofdmap waarin je back-up is opgeslagen";
 
 /* Bullet point for a sheet asking the user to select their backup to restore from during registration. */
-"LOCAL_BACKUPS_SELECT_HERO_SHEET_BULLET_2" = "Tik op ‘Openen’";
+"LOCAL_BACKUPS_SELECT_HERO_SHEET_BULLET_2" = "Tik op ‘Open’";
 
 /* Bullet point for a sheet asking the user to select their backup to restore from during registration. */
 "LOCAL_BACKUPS_SELECT_HERO_SHEET_BULLET_3" = "Selecteer geen individuele bestanden";
@@ -6794,10 +6794,10 @@
 "OUTGOING_DEVICE_TRANSFER_CONFIRM_BODY" = "Je account wordt overgezet naar een nieuw apparaat. Dit apparaat zal je groepen en contacten kunnen inzien, toegang krijgen tot je chats en berichten uit jouw naam kunnen versturen.";
 
 /* Title of prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Transfer Account to \"%1$@\"?";
+"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Account overzetten naar ‘%1$@’?";
 
 /* Action prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Start Transfer";
+"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Overzetten";
 
 /* info message text in conversation view */
 "OUTGOING_MISSED_VIDEO_CALL" = "Onbeantwoorde video-oproep";
@@ -9833,7 +9833,7 @@
 "SETTINGS_WHILE_MUTED_MENTIONS_FOOTER" = "Ontvang meldingen wanneer je wordt vermeld in een gedempte chat";
 
 /* Label for the switch controlling whether replies to your messages notify in muted chats. */
-"SETTINGS_WHILE_MUTED_REPLIES" = "Reacties";
+"SETTINGS_WHILE_MUTED_REPLIES" = "Antwoorden";
 
 /* Explanation for the switch controlling whether replies to your messages notify while this chat is muted. */
 "SETTINGS_WHILE_MUTED_REPLIES_CHAT_FOOTER" = "Ontvang meldingen wanneer iemand op je bericht antwoordt terwijl deze chat is gedempt";

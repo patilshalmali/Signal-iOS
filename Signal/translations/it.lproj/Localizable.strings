@@ -3167,16 +3167,16 @@
 "DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "Aggiorna all'ultima versione di Signal e riprova";
 
 /* Body of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "To transfer your account, pair this device with your old device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "Per trasferire il tuo account, associa questo dispositivo con il tuo dispositivo precedente";
 
 /* Title of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Pair With Your New Device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Associa con il tuo nuovo dispositivo";
 
 /* Body of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "To transfer your account, pair this device with your new device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "Per trasferire il tuo account, associa questo dispositivo con il tuo nuovo dispositivo";
 
 /* Title of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Pair With Your Old Device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Associa con il tuo dispositivo precedente";
 
 /* The explanation on the view that shows receiving progress */
 "DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "Tieni entrambi i dispositivi vicini. Non spegnere nessuno dei due dispositivi e tieni aperto Signal. I trasferimenti sono crittografati end-to-end.";
@@ -3197,7 +3197,7 @@
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Tieni il tuo vecchio dispositivo vicino e verifica che il Wi-Fi e il Bluetooth siano attivati. Seleziona questo dispositivo dall’elenco presente sul vecchio dispositivo.  Se il nuovo dispositivo non è visibile su quello vecchio, seleziona \"Associa nuovo dispositivo\" di seguito.";
 
 /* Title for paring an old device to transfer to. */
-"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Pair This Device";
+"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Associa questo dispositivo";
 
 /* Status message on new device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_STARTING" = "In attesa di connettersi al vecchio dispositivo…";
@@ -3227,7 +3227,7 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Tieni il tuo nuovo dispositivo vicino e accertati che il Wi-Fi e il Bluetooth siano attivati.";
 
 /* Title for paring an new device to transfer to. */
-"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Pair With New Device";
+"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Associa con il nuovo dispositivo";
 
 /* Status message on old device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING" = "In attesa di connettersi al nuovo dispositivo…";
@@ -3239,19 +3239,19 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING_WIFI_AWARE_MESSAGE" = "Seleziona il nuovo dispositivo dall'elenco dei dispositivi associati in basso. Se il nuovo dispositivo non è visibile, seleziona \"Associa un nuovo dispositivo\" per cominciare la procedura.";
 
 /* Message informing the user to continue on the old device */
-"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Continue on your old device";
+"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Prosegui sul tuo vecchio dispositivo";
 
 /* Message informing the user to enable wifi and bluetooth on device */
-"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Enable Wifi and Bluetooth on both devices";
+"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Attiva Wi-Fi e Bluetooth su entrambi i dispositivi";
 
 /* Message informing the user to select the new device when prompted */
-"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Select your new device when prompted";
+"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Seleziona il tuo nuovo dispositivo quando viene richiesto";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Tap “Pair This Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Tocca su \"Associa questo dispositivo\" qui sotto";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Tap “Pair With New Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Tocca su \"Associa con il nuovo dispositivo\" qui sotto";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "Messaggi temporanei";
@@ -6794,10 +6794,10 @@
 "OUTGOING_DEVICE_TRANSFER_CONFIRM_BODY" = "Il tuo account verrà trasferito su un nuovo dispositivo. Su questo dispositivo potrai vedere i tuoi gruppi e contatti, accedere alle tue chat e inviare messaggi a tuo nome.";
 
 /* Title of prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Transfer Account to \"%1$@\"?";
+"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Trasferire l'account su \"%1$@\"?";
 
 /* Action prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Start Transfer";
+"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Inizia ad associare";
 
 /* info message text in conversation view */
 "OUTGOING_MISSED_VIDEO_CALL" = "Videochiamata senza risposta";
@@ -9818,7 +9818,7 @@
 "SETTINGS_WHILE_MUTED_CALLS" = "Chiamate";
 
 /* Explanation for the switch controlling whether calls ring or notify while this chat is muted. */
-"SETTINGS_WHILE_MUTED_CALLS_CHAT_FOOTER" = "Squilla o invia una notifica quando viene avviata una chiamata mentre questa chat è silenziata.";
+"SETTINGS_WHILE_MUTED_CALLS_CHAT_FOOTER" = "Fai squillare o ricevi una notifica quando viene avviata una chiamata mentre questa chat è silenziata.";
 
 /* Explanation for the switch controlling whether calls ring or notify in muted chats. */
 "SETTINGS_WHILE_MUTED_CALLS_FOOTER" = "Fai squillare o ricevi una notifica quando viene avviata una chiamata nelle chat silenziate.";
@@ -9827,7 +9827,7 @@
 "SETTINGS_WHILE_MUTED_MENTIONS" = "Menzioni";
 
 /* Explanation for the switch controlling whether mentions of you notify while this chat is muted. */
-"SETTINGS_WHILE_MUTED_MENTIONS_CHAT_FOOTER" = "Invia una notifica quando una persona ti menziona mentre questa chat è silenziata.";
+"SETTINGS_WHILE_MUTED_MENTIONS_CHAT_FOOTER" = "Ricevi una notifica quando una persona ti menziona mentre questa chat è silenziata.";
 
 /* Explanation for the switch controlling whether mentions of you notify in muted chats. */
 "SETTINGS_WHILE_MUTED_MENTIONS_FOOTER" = "Ricevi una notifica quando ti menzionano nelle chat silenziate.";

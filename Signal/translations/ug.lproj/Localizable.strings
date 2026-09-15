@@ -3167,16 +3167,16 @@
 "DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "‫Signal نىڭ ئەڭ يېڭى نەشرىگە يېڭىلاپ ئاندىن قايتا سىناڭ";
 
 /* Body of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "To transfer your account, pair this device with your old device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "ھېساباتىڭىزنى يۆتكەش ئۈچۈن، بۇ ئۈسكۈنىنى كونا ئۈسكۈنىڭىز بىلەن جۈپلەڭ";
 
 /* Title of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Pair With Your New Device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "يېڭى ئۈسكۈنىڭىز بىلەن جۈپلەڭ";
 
 /* Body of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "To transfer your account, pair this device with your new device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "ھېساباتىڭىزنى يۆتكەش ئۈچۈن، بۇ ئۈسكۈنىنى يېڭى ئۈسكۈنىڭىز بىلەن جۈپلەڭ";
 
 /* Title of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Pair With Your Old Device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "كونا ئۈسكۈنىڭىز بىلەن جۈپلەڭ";
 
 /* The explanation on the view that shows receiving progress */
 "DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "ئىككى ئۈسكۈنىنى يېقىنلاشتۇرۇڭ. ئۈسكۈتە ۋە Signal ئوچۇق تۇرسۇن. يۆتكەنش نۇقتىدىن نۇقتىغا شىفىرلانغان.";
@@ -3197,7 +3197,7 @@
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "كونا ئۈسكۈنىڭىزنى ئېلىپ كېلىڭ، Wi-Fi ۋە كۆكچىشنىڭ قوزغىتىلغانلىقىنى جەزملەشتۈرۈڭ. كونا ئۈسكۈنىدىكى ئۈسكۈنىلەر تىزىملىكىدىن بۇ ئۈسكۈنىنى تاللاڭ.  ئەگەر كونا ئۈسكۈنىدە بۇ ئۈسكۈنە كۆرۈنمىسە، تۆۋەندىكى «يېڭى ئۈسكۈنىنى جۈپلەش»نى تاللاڭ.";
 
 /* Title for paring an old device to transfer to. */
-"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Pair This Device";
+"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "بۇ ئۈسكۈنىنى جۈپلەڭ";
 
 /* Status message on new device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_STARTING" = "كونا ئۈسكۈنىگە ئۇلىنىشنى كۈتىۋاتىدۇ…";
@@ -3227,7 +3227,7 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "يېڭى ئۈسكۈنىڭىزنى ئېلىپ كېلىڭ، Wi-Fi ۋە كۆكچىشنىڭ قوزغىتىلغانلىقىنى جەزملەشتۈرۈڭ.";
 
 /* Title for paring an new device to transfer to. */
-"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Pair With New Device";
+"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "يېڭى ئۈسكۈنە بىلەن جۈپلەش";
 
 /* Status message on old device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING" = "يېڭى ئۈسكۈنىگە ئۇلىنىشنى كۈتىۋاتىدۇ…";
@@ -3239,19 +3239,19 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING_WIFI_AWARE_MESSAGE" = "تۆۋەندىكى جۈپلەنگەن ئۈسكۈنىلەر تىزىملىكىدىن يېڭى ئۈسكۈنىنى تاللاڭ. ئەگەر يېڭى ئۈسكۈنە كۆرۈنمىسە، «يېڭى ئۈسكۈنىنى جۈپلەش»نى تاللاپ جەرياننى باشلاڭ.";
 
 /* Message informing the user to continue on the old device */
-"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Continue on your old device";
+"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "كونا ئۈسكۈنىڭىزدە داۋاملاشتۇرۇڭ";
 
 /* Message informing the user to enable wifi and bluetooth on device */
-"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Enable Wifi and Bluetooth on both devices";
+"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "ھەر ئىككىلا ئۈسكۈنىدىكى Wifi ۋە كۆكچىشنى ئېچىۋېتىڭ";
 
 /* Message informing the user to select the new device when prompted */
-"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Select your new device when prompted";
+"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "ئەسكەرتىش چىققاندا يېڭى ئۈسكۈنىڭىزنى تاللاڭ";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Tap “Pair This Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "تۆۋەندىكى «بۇ ئۈسكۈنىنى جۈپلەش» نى چېكىڭ";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Tap “Pair With New Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "ئاستىدىكى «يېڭى ئۈسكۈنە بىلەن جۈپلەش» نى چېكىڭ";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "غايىب ئۇچۇرلار";
@@ -6794,10 +6794,10 @@
 "OUTGOING_DEVICE_TRANSFER_CONFIRM_BODY" = "ھېساباتىڭىز يېڭى ئۈسكۈنىگە يۆتكىلىدۇ. بۇ ئۈسكۈنە گۇرۇپپا ۋە ئالاقىداشلىرىڭىزنى كۆرەلەيدۇ ، پاراڭلىرىڭىزنى زىيارەت قىلالايدۇ ۋە نامىڭىزدا ئۇچۇر ئەۋەتەلەيدۇ.";
 
 /* Title of prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Transfer Account to \"%1$@\"?";
+"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "ھېساباتىڭىزنى «%1$@»غا يۆتكەمسىز؟";
 
 /* Action prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Start Transfer";
+"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "يۆتكەشنى باشلاش";
 
 /* info message text in conversation view */
 "OUTGOING_MISSED_VIDEO_CALL" = "جاۋابسىز ۋىدېيولۇق چاقىرىق";

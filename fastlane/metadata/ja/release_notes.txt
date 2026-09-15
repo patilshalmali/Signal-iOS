@@ -1,1 +1,1 @@
-• Just in time for your next upgrade, the revamped device-to-device migration experience makes it easier than ever to securely transfer your Signal information from an old phone to a new phone over a local end-to-end encrypted wireless link. When available, connections now utilize Wi-Fi Aware networking for dramatically improved speed and reliability too.
+• 端末間の移行機能を強化し、古い端末から新しい端末へ、Signalのデータをこれまで以上に簡単かつ迅速に、安全に移行できるようになりました。

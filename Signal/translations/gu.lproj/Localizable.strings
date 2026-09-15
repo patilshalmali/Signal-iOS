@@ -3167,16 +3167,16 @@
 "DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "Signal ના નવીનતમ વર્ઝન પર અપડેટ કરો અને ફરીથી પ્રયાસ કરો";
 
 /* Body of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "To transfer your account, pair this device with your old device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "તમારા એકાઉન્ટને ટ્રાન્સફર કરવા, આ ડિવાઇસને તમારા જૂના ડિવાઇસ સાથે પેર કરો";
 
 /* Title of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Pair With Your New Device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "તમારા નવા ડિવાઇસ સાથે પેર કરો";
 
 /* Body of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "To transfer your account, pair this device with your new device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "તમારા એકાઉન્ટને ટ્રાન્સફર કરવા, આ ડિવાઇસને તમારા નવા ડિવાઇસ સાથે પેર કરો";
 
 /* Title of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Pair With Your Old Device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "તમારા જૂના ડિવાઇસ સાથે પેર કરો";
 
 /* The explanation on the view that shows receiving progress */
 "DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "બંને ડિવાઇસને એકબીજાની નજીક રાખો. બંને ડિવાઇસ બંધ ન કરો અને Signal ને ખુલ્લા રાખો. ટ્રાન્સફર એન્ડ-ટુ-એન્ડ એન્ક્રિપ્ટ થયેલ છે.";
@@ -3197,7 +3197,7 @@
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "તમારા જૂના ડિવાઇસને નજીકમાં લાવો અને ખાતરી કરો કે વાઇ-ફાઇ અને બ્લુટુથ સક્ષમ છે. જૂના ડિવાઇસ પરના ડિવાઇસ લિસ્ટમાંથી આ ડિવાઇસને પસંદ કરો.  જો જૂના ડિવાઇસ પર ડિવાઇસ દેખાતું ન હોય, તો નીચે 'નવું ડિવાઇસ પેર કરો' પસંદ કરો.";
 
 /* Title for paring an old device to transfer to. */
-"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Pair This Device";
+"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "આ ડિવાઇસને પેર કરો";
 
 /* Status message on new device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_STARTING" = "જૂના ડિવાઇસ સાથે કનેક્ટ થવાની રાહ જોઈ રહ્યાં છે…";
@@ -3227,7 +3227,7 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "તમારા નવા ડિવાઇસને નજીકમાં લાવો અને ખાતરી કરો કે વાઇ-ફાઇ અને બ્લુટુથ સક્ષમ છે.";
 
 /* Title for paring an new device to transfer to. */
-"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Pair With New Device";
+"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "નવા ડિવાઇસ સાથે પેર કરો";
 
 /* Status message on old device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING" = "નવા ડિવાઇસ સાથે કનેક્ટ થવાની રાહ જોઈ રહ્યાં છે…";
@@ -3239,19 +3239,19 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING_WIFI_AWARE_MESSAGE" = "નીચે આપેલા પેર કરેલા ડિવાઇસના લિસ્ટમાંથી નવું ડિવાઇસ પસંદ કરો. જો નવું ડિવાઇસ દેખાતું ન હોય, તો પ્રક્રિયા શરૂ કરવા માટે 'નવા ડિવાઇસને પેર કરો' પસંદ કરો.";
 
 /* Message informing the user to continue on the old device */
-"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Continue on your old device";
+"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "તમારા જૂના ડિવાઇસ પર ચાલુ રાખો";
 
 /* Message informing the user to enable wifi and bluetooth on device */
-"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Enable Wifi and Bluetooth on both devices";
+"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "બંને ડિવાઇસ પર વાઇ-ફાઇ અને બ્લુટુથ ચાલુ કરો";
 
 /* Message informing the user to select the new device when prompted */
-"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Select your new device when prompted";
+"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "કહેવામાં આવે ત્યારે તમારું નવું ડિવાઇસ પસંદ કરો";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Tap “Pair This Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "નીચે \"આ ડિવાઇસ પેર કરો\" પર ટેપ કરો";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Tap “Pair With New Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "નીચે \"નવા ડિવાઇસ સાથે પેર કરો\" ટેપ કરો";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "અદૃશ્ય થઈ રહેલા મેસેજ";
@@ -6794,10 +6794,10 @@
 "OUTGOING_DEVICE_TRANSFER_CONFIRM_BODY" = "તમારું એકાઉન્ટ એક નવા ડિવાઇસ પર ટ્રાન્સફર થશે. આ ડિવાઇસ તમારા ગ્રૂપ અને સંપર્કો જોઈ શકશે, તમારી ચેટને ઍક્સેસ કરી શકશે અને તમારા નામે મેસેજ મોકલી શકશે.";
 
 /* Title of prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Transfer Account to \"%1$@\"?";
+"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "એકાઉન્ટને \"%1$@\" પર ટ્રાન્સફર કરીએ?";
 
 /* Action prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Start Transfer";
+"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "ટ્રાન્સફર શરૂ કરો";
 
 /* info message text in conversation view */
 "OUTGOING_MISSED_VIDEO_CALL" = "ન ઉપાડેલો વિડિયો કૉલ";

@@ -3167,16 +3167,16 @@
 "DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "최신 Signal 버전으로 업데이트한 후 다시 시도해 주세요.";
 
 /* Body of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "To transfer your account, pair this device with your old device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "계정을 이전하려면 기기를 기존 기기와 연결하세요.";
 
 /* Title of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Pair With Your New Device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "새 기기 연결하기";
 
 /* Body of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "To transfer your account, pair this device with your new device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "계정을 이전하려면 기기를 새 기기와 연결하세요.";
 
 /* Title of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Pair With Your Old Device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "기존 기기 연결하기";
 
 /* The explanation on the view that shows receiving progress */
 "DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "두 기기를 서로 가까이 두고 Signal을 계속 열어 두세요. 모든 과정은 종단간 암호화로 안전하게 보호됩니다.";
@@ -3197,7 +3197,7 @@
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "이전 기기를 가까이 두고 Wi-Fi와 블루투스가 켜져 있는지 확인하세요. 이전 기기의 기기 목록에서 이 기기를 선택합니다.  목록에 표시되지 않으면 아래에서 '새 기기 페어링하기'를 선택하세요.";
 
 /* Title for paring an old device to transfer to. */
-"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Pair This Device";
+"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "기기 연결하기";
 
 /* Status message on new device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_STARTING" = "이전 기기 연결 대기 중…";
@@ -3227,7 +3227,7 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "새 기기를 가까이 두고 Wi-Fi와 Bluetooth가 켜져 있는지 확인하세요.";
 
 /* Title for paring an new device to transfer to. */
-"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Pair With New Device";
+"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "새 기기 연결하기";
 
 /* Status message on old device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING" = "새 기기 연결 대기 중…";
@@ -3239,19 +3239,19 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING_WIFI_AWARE_MESSAGE" = "아래 페어링된 기기 목록에서 새 기기를 선택하세요. 새 기기가 보이지 않으면 '새 기기 페어링하기'를 선택하여 시작하세요.";
 
 /* Message informing the user to continue on the old device */
-"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Continue on your old device";
+"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "기존 기기에서 계속하세요.";
 
 /* Message informing the user to enable wifi and bluetooth on device */
-"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Enable Wifi and Bluetooth on both devices";
+"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "두 기기 모두에서 Wi-Fi와 블루투스를 켜세요.";
 
 /* Message informing the user to select the new device when prompted */
-"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Select your new device when prompted";
+"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "메시지가 뜨면 새 기기를 선택하세요";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Tap “Pair This Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "아래 \"기기 연결하기\"를 탭하세요.";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Tap “Pair With New Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "아래 \"새 기기 연결하기\"를 탭하세요.";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "자동 삭제 메시지";
@@ -6794,10 +6794,10 @@
 "OUTGOING_DEVICE_TRANSFER_CONFIRM_BODY" = "계정을 새 기기로 이전합니다. 이전이 완료되면 이 기기에서 그룹과 연락처를 확인하고, 기존 대화를 보거나 내 이름으로 메시지를 보낼 수 있습니다.";
 
 /* Title of prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Transfer Account to \"%1$@\"?";
+"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "\"%1$@\" 기기로 계정을 이전할까요?";
 
 /* Action prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Start Transfer";
+"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "이전 시작하기";
 
 /* info message text in conversation view */
 "OUTGOING_MISSED_VIDEO_CALL" = "미응답 영상 통화";
@@ -9098,7 +9098,7 @@
 "SETTINGS_NAV_BAR_TITLE" = "설정";
 
 /* Label for the setting controlling whether the app icon badge counts unread messages or unread chats. */
-"SETTINGS_NOTIFICATION_BADGE_COUNT" = "앱 아이콘 배지";
+"SETTINGS_NOTIFICATION_BADGE_COUNT" = "알림 배지";
 
 /* Explanation for the setting controlling whether the app icon badge counts unread messages or unread chats. */
 "SETTINGS_NOTIFICATION_BADGE_COUNT_FOOTER" = "알림 배지에 읽지 않은 메시지 수와 대화 수 중 무엇을 표시할지 선택하세요";

@@ -3167,16 +3167,16 @@
 "DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "به آخرین نسخه سیگنال به‌روزرسانی کرده و دوباره امتحان کنید";
 
 /* Body of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "To transfer your account, pair this device with your old device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "برای انتقال حساب، این دستگاه را با دستگاه قدیمی خود جفت‌سازی کنید";
 
 /* Title of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Pair With Your New Device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "جفت‌سازی با دستگاه جدید";
 
 /* Body of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "To transfer your account, pair this device with your new device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "برای انتقال حساب، این دستگاه را با دستگاه جدید خود جفت‌سازی کنید";
 
 /* Title of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Pair With Your Old Device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "جفت‌سازی با دستگاه قدیمی";
 
 /* The explanation on the view that shows receiving progress */
 "DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "هر دو دستگاه را نزدیک هم قرار دهید. هیچکدام را خاموش نکنید و سیگنال را باز نگه دارید. عملیات انتقال رمزگذاری سرتاسری شده است.";
@@ -3197,7 +3197,7 @@
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "دستگاه قدیمی‌تان را نزدیک بیاورید و مطمئن شوید که Wi-Fi و بلوتوث فعال باشند. این دستگاه را از فهرست دستگاه‌های موجود در دستگاه قدیمی انتخاب کنید.  اگر دستگاه موردنظر در دستگاه قدیمی قابل مشاهده نیست، گزینه «جفت‌سازی دستگاه جدید» را در زیر انتخاب کنید.";
 
 /* Title for paring an old device to transfer to. */
-"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Pair This Device";
+"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "جفت‌سازی این دستگاه";
 
 /* Status message on new device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_STARTING" = "در انتظار اتصال به دستگاه قدیمی…";
@@ -3227,7 +3227,7 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "دستگاه جدیدتان را نزدیک بیاورید و مطمئن شوید که Wi-Fi و بلوتوث فعال باشند.";
 
 /* Title for paring an new device to transfer to. */
-"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Pair With New Device";
+"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "جفت‌سازی با دستگاه جدید";
 
 /* Status message on old device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING" = "در انتظار اتصال به دستگاه جدید…";
@@ -3239,19 +3239,19 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING_WIFI_AWARE_MESSAGE" = "دستگاه جدید را از فهرست دستگاه‌های جفت‌سازی‌شده زیر انتخاب کنید. اگر دستگاه جدید قابل مشاهده نیست، برای شروع فرایند، «جفت‌سازی دستگاه جدید» را انتخاب کنید.";
 
 /* Message informing the user to continue on the old device */
-"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Continue on your old device";
+"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "در دستگاه قدیمی خود ادامه دهید";
 
 /* Message informing the user to enable wifi and bluetooth on device */
-"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Enable Wifi and Bluetooth on both devices";
+"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Wi-fi و بلوتوث را در هر دو دستگاه فعال کنید";
 
 /* Message informing the user to select the new device when prompted */
-"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Select your new device when prompted";
+"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "هنگام درخواست، دستگاه جدید خود را انتخاب کنید";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Tap “Pair This Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "روی «جفت‌سازی این دستگاه» در زیر ضربه بزنید";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Tap “Pair With New Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "روی «جفت‌سازی با دستگاه جدید» در زیر ضربه بزنید";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "پیام‌های ناپدید شونده";
@@ -6794,10 +6794,10 @@
 "OUTGOING_DEVICE_TRANSFER_CONFIRM_BODY" = "حساب شما به یک دستگاه جدید منتقل می‌شود. این دستگاه می‌تواند گروه‌ها و مخاطبان شما را ببیند، به گفتگوهای شما دسترسی داشته باشد و پیام‌هایی را به نام شما ارسال کند.";
 
 /* Title of prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Transfer Account to \"%1$@\"?";
+"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "انتقال حساب به «%1$@»؟";
 
 /* Action prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Start Transfer";
+"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "شروع انتقال";
 
 /* info message text in conversation view */
 "OUTGOING_MISSED_VIDEO_CALL" = "تماس تصویری بی‌پاسخ";

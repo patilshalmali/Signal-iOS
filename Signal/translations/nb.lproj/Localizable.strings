@@ -3167,16 +3167,16 @@
 "DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "Oppdater til siste versjon av Signal, og prøv igjen";
 
 /* Body of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "To transfer your account, pair this device with your old device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "Koble denne enheten til den gamle enheten din for å overføre kontoen.";
 
 /* Title of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Pair With Your New Device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Koble til den nye enheten";
 
 /* Body of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "To transfer your account, pair this device with your new device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "Koble denne enheten til den nye enheten din for å overføre kontoen.";
 
 /* Title of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Pair With Your Old Device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Koble til den gamle enheten";
 
 /* The explanation on the view that shows receiving progress */
 "DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "Hold enhetene i nærheten av hverandre. Ikke slå av noen av enhetene, og la Signal være åpen. Overføringer er kryptert fra ende til ende.";
@@ -3197,7 +3197,7 @@
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Hold den gamle enheten i nærheten, og sørg for at Wi-Fi og Bluetooth er slått på. Velg denne enheten fra listen på den gamle enheten.  Dersom den ikke vises, trykker du på «Koble til en ny enhet» nedenfor.";
 
 /* Title for paring an old device to transfer to. */
-"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Pair This Device";
+"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Koble til denne enheten";
 
 /* Status message on new device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_STARTING" = "Venter på å koble til den gamle enheten …";
@@ -3227,7 +3227,7 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Hold den nye enheten i nærheten, og sørg for at Wi-Fi og Bluetooth er slått på.";
 
 /* Title for paring an new device to transfer to. */
-"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Pair With New Device";
+"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Koble til den nye enheten";
 
 /* Status message on old device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING" = "Venter på å koble til den nye enheten …";
@@ -3239,19 +3239,19 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING_WIFI_AWARE_MESSAGE" = "Velg den nye enheten fra listen over tilkoblede enheter nedenfor. Dersom den ikke vises, trykker du på «Koble til en ny enhet» for å finne den.";
 
 /* Message informing the user to continue on the old device */
-"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Continue on your old device";
+"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Fortsett på den gamle enheten";
 
 /* Message informing the user to enable wifi and bluetooth on device */
-"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Enable Wifi and Bluetooth on both devices";
+"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Slå på Wifi og Bluetooth på begge enhetene";
 
 /* Message informing the user to select the new device when prompted */
-"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Select your new device when prompted";
+"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Velg den nye enheten når du blir bedt om det";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Tap “Pair This Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Trykk på «Koble til denne enheten» nedenfor";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Tap “Pair With New Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Trykk på «Koble til den nye enheten»";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "Tidsavgrensede meldinger";
@@ -6791,13 +6791,13 @@
 "OUTGOING_DEVICE_TRANSFER_COMPLETE_TITLE" = "Overføring fullført";
 
 /* Body of prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_CONFIRM_BODY" = "Dette innebærer at kontoen din overføres til en annen enhet. Denne enheten får tilgang til gruppene, kontaktene og samtalene dine og kan sende meldinger i ditt navn.";
+"OUTGOING_DEVICE_TRANSFER_CONFIRM_BODY" = "Dette innebærer at kontoen din overføres til en ny enhet. Denne enheten får tilgang til gruppene, kontaktene og samtalene dine og kan sende meldinger i ditt navn.";
 
 /* Title of prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Transfer Account to \"%1$@\"?";
+"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Vil du overføre kontoen til «%1$@»?";
 
 /* Action prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Start Transfer";
+"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Start overføringen";
 
 /* info message text in conversation view */
 "OUTGOING_MISSED_VIDEO_CALL" = "Ubesvart videoanrop";
@@ -9098,7 +9098,7 @@
 "SETTINGS_NAV_BAR_TITLE" = "Innstillinger";
 
 /* Label for the setting controlling whether the app icon badge counts unread messages or unread chats. */
-"SETTINGS_NOTIFICATION_BADGE_COUNT" = "Antall-merke";
+"SETTINGS_NOTIFICATION_BADGE_COUNT" = "Antall varsler";
 
 /* Explanation for the setting controlling whether the app icon badge counts unread messages or unread chats. */
 "SETTINGS_NOTIFICATION_BADGE_COUNT_FOOTER" = "Velg om antall varsler skal vise antallet uleste meldinger eller antall uleste samtaler.";
@@ -9824,7 +9824,7 @@
 "SETTINGS_WHILE_MUTED_CALLS_FOOTER" = "Ring eller varsle når et nytt anrop startes i samtaler der varsler er deaktivert.";
 
 /* Label for the switch controlling whether mentions of you notify in muted chats. */
-"SETTINGS_WHILE_MUTED_MENTIONS" = "Omtaler";
+"SETTINGS_WHILE_MUTED_MENTIONS" = "Nevninger";
 
 /* Explanation for the switch controlling whether mentions of you notify while this chat is muted. */
 "SETTINGS_WHILE_MUTED_MENTIONS_CHAT_FOOTER" = "Få et varsel når du blir nevnt i samtalen mens varsler er deaktivert.";

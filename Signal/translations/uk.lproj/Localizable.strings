@@ -3167,16 +3167,16 @@
 "DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "Оновіть Signal до останньої версії і спробуйте ще раз";
 
 /* Body of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "To transfer your account, pair this device with your old device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "Щоб перенести акаунт, спаруйте цей пристрій зі своїм старим пристроєм";
 
 /* Title of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Pair With Your New Device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Парування з новим пристроєм";
 
 /* Body of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "To transfer your account, pair this device with your new device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "Щоб перенести акаунт, спаруйте цей пристрій із новим пристроєм";
 
 /* Title of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Pair With Your Old Device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Парування зі старим пристроєм";
 
 /* The explanation on the view that shows receiving progress */
 "DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "Пристрої повинні бути поряд один з одним. Не вимикайте жодного з пристроїв і не закривайте на них Signal. Перенесення даних захищено наскрізним шифруванням.";
@@ -3197,7 +3197,7 @@
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Піднесіть старий пристрій ближче. Не забудьте ввімкнути Wi-Fi і Bluetooth. Виберіть цей пристрій у списку на старому пристрої.  Якщо пристрій не показано на старому пристрої, виберіть «Спарувати новий пристрій» нижче.";
 
 /* Title for paring an old device to transfer to. */
-"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Pair This Device";
+"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Спарувати цей пристрій";
 
 /* Status message on new device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_STARTING" = "Очікування на з'єднання зі старим пристроєм…";
@@ -3227,7 +3227,7 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Піднесіть новий пристрій ближче. Не забудьте ввімкнути Wi-Fi і Bluetooth.";
 
 /* Title for paring an new device to transfer to. */
-"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Pair With New Device";
+"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Спарувати з новим пристроєм";
 
 /* Status message on old device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING" = "Очікування на з'єднання з новим пристроєм…";
@@ -3239,19 +3239,19 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING_WIFI_AWARE_MESSAGE" = "Виберіть новий пристрій зі списку спарованих пристроїв нижче. Якщо там немає нового пристрою, виберіть «Спарувати новий пристрій», щоб почати.";
 
 /* Message informing the user to continue on the old device */
-"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Continue on your old device";
+"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Продовжте на старому пристрої";
 
 /* Message informing the user to enable wifi and bluetooth on device */
-"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Enable Wifi and Bluetooth on both devices";
+"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Увімкніть Wi-Fi і Bluetooth на обох пристроях";
 
 /* Message informing the user to select the new device when prompted */
-"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Select your new device when prompted";
+"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Виберіть новий пристрій, коли буде запропоновано";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Tap “Pair This Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Натисніть «Спарувати цей пристрій» нижче";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Tap “Pair With New Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Натисніть «Спарувати з новим пристроєм» нижче";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "Тимчасові повідомлення";
@@ -6791,13 +6791,13 @@
 "OUTGOING_DEVICE_TRANSFER_COMPLETE_TITLE" = "Перенесення завершено";
 
 /* Body of prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_CONFIRM_BODY" = "Ваш акаунт буде перенесено на новий пристрій. Такий пристрій зможе бачити ваші групи й контакти, отримає доступ до ваших чатів, і з нього надсилатимуться повідомлення від вашого імені.";
+"OUTGOING_DEVICE_TRANSFER_CONFIRM_BODY" = "Ваш акаунт буде перенесено на новий пристрій. Такий пристрій зможе бачити ваші групи й контакти, отримає доступ до ваших чатів і з нього надсилатимуться повідомлення від вашого імені.";
 
 /* Title of prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Transfer Account to \"%1$@\"?";
+"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Перенести акаунт на пристрій «%1$@»?";
 
 /* Action prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Start Transfer";
+"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Почати перенесення";
 
 /* info message text in conversation view */
 "OUTGOING_MISSED_VIDEO_CALL" = "Відеовиклик без відповіді";
@@ -9812,7 +9812,7 @@
 "SETTINGS_VERSION" = "Версія";
 
 /* Title for the settings page controlling which notifications are still shown for muted chats. Also used as the label for the rows that link to this page. */
-"SETTINGS_WHILE_MUTED" = "Якщо сповіщення вимкнуто";
+"SETTINGS_WHILE_MUTED" = "Якщо сповіщення вимкнено";
 
 /* Label for the switch controlling whether calls ring or notify in muted chats. */
 "SETTINGS_WHILE_MUTED_CALLS" = "Виклики";

@@ -3167,16 +3167,16 @@
 "DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "Cập nhật phiên bản mới nhất của Signal và thử lại";
 
 /* Body of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "To transfer your account, pair this device with your old device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "Để chuyển tài khoản, ghép nối thiết bị này với thiết bị cũ của bạn";
 
 /* Title of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Pair With Your New Device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Ghép nối với thiết bị mới của bạn";
 
 /* Body of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "To transfer your account, pair this device with your new device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "Để chuyển tài khoản, ghép nối thiết bị này với thiết bị mới của bạn";
 
 /* Title of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Pair With Your Old Device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Ghép nối với thiết bị cũ của bạn";
 
 /* The explanation on the view that shows receiving progress */
 "DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "Để cả hai thiết bị gần nhau. Đừng tắt nguồn thiết bị nào và để mở ứng dụng Signal. Quá trình chuyển dữ liệu được bảo mật hai chiều.";
@@ -3197,7 +3197,7 @@
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Đặt thiết bị cũ của bạn ở gần và đảm bảo Wi-Fi và Bluetooth trên thiết bị này đã được bật. Chọn thiết bị này từ danh sách các thiết bị trên thiết bị cũ.  Nếu thiết bị không hiển thị trên thiết bị cũ, hãy chọn \"Ghép nối thiết bị mới\" bên dưới.";
 
 /* Title for paring an old device to transfer to. */
-"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Pair This Device";
+"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Ghép nối thiết bị này";
 
 /* Status message on new device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_STARTING" = "Đang chờ để kết nối đến thiết bị cũ…";
@@ -3227,7 +3227,7 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Đặt thiết bị mới của bạn ở gần và đảm bảo Wi-Fi và Bluetooth trên thiết bị này đã được bật.";
 
 /* Title for paring an new device to transfer to. */
-"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Pair With New Device";
+"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Ghép nối với thiết bị mới";
 
 /* Status message on old device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING" = "Đang chờ để kết nối đến thiết bị mới…";
@@ -3239,19 +3239,19 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING_WIFI_AWARE_MESSAGE" = "Chọn thiết bị mới từ danh sách các thiết bị đã ghép nối bên dưới. Nếu thiết bị mới không hiển thị, hãy chọn \"Ghép nối thiết bị mới\" để bắt đầu quá trình.";
 
 /* Message informing the user to continue on the old device */
-"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Continue on your old device";
+"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Tiếp tục trên thiết bị cũ của bạn";
 
 /* Message informing the user to enable wifi and bluetooth on device */
-"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Enable Wifi and Bluetooth on both devices";
+"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Bật Wi-Fi và Bluetooth trên cả hai thiết bị";
 
 /* Message informing the user to select the new device when prompted */
-"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Select your new device when prompted";
+"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Chọn thiết bị mới của bạn khi được hỏi";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Tap “Pair This Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Nhấn \"Ghép nối thiết bị này\" ở bên dưới";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Tap “Pair With New Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Nhấn \"Ghép nối với thiết bị mới\" ở bên dưới";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "Tin nhắn tự hủy";
@@ -6794,10 +6794,10 @@
 "OUTGOING_DEVICE_TRANSFER_CONFIRM_BODY" = "Tài khoản của bạn sẽ dược chuyển đến một thiết bị mới. Thiết bị này sẽ có thể thấy được nhóm và liên hệ của bạn, truy cập các cuộc trò chuyện của bạn, và gửi tin nhắn với danh tính của bạn.";
 
 /* Title of prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Transfer Account to \"%1$@\"?";
+"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Chuyển tài khoản đến \"%1$@\"?";
 
 /* Action prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Start Transfer";
+"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Bắt đầu chuyển";
 
 /* info message text in conversation view */
 "OUTGOING_MISSED_VIDEO_CALL" = "Cuộc gọi video không được trả lời";
@@ -8636,7 +8636,7 @@
 "SELECT_CONTACT_FOR_SHARING_SEARCH_BAR_PLACEHOLDER" = "Tìm kiếm";
 
 /* Title for the 'Select Contact' view */
-"SELECT_CONTACT_FOR_SHARING_VIEW_TITLE" = "Select Contact";
+"SELECT_CONTACT_FOR_SHARING_VIEW_TITLE" = "Chọn liên hệ";
 
 /* No comment provided by engineer. */
 "SEND_AGAIN_BUTTON" = "Gửi lại";

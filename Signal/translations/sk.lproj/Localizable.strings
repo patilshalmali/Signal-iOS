@@ -3167,16 +3167,16 @@
 "DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "Aktualizujte na najnovšiu verziu Signalu a skúste to znovu";
 
 /* Body of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "To transfer your account, pair this device with your old device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "Ak chcete preniesť svoj účet, spárujte toto zariadenie so starým zariadením";
 
 /* Title of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Pair With Your New Device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Spárujte s vaším novým zariadením";
 
 /* Body of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "To transfer your account, pair this device with your new device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "Ak chcete preniesť svoj účet, spárujte toto zariadenie s novým zariadením";
 
 /* Title of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Pair With Your Old Device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Spárujte s vaším starým zariadením";
 
 /* The explanation on the view that shows receiving progress */
 "DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "Ponechajte obe zariadenia blízko seba. Nevypínajte ani jedno zariadenie a nechajte Signal otvorený. Prenosy sú zabezpečené prostredníctvom koncového šifrovania.";
@@ -3197,7 +3197,7 @@
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Priblížte svoje staré zariadenie a uistite sa, že máte zapnuté Wi-Fi a Bluetooth. Vyberte toto zariadenie zo zoznamu zariadení na starom zariadení.  Ak zariadenie nie je viditeľné na starom zariadení, vyberte nižšie možnosť „Spárovať nové zariadenie“.";
 
 /* Title for paring an old device to transfer to. */
-"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Pair This Device";
+"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Spárovať toto zariadenie";
 
 /* Status message on new device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_STARTING" = "Čaká sa na pripojenie k starému zariadeniu…";
@@ -3227,7 +3227,7 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Priblížte nové zariadenie a uistite sa, že máte zapnuté Wi-Fi a Bluetooth.";
 
 /* Title for paring an new device to transfer to. */
-"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Pair With New Device";
+"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Spárovať s novým zariadením";
 
 /* Status message on old device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING" = "Čaká sa na pripojenie k novému zariadeniu…";
@@ -3239,19 +3239,19 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING_WIFI_AWARE_MESSAGE" = "Vyberte nové zariadenie zo zoznamu spárovaných zariadení nižšie. Ak nové zariadenie nie je viditeľné, vyberte možnosť „Spárovať nové zariadenie“ a spustite proces.";
 
 /* Message informing the user to continue on the old device */
-"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Continue on your old device";
+"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Pokračujte na starom zariadení";
 
 /* Message informing the user to enable wifi and bluetooth on device */
-"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Enable Wifi and Bluetooth on both devices";
+"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Povoľte Wi-Fi a Bluetooth na oboch zariadeniach";
 
 /* Message informing the user to select the new device when prompted */
-"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Select your new device when prompted";
+"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Po zobrazení výzvy vyberte svoje nové zariadenie";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Tap “Pair This Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Ťuknite nižšie na „Spárovať toto zariadenie“";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Tap “Pair With New Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Ťuknite nižšie na „Spárovať s novým zariadením“";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "Miznúce správy";
@@ -6794,10 +6794,10 @@
 "OUTGOING_DEVICE_TRANSFER_CONFIRM_BODY" = "Váš účet bude prenesený do nového zariadenia. Toto zariadenie bude vidieť vaše skupiny a kontakty, bude mať prístup k vašim četom a bude môcť odosielať správy vo vašom mene.";
 
 /* Title of prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Transfer Account to \"%1$@\"?";
+"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Preniesť účet na „%1$@“?";
 
 /* Action prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Start Transfer";
+"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Spustiť prenos";
 
 /* info message text in conversation view */
 "OUTGOING_MISSED_VIDEO_CALL" = "Neprijatý videohovor";
@@ -9098,7 +9098,7 @@
 "SETTINGS_NAV_BAR_TITLE" = "Nastavenia";
 
 /* Label for the setting controlling whether the app icon badge counts unread messages or unread chats. */
-"SETTINGS_NOTIFICATION_BADGE_COUNT" = "Počet odznakov";
+"SETTINGS_NOTIFICATION_BADGE_COUNT" = "Počet oznámení";
 
 /* Explanation for the setting controlling whether the app icon badge counts unread messages or unread chats. */
 "SETTINGS_NOTIFICATION_BADGE_COUNT_FOOTER" = "Vyberte, či počet oznámení zobrazuje množstvo neprečítaných správ alebo množstvo neprečítaných četov";
@@ -9824,13 +9824,13 @@
 "SETTINGS_WHILE_MUTED_CALLS_FOOTER" = "Zvoniť alebo upozorniť, keď sa v stlmených četoch začne hovor.";
 
 /* Label for the switch controlling whether mentions of you notify in muted chats. */
-"SETTINGS_WHILE_MUTED_MENTIONS" = "Spomenutia";
+"SETTINGS_WHILE_MUTED_MENTIONS" = "Zmienky";
 
 /* Explanation for the switch controlling whether mentions of you notify while this chat is muted. */
 "SETTINGS_WHILE_MUTED_MENTIONS_CHAT_FOOTER" = "Upozorniť na zmienky, keď je tento čet stlmený";
 
 /* Explanation for the switch controlling whether mentions of you notify in muted chats. */
-"SETTINGS_WHILE_MUTED_MENTIONS_FOOTER" = "Upozorniť, keď vás niekto spomenie v stlmených četoch.";
+"SETTINGS_WHILE_MUTED_MENTIONS_FOOTER" = "Upozorniť na zmienky v stlmených četoch.";
 
 /* Label for the switch controlling whether replies to your messages notify in muted chats. */
 "SETTINGS_WHILE_MUTED_REPLIES" = "Odpovede";

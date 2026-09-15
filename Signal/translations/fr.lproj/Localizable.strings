@@ -590,7 +590,7 @@
 "BACKUP_CONFIRM_KEY_PW_MGR_SHEET_MESSAGE" = "Confirmez que vous avez bien enregistré votre clé de récupération. Elle vous sera demandée pour vous connecter à l'étape suivante.";
 
 /* Title for a button that returns the user to view their Recovery Key, in a sheet shown after it was saved to their password manager. */
-"BACKUP_CONFIRM_KEY_PW_MGR_SHEET_SEE_KEY_AGAIN_BUTTON_TITLE" = "Réafficher la clé";
+"BACKUP_CONFIRM_KEY_PW_MGR_SHEET_SEE_KEY_AGAIN_BUTTON_TITLE" = "Revoir la clé";
 
 /* Title for a sheet shown to confirm the user's Recovery Key after it was saved to their password manager. */
 "BACKUP_CONFIRM_KEY_PW_MGR_SHEET_TITLE" = "Confirmer la clé de récupération";
@@ -653,7 +653,7 @@
 "BACKUP_ONBOARDING_CONFIRM_KEY_KEEP_KEY_SAFE_SHEET_TITLE" = "Conservez votre clé en lieu sûr";
 
 /* Title for a button offering to let users see their 'Recovery Key'. */
-"BACKUP_ONBOARDING_CONFIRM_KEY_SEE_KEY_AGAIN_BUTTON_TITLE" = "Réafficher la clé";
+"BACKUP_ONBOARDING_CONFIRM_KEY_SEE_KEY_AGAIN_BUTTON_TITLE" = "Revoir la clé";
 
 /* Subtitle for a view asking users to confirm their 'Recovery Key'. */
 "BACKUP_ONBOARDING_CONFIRM_KEY_SUBTITLE" = "Saisissez la clé de récupération que vous venez d'enregistrer.";
@@ -3167,16 +3167,16 @@
 "DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "Passez à la dernière version de Signal et réessayez";
 
 /* Body of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "To transfer your account, pair this device with your old device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_MESSAGE" = "Pour transférer votre compte, associez cet appareil à votre ancien appareil.";
 
 /* Title of the device transfer screen for pairing a new device, from the new device */
-"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Pair With Your New Device";
+"DEVICE_TRANSFER_PAIR_NEW_DEVICE_TITLE" = "Associer au nouvel appareil";
 
 /* Body of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "To transfer your account, pair this device with your new device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_MESSAGE" = "Pour transférer votre compte, associez cet appareil à votre nouvel appareil.";
 
 /* Title of the device transfer screen for pairing a new device, from the old device */
-"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Pair With Your Old Device";
+"DEVICE_TRANSFER_PAIR_OLD_DEVICE_TITLE" = "Associer à l'ancien appareil";
 
 /* The explanation on the view that shows receiving progress */
 "DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "Gardez les deux appareils côte à côte. Ne les éteignez pas et ne fermez pas Signal. Comme tout ce que nous faisons, les transferts sont chiffrés de bout en bout.";
@@ -3197,7 +3197,7 @@
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Vérifiez que le Wi-Fi et le Bluetooth sont bien activés sur votre ancien appareil, et maintenez-le à proximité. Depuis votre ancien appareil, sélectionnez le nouvel appareil dans la liste des appareils associés.  S'il ne s'affiche pas, sélectionnez \"Associer un nouvel appareil\" ci-dessous.";
 
 /* Title for paring an old device to transfer to. */
-"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Pair This Device";
+"DEVICE_TRANSFER_STATUS_NEW_DEVICE_PAIR_DEVICE" = "Associer cet appareil";
 
 /* Status message on new device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_STARTING" = "En attente de connexion à l'ancien appareil…";
@@ -3227,7 +3227,7 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_CONNECTING_WIFI_AWARE_MESSAGE" = "Vérifiez que le Wi-Fi et le Bluetooth sont bien activés sur votre nouvel appareil, et maintenez-le à proximité.";
 
 /* Title for paring an new device to transfer to. */
-"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Pair With New Device";
+"DEVICE_TRANSFER_STATUS_OLD_DEVICE_PAIR_DEVICE" = "Associer au nouvel appareil";
 
 /* Status message on old device when transfer is starting. */
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING" = "En attente de connexion au nouvel appareil…";
@@ -3239,19 +3239,19 @@
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_STARTING_WIFI_AWARE_MESSAGE" = "Sélectionnez le nouvel appareil dans la liste des appareils associés ci-dessous. Si ce nouvel appareil ne s'affiche pas, sélectionnez \"Associer un nouvel appareil\" pour lancer le processus.";
 
 /* Message informing the user to continue on the old device */
-"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Continue on your old device";
+"DEVICE_TRANSFER_TUTORIAL_CONTINUE_OLD_DEVICE_MESSAGE" = "Continuez sur l'ancien appareil";
 
 /* Message informing the user to enable wifi and bluetooth on device */
-"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Enable Wifi and Bluetooth on both devices";
+"DEVICE_TRANSFER_TUTORIAL_ENABLE_WIFI_MESSAGE" = "Activez le Wi-Fi et le Bluetooth sur les deux appareils";
 
 /* Message informing the user to select the new device when prompted */
-"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "Select your new device when prompted";
+"DEVICE_TRANSFER_TUTORIAL_SELECT_NEW_DEVICE_MESSAGE" = "À l'invite, sélectionnez votre nouvel appareil";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Tap “Pair This Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_DEVICE_MESSAGE" = "Touchez \"Associer cet appareil\" ci-dessous";
 
 /* Message informing the user to tap on the pair device button */
-"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Tap “Pair With New Device” below";
+"DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Touchez \"Associer au nouvel appareil\" ci-dessous";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "Messages éphémères";
@@ -6794,10 +6794,10 @@
 "OUTGOING_DEVICE_TRANSFER_CONFIRM_BODY" = "Vous allez transférer votre compte vers un autre appareil. Ce nouvel appareil pourra afficher vos groupes et vos contacts, accéder à vos conversations et envoyer des messages via votre profil.";
 
 /* Title of prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Transfer Account to \"%1$@\"?";
+"OUTGOING_DEVICE_TRANSFER_CONFIRM_TITLE" = "Transférer le compte vers \"%1$@\" ?";
 
 /* Action prompt confirming the start of device transfer. */
-"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Start Transfer";
+"OUTGOING_DEVICE_TRANSFER_START_TRANSFER_ACTION" = "Démarrer le transfert";
 
 /* info message text in conversation view */
 "OUTGOING_MISSED_VIDEO_CALL" = "Appel vidéo sans réponse";
@@ -6875,7 +6875,7 @@
 "PAYMENTS_IN_CHAT_FAILURE_MESSAGE_TOP" = "Impossible d'envoyer la somme de %1$@ MOB";
 
 /* Status indicator for invalid payments which could not be processed. */
-"PAYMENTS_INFO_UNAVAILABLE_MESSAGE" = "NON DISPONIBLE";
+"PAYMENTS_INFO_UNAVAILABLE_MESSAGE" = "INDISPONIBLE";
 
 /* Indicates that an unknown error occurred while using Touch ID/Face ID/Phone Passcode. */
 "PAYMENTS_LOCK_AUTHENTICATION_ENABLE_UNKNOWN_ERROR" = "Impossible d’accéder à l'authentification.";
@@ -8408,7 +8408,7 @@
 "SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_FOOTER" = "La vérification automatique n'est pas disponible pour toutes les conversations.";
 
 /* Header for automatic key verification */
-"SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_HEADER" = "Vérification automatique de la clé";
+"SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_HEADER" = "Vérification automatique des clés";
 
 /* Body for a sheet explaining that encryption auto-verification is not available. */
 "SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_NOT_AVAILABLE_SHEET_BODY" = "Signal ne peut vérifier automatiquement le chiffrement que lorsque vous avez initié la conversation via un numéro de téléphone. Si vous l'avez fait via un nom d'utilisateur ou un groupe en commun, vous devez vérifier le chiffrement de bout en bout manuellement. Il vous suffit de scanner le code QR qui s'affiche sur l'appareil de votre contact ou de comparer les chiffres de l'écran précédent avec ceux qui s'affichent sur le sien.";
@@ -8981,7 +8981,7 @@
 "SETTINGS_KEY_TRANSPARENCY_OPT_OUT_FOOTER" = "Lorsque cette option est activée, Signal tente de vérifier automatiquement le chiffrement des conversations individuelles.";
 
 /* Title for for a settings option describing that Key Transparency is enabled. */
-"SETTINGS_KEY_TRANSPARENCY_OPT_OUT_SWITCH_TITLE" = "Vérification automatique de la clé";
+"SETTINGS_KEY_TRANSPARENCY_OPT_OUT_SWITCH_TITLE" = "Vérification automatique des clés";
 
 /* No comment provided by engineer. */
 "SETTINGS_LEGAL_TERMS_CELL" = "Conditions générales et règles de confidentialité";
@@ -9101,7 +9101,7 @@
 "SETTINGS_NOTIFICATION_BADGE_COUNT" = "Pastille de notification";
 
 /* Explanation for the setting controlling whether the app icon badge counts unread messages or unread chats. */
-"SETTINGS_NOTIFICATION_BADGE_COUNT_FOOTER" = "Choisissez si vous voulez que la pastille indique le nombre de messages non lus ou de conversations non lues.";
+"SETTINGS_NOTIFICATION_BADGE_COUNT_FOOTER" = "Indiquez si vous préférez que la pastille affiche le nombre de messages non lus ou de conversations non lues.";
 
 /* A setting controlling whether muted conversations are shown in the badge count */
 "SETTINGS_NOTIFICATION_BADGE_COUNT_INCLUDES_MUTED_CONVERSATIONS" = "Inclure les conversations mises en sourdine";
@@ -9119,7 +9119,7 @@
 "SETTINGS_NOTIFICATION_CONTENT_TITLE" = "Contenu des notifications";
 
 /* When the local device discovers a contact has recently installed signal, the app can generates a message encouraging the local user to say hello. Turning this switch off disables that feature. */
-"SETTINGS_NOTIFICATION_EVENTS_CONTACT_JOINED_SIGNAL" = "Un contact rejoint Signal";
+"SETTINGS_NOTIFICATION_EVENTS_CONTACT_JOINED_SIGNAL" = "Quand un contact rejoint Signal";
 
 /* The title for the notification settings. */
 "SETTINGS_NOTIFICATIONS" = "Notifications";
