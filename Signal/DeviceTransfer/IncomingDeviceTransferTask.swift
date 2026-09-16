@@ -325,7 +325,9 @@ class IncomingDeviceTransferTask {
         // all data because it doesn't know for sure if the data was safely
         // received by the new device.
         do {
-            try session.send(message: DeviceTransfer.Message.done)
+            try await withCooperativeTimeout(seconds: 3) {
+                try session.send(message: DeviceTransfer.Message.done)
+            }
         } catch {
             owsFailDebug("Failed to send done message to old device \(error)")
         }

@@ -195,7 +195,11 @@ class OutgoingDeviceTransferTask {
         // and allows the user to re-register on the old device and try the transfer again before anything
         // destructive happens on the old device.
         await db.awaitableWrite { tx in
-            self.registrationStateChangeManager.setIsDeregisteredOrDelinked(true, notify: true, tx: tx)
+            self.registrationStateChangeManager.setIsDeregisteredOrDelinked(
+                true,
+                notify: false,
+                tx: tx,
+            )
         }
 
         logger.info("Finished sending files to new device")
