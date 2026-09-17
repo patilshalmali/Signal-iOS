@@ -251,6 +251,14 @@ public class CVAudioPlayer: NSObject {
         audioPlayback.stop()
         self.audioPlayback = nil
     }
+    
+    //pause all function
+    public func pauseAll() {
+        guard let audioPlayback = self.audioPlayback else {
+            return
+        }
+        audioPlayback.pause()
+    }
 }
 
 extension CVAudioPlayer: AudioPlayerDelegate {
@@ -400,6 +408,12 @@ private class CVAudioPlayback: NSObject, AudioPlayerDelegate {
 
     deinit {
         stop()
+    }
+    
+    fileprivate func pause() {
+        AssertIsOnMainThread()
+        
+        audioPlayer.pause()
     }
 
     fileprivate func stop() {
