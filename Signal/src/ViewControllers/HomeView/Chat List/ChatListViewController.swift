@@ -1452,7 +1452,7 @@ extension ChatListViewController {
                     if LocalFileBackupStore().shouldOverrideShowLocalBackupsOnboarding(tx: tx) {
                         return false
                     }
-                    return LocalFileBackupStore().haveLocalBackupsEverBeenEnabled(tx: tx)
+                    return LocalFileBackupStore().localBackupsEnabled(tx: tx)
                 }
 
                 backupSettingsVC = BackupOnboardingCoordinator(
