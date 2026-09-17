@@ -1359,7 +1359,7 @@ public class BackupArchiveManagerImpl: BackupArchiveManager {
                             try await localFileBackupManager.restoreLocalFileBackupAttachments()
                         } catch LocalFileBackupError.unableToAccessLocalFile(let reason) {
                             switch reason {
-                            case .stale, .missing, .failedToResolveBookmark:
+                            case .stale, .missing, .failedToResolveBookmark, .trashed:
                                 logger.error("Unable to restore local file backup attachments (\(reason))")
                                 await db.awaitableWrite { tx in
                                     // Prompt the user to pick a new backup location.

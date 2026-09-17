@@ -12,6 +12,7 @@ public enum LocalFileBackupError: Error {
         case missing
         case noAccess
         case failedToResolveBookmark(Error)
+        case trashed
     }
 
     case unableToAccessLocalFile(AccessFailureReason)
@@ -732,6 +733,10 @@ public class LocalFileBackupManager: NSObject, UIDocumentPickerDelegate {
 
         if isStale {
             throw LocalFileBackupError.unableToAccessLocalFile(.stale)
+        }
+
+        if resolvedURL.pathComponents.contains(".Trash") {
+            throw LocalFileBackupError.unableToAccessLocalFile(.trashed)
         }
 
         return resolvedURL

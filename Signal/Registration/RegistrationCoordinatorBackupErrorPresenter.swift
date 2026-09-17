@@ -85,7 +85,7 @@ public class RegistrationCoordinatorBackupErrorPresenterImpl:
             }
         case LocalFileBackupError.unableToAccessLocalFile(let reason):
             switch reason {
-            case .missing, .stale, .failedToResolveBookmark:
+            case .missing, .stale, .failedToResolveBookmark, .trashed:
                 return .missingLocalFileBackupLocation
             case .noAccess:
                 Logger.error("No access to local file backup location")
