@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 //
 
+import AppIntents
 import CryptoKit
 import GRDB
 import Intents
@@ -134,6 +135,9 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         // This should be the first thing we do.
         let mainAppContext = MainAppContext()
         SetCurrentAppContext(mainAppContext, isRunningTests: false)
+        if #available(iOS 16.0, *) {
+            SignalShortcutsProvider.updateAppShortcutParameters()
+        }
 
         let debugLogger = DebugLogger.shared
         debugLogger.enableTTYLoggingIfNeeded()

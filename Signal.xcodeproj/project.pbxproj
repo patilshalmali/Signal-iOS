@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFA100052C8511E000000001 /* AppIntentsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA100042C8511E000000001 /* AppIntentsTest.swift */; };
+		BFA100022C8511E000000001 /* SignalAppIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA100012C8511E000000001 /* SignalAppIntents.swift */; };
 		040277FA303DCFA6009C1468 /* LocalFileBackupAttachmentRestoreProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040277F9303DCF9B009C1468 /* LocalFileBackupAttachmentRestoreProgress.swift */; };
 		040277FE303DE4F2009C1468 /* ChatListViewController+LocalFileBackupRestoreProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040277FD303DE4F2009C1468 /* ChatListViewController+LocalFileBackupRestoreProgressView.swift */; };
 		040506F82F7EEF3B0078B769 /* RemoteReleaseNotesFetchingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040506F72F7EEF290078B769 /* RemoteReleaseNotesFetchingManager.swift */; };
@@ -4258,6 +4260,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BFA100042C8511E000000001 /* AppIntentsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntentsTest.swift; sourceTree = "<group>"; };
+		BFA100012C8511E000000001 /* SignalAppIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalAppIntents.swift; sourceTree = "<group>"; };
 		040277F9303DCF9B009C1468 /* LocalFileBackupAttachmentRestoreProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileBackupAttachmentRestoreProgress.swift; sourceTree = "<group>"; };
 		040277FD303DE4F2009C1468 /* ChatListViewController+LocalFileBackupRestoreProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatListViewController+LocalFileBackupRestoreProgressView.swift"; sourceTree = "<group>"; };
 		040506F72F7EEF290078B769 /* RemoteReleaseNotesFetchingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteReleaseNotesFetchingManager.swift; sourceTree = "<group>"; };
@@ -8665,6 +8669,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BFA100032C8511E000000001 /* AppIntents */ = {
+			isa = PBXGroup;
+			children = (
+				BFA100012C8511E000000001 /* SignalAppIntents.swift */,
+			);
+			path = AppIntents;
+			sourceTree = "<group>";
+		};
 		040507132F80639B0078B769 /* RemoteReleaseNotes */ = {
 			isa = PBXGroup;
 			children = (
@@ -11917,6 +11929,7 @@
 				34B3F8951E8DF1B90035BE1A /* ViewControllers */,
 				34BEDB0F21C41E71007B0EAE /* views */,
 				F9B93CDF28E246D900B3F8A0 /* AppDelegateTest.swift */,
+				BFA100042C8511E000000001 /* AppIntentsTest.swift */,
 				4C83AC4123C55D9C00D4F2E6 /* SignalBaseTest.swift */,
 			);
 			path = test;
@@ -12324,6 +12337,7 @@
 			children = (
 				F94D12FD28BD0DD900B2C478 /* Accessibility */,
 				B91751C52EC552B100FF7A9C /* AppIcons */,
+				BFA100032C8511E000000001 /* AppIntents */,
 				5045F44129E0DAA400058E5F /* AppLaunch */,
 				661AEE462C2088DF0046B1D8 /* Attachments */,
 				D9EB00702FE0730700F81AD0 /* Autofill */,
@@ -19152,6 +19166,7 @@
 				886BB3D325BA0CA400079781 /* SetWallpaperViewController.swift in Sources */,
 				F915A77029CB6D4C00EB6F68 /* ShareActivityUtil.swift in Sources */,
 				880D90302481E617003D2B14 /* SignalApp.swift in Sources */,
+				BFA100022C8511E000000001 /* SignalAppIntents.swift in Sources */,
 				50C861E62EC52CA90001A4FA /* SignalAttachmentCloner.swift in Sources */,
 				D9E43C2D2CC194140001536E /* SignalCall.swift in Sources */,
 				8822558D26B9D1D7001A33C4 /* SignalDotMePhoneNumberLink.swift in Sources */,
@@ -19257,6 +19272,7 @@
 			files = (
 				6675F65129261E0C007A311E /* APNSRotationStoreTest.swift in Sources */,
 				F9B93CE028E246D900B3F8A0 /* AppDelegateTest.swift in Sources */,
+				BFA100052C8511E000000001 /* AppIntentsTest.swift in Sources */,
 				F9B3A92F293554090071EB95 /* ASWebAuthenticationSessionUtilTest.swift in Sources */,
 				50B6BCB42AEC58250010FB3B /* AuthorMergeHelperBuilderTest.swift in Sources */,
 				D962FC432E149ECF004DB623 /* BackupAttachmentDownloadTrackerTest.swift in Sources */,

@@ -76,6 +76,33 @@ class ScreenLockUI {
         }
     }
 
+    @MainActor
+    var isLockedForAppIntents: Bool {
+        guard appReadiness.isAppReady else {
+            return true
+        }
+        guard ScreenLock.shared.isScreenLockEnabled() else {
+            return false
+        }
+        guard !isScreenLockLocked else {
+            return true
+        }
+        guard !CurrentAppContext().isMainAppAndActiveIsolated else {
+            return false
+        }
+        guard let screenLockCountdownTimestamp else {
+            return true
+        }
+
+        let currentTimestamp = monotonicTimestamp()
+        guard currentTimestamp >= screenLockCountdownTimestamp, currentTimestamp != 0 else {
+            return true
+        }
+
+        let elapsed = TimeInterval(currentTimestamp - screenLockCountdownTimestamp) / TimeInterval(NSEC_PER_SEC)
+        return elapsed >= ScreenLock.shared.screenLockTimeout()
+    }
+
     struct ScreenUnlockActionReplacedError: Error {}
 
     private var pendingScreenUnlockContinuation: CheckedContinuation<Void, Error>?
