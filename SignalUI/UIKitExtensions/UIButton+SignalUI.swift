@@ -363,6 +363,9 @@ public extension UIBarButtonItem {
     ) -> UIBarButtonItem {
         let item = button(title: title, action: action)
         item.style = prominentBarButtonItemStyle
+        if #available(iOS 26, *) {
+            item.tintColor = .Signal.accent
+        }
         return item
     }
 
@@ -384,6 +387,9 @@ public extension UIBarButtonItem {
         let item = UIBarButtonItem(primaryAction: UIAction(image: image) { _ in action() })
         if isProminent {
             item.style = prominentBarButtonItemStyle
+            if #available(iOS 26, *) {
+                item.tintColor = .Signal.accent
+            }
         }
         return item
     }
@@ -401,7 +407,11 @@ public extension UIBarButtonItem {
         _ systemItem: UIBarButtonItem.SystemItem,
         action: @escaping () -> Void,
     ) -> UIBarButtonItem {
-        UIBarButtonItem(systemItem: systemItem, primaryAction: UIAction { _ in action() })
+        let item = UIBarButtonItem(systemItem: systemItem, primaryAction: UIAction { _ in action() })
+        if #available(iOS 26, *), item.style == .prominent {
+            item.tintColor = .Signal.accent
+        }
+        return item
     }
 
     /// Creates a "Cancel" bar button which performs the action in the provided closure.
