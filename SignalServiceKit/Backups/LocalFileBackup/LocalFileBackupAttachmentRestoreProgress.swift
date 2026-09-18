@@ -64,11 +64,13 @@ public class LocalFileBackupAttachmentRestoreProgress {
     }
 
     public func didFinish() {
-        state.update { _state in
-            _state.source?.complete()
+        let completeProgress: OWSProgress? = state.update { _state in
             _state.sink = nil
             _state.source = nil
+            guard let total = _state.latestProgress?.totalUnitCount else { return nil }
+            return OWSProgress(completedUnitCount: total, totalUnitCount: total)
         }
+        if let completeProgress { update(completeProgress) }
     }
 
     private func update(_ progress: OWSProgress) {
