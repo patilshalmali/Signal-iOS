@@ -162,6 +162,7 @@ class OutgoingDeviceRestoreViewModel: ObservableObject {
             throw OWSAssertionError("Transfer started before negotiating connection")
         }
         defer {
+            messagePipelineSupervisor.unsuspendMessageProcessing(for: .deviceTransfer)
             Task {
                 await stopListeningForTransfer(error: nil)
             }
