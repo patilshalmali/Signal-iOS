@@ -2132,19 +2132,19 @@
 "CHAT_LIST_FILTERED_BY_UNREAD_CLEAR_BUTTON" = "فیلترشده بر اساس خوانده‌نشده‌ها";
 
 /* Title shown on chat list banner for restoring media from a backup is finished */
-"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_FINISHED_TITLE" = "Restore Complete";
+"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_FINISHED_TITLE" = "بازیابی کامل شد";
 
 /* Progress label showing bytes restored from an on-device backup. Embeds {{ %1$@ formatted bytes restored, %2$@ formatted total bytes to restore }}. */
 "CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_PROGRESS_FORMAT" = "%1$@ از %2$@";
 
 /* Title shown on the chat list banner while restoring attachments from an on-device backup. */
-"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_TITLE" = "Restoring on-device backup";
+"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_TITLE" = "بازیابی نسخه پشتیبان روی دستگاه";
 
 /* Progress label showing the amount uploaded out of the total. Embeds {{ %1$@ bytes uploaded, %2$@ total bytes to upload }}. */
 "CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_FORMAT" = "%1$@ از %2$@";
 
 /* Title label shown in the chat list backup progress view while backup attachments are being uploaded. */
-"CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_TITLE" = "Creating on-device backup";
+"CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_TITLE" = "در حال ایجاد نسخه پشتیبان روی دستگاه";
 
 /* Title label shown in the chat list local file backup progress view while the attachments are being prepared */
 "CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_ATTACHMENTS" = "در حال آماده‌سازی پیوست‌ها";
@@ -3185,7 +3185,7 @@
 "DEVICE_TRANSFER_RECEIVING_TITLE" = "در حال دریافت داده";
 
 /* Description in the progress view displayed during device transfer finalization. */
-"DEVICE_TRANSFER_STATUS_DEVICE_FINISHING" = "Finalizing transfer…";
+"DEVICE_TRANSFER_STATUS_DEVICE_FINISHING" = "در حال نهایی‌سازی انتقال…";
 
 /* Status message on new device when cancelling transfer. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CANCELLING" = "در حال لغو اتصال به آیفون قدیمی…";
@@ -3257,7 +3257,7 @@
 "DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "روی «جفت‌سازی با دستگاه جدید» در زیر ضربه بزنید";
 
 /* Label for a toast that confirms that local backups are disabled. */
-"DISABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "On-device backups are disabled. Turn backups on in Settings";
+"DISABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "پشتیبان‌گیری روی دستگاه غیرفعال است. در «تنظیمات»، پشتیبان‌گیری را روشن کنید";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "پیام‌های ناپدید شونده";
@@ -3788,7 +3788,7 @@
 "EMPTY_CONTACTS_LABEL_LINE2" = "چرا از کسی دعوت نمی‌کنید؟";
 
 /* Label for a toast that confirms that local backups are enabled. */
-"ENABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "On-device backups enabled";
+"ENABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "پشتیبان‌گیری روی دستگاه فعال شد";
 
 /* Call setup status label */
 "END_CALL_RESPONDER_IS_BUSY" = "مشغول";
@@ -5486,7 +5486,7 @@
 "LOADING_VIEW_CONTROLLER_DONT_CLOSE_APP" = "سیگنال را نبندید.";
 
 /* Body for a sheet warning users about creating a new Recovery Key. */
-"LOCAL_BACKUP_SETTINGS_CREATE_NEW_KEY_WARNING_SHEET_BODY" = "Creating a new key is only necessary if someone else knows your key. On-Device Backups must first be disabled to create a new key.\n\nAfter disabling On-Device Backups and creating a new key, you will need to re-enable On-Device Backups.";
+"LOCAL_BACKUP_SETTINGS_CREATE_NEW_KEY_WARNING_SHEET_BODY" = "ایجاد رمز جدید فقط در صورتی ضروری است که شخص دیگری رمز شما را بداند. برای ایجاد رمز جدید، ابتدا نسخه‌های پشتیبان روی دستگاه باید غیرفعال شوند.\n\nبعد از غیرفعال‌سازی نسخه‌های پشتیبان روی دستگاه و ایجاد رمز جدید، باید نسخه‌های پشتیبان روی دستگاهتان را دوباره فعال کنید.";
 
 /* Body for an error sheet shown when the user's folder choice does not contain a backup file. */
 "LOCAL_BACKUPS_MISSING_BACKUP_ACTION_SHEET_BODY" = "هیچ نسخه پشتیبانی در پوشه انتخابی پیدا نشد. لطفاً پوشه دیگری امتحان کنید.";
@@ -7985,10 +7985,10 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_TITLE" = "نسخه پشتیبان پیدا نشد";
 
 /* Message for a sheet warning users about an invalid local backup location */
-"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_MESSAGE" = "Your on-device backup can’t be restored. This may be because you moved or deleted your backup folder.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_MESSAGE" = "نسخه پشتیبان روی دستگاهتان قابل بازیابی نیست. شاید به این دلیل باشد که پوشه پشتیبان خود را جابه‌جا یا حذف کرده‌اید.";
 
 /* Title for a sheet warning users about an invalid local backup location */
-"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_TITLE" = "Can’t Restore Backup";
+"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_TITLE" = "نسخه پشتیبان بازیابی نشد";
 
 /* Body for a sheet warning users about a network error during backup restore. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_NETWORK_BODY" = "نسخه پشتیبان شما اکنون قابل بازیابی نیست. اتصال اینترنت خود را بررسی و دوباره امتحان کنید.";
@@ -8273,16 +8273,16 @@
 "RESET" = "بازنشانی";
 
 /* Button on a sheet prompting the user to pick a folder on their device where on-device backups will be saved */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_CHOOSE_FOLDER_BUTTON" = "Choose Folder";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_CHOOSE_FOLDER_BUTTON" = "انتخاب پوشه";
 
 /* Button for a sheet asking the user if they want to disable local backups */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_DISABLE_BUTTON" = "Disable Backups";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_DISABLE_BUTTON" = "غیرفعال‌سازی پشتیبان‌گیری";
 
 /* Message for a sheet asking the user if they want to enable local file backups. */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_MESSAGE" = "To continue using on-device backups, choose a folder on your device where new backups will be saved.";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_MESSAGE" = "برای ادامه استفاده از پشتیبان‌گیری در دستگاه، پوشه‌ای در دستگاهتان انتخاب کنید تا نسخه‌های پشتیبان جدید در آن ذخیره شوند.";
 
 /* Title for a sheet asking the user if they want to enable local file backups. */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_TITLE" = "Restore complete";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_TITLE" = "بازیابی کامل شد";
 
 /* Body for a sheet allowing users to cancel an in-progress media restore. */
 "RESTORING_MEDIA_BANNER_CANCEL_RESTORE_SHEET_1_BODY" = "بازیابی رسانه شما تکمیل نشده است. اگر لغو را انتخاب کنید، می‌توانید با اتصال مجدد این دستگاه، دوباره بازیابی را انجام دهید.";
@@ -8375,7 +8375,7 @@
 "RING_ON_CONFIRMATION_TOAST_LABEL" = "زنگ روشن است";
 
 /* Message shown in an action sheet when attempting to disable PIN, but Backups is enabled. */
-"ROTATE_AEP_ACTION_BACKUPS_DISABLE_REQUIRED" = "You must disable Signal Secure Backups before proceeding.";
+"ROTATE_AEP_ACTION_BACKUPS_DISABLE_REQUIRED" = "قبل از ادامه، باید «پشتیبان‌گیری امن سیگنال» را غیرفعال کنید.";
 
 /* button title to confirm adding a recipient when their safety number has recently changed */
 "SAFETY_NUMBER_CHANGED_CONFIRM_ADD_MEMBER_ACTION" = "به هر حال اضافه شود";
@@ -9050,7 +9050,7 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_LOCAL_BACKUP_IN_PROGRESS_MESSAGE" = "انجام پشتیبان‌گیری امن سیگنال امکان‌پذیر نیست زیرا پشتیبان‌گیری روی دستگاه در حال انجام است. بعداً دوباره امتحان کنید.";
 
 /* Label for a progress bar while attachments are being copied for an on-device backup. Embeds 1:{{%1$@ completed bytes copied, %2$@ total bytes to copy, %3$@ percentage complete }}. */
-"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS" = "Creating on-device backup %1$@ of %2$@ (%3$@)";
+"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS" = "در حال ایجاد نسخه پشتیبان روی دستگاه %1$@ از %2$@ (%3$@)";
 
 /* Label for a progress bar while the attachments are being prepared for an on-device backup. Embeds 1:{{ percentage complete }}. */
 "SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_ATTACHMENTS" = "در حال آماده‌سازی پیوست‌ها (%1$@)";
@@ -9059,7 +9059,7 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_BACKUP" = "در حال آماده‌سازی نسخه پشتیبان (%1$@)";
 
 /* Label for a progress bar while attachments are being restored for an on-device backup. Embeds {{%1$@ completed bytes restored, %2$@ total bytes to restore  }}. */
-"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_RESTORING_ATTACHMENTS" = "Restoring on-device backup (%1$@ of %2$@)";
+"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_RESTORING_ATTACHMENTS" = "در حال بازیابی نسخه پشتیبان روی دستگاه (%1$@ از %2$@)";
 
 /* Message for an action sheet when a user cannot perform a local backup because a remote backup is in progress */
 "SETTINGS_LOCAL_FILE_BACKUPS_REMOTE_BACKUP_IN_PROGRESS_MESSAGE" = "انجام پشتیبان‌گیری روی دستگاه امکان‌پذیر نیست زیرا پشتیبان‌گیری امن سیگنال در حال انجام است. بعداً دوباره امتحان کنید.";
@@ -9083,10 +9083,10 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_MESSAGE_FORMAT" = "به‌دلیل بروز خطا، نسخه پشتیبان حذف نشد. باید پوشه را به‌صورت دستی حذف کنید. در برنامه فایل‌ها، به «‎%1$@» بروید و پوشه و محتویات آن را به صورت دستی حذف کنید. هیچ نسخه پشتیبان جدیدی ایجاد نخواهد شد.";
 
 /* Message shown on an action sheet when a user's backup fails to delete because the file isn't found. */
-"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_MESSAGE" = "We couldn't confirm your backup was deleted due to an error. This may be because you renamed or moved the folder. In the Files app, manually delete the folder and its contents. No new backups will be created.";
+"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_MESSAGE" = "به‌دلیل بروز خطا، نتوانستیم حذف نسخه پشتیبان شما را تأیید کنیم. شاید به این دلیل باشد که نام پوشه را تغییر داده یا آن را جابه‌جا کرده‌اید. در برنامه فایل‌ها، پوشه و محتویات آن را به‌صورت دستی حذف کنید. هیچ نسخه پشتیبان جدیدی ایجاد نخواهد شد.";
 
 /* Title shown on an action sheet when a user's backup fails to delete because the file isn't found */
-"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_TITLE" = "Couldn’t Confirm Deletion";
+"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_TITLE" = "حذف تأیید نشد";
 
 /* Title shown on an action sheet when a user's backup fails to delete */
 "SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_TITLE" = "نسخه پشتیبان حذف نشد";

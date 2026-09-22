@@ -2132,19 +2132,19 @@
 "CHAT_LIST_FILTERED_BY_UNREAD_CLEAR_BUTTON" = "ન વાંચેલા અનુસાર ફિલ્ટર કરેલ";
 
 /* Title shown on chat list banner for restoring media from a backup is finished */
-"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_FINISHED_TITLE" = "Restore Complete";
+"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_FINISHED_TITLE" = "રિસ્ટોર પૂર્ણ થયું";
 
 /* Progress label showing bytes restored from an on-device backup. Embeds {{ %1$@ formatted bytes restored, %2$@ formatted total bytes to restore }}. */
 "CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_PROGRESS_FORMAT" = "%2$@માંથી %1$@";
 
 /* Title shown on the chat list banner while restoring attachments from an on-device backup. */
-"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_TITLE" = "Restoring on-device backup";
+"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_TITLE" = "ઓન-ડિવાઇસ બેકઅપ રિસ્ટોર થાય છે";
 
 /* Progress label showing the amount uploaded out of the total. Embeds {{ %1$@ bytes uploaded, %2$@ total bytes to upload }}. */
 "CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_FORMAT" = "%2$@માંથી %1$@";
 
 /* Title label shown in the chat list backup progress view while backup attachments are being uploaded. */
-"CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_TITLE" = "Creating on-device backup";
+"CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_TITLE" = "ઓન-ડિવાઇસ બેકઅપ બનાવી રહ્યા છીએ";
 
 /* Title label shown in the chat list local file backup progress view while the attachments are being prepared */
 "CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_ATTACHMENTS" = "જોડાણો તૈયાર થાય છે";
@@ -3185,7 +3185,7 @@
 "DEVICE_TRANSFER_RECEIVING_TITLE" = "ડેટા પ્રાપ્ત કરવો";
 
 /* Description in the progress view displayed during device transfer finalization. */
-"DEVICE_TRANSFER_STATUS_DEVICE_FINISHING" = "Finalizing transfer…";
+"DEVICE_TRANSFER_STATUS_DEVICE_FINISHING" = "ટ્રાન્સફર પૂરું થઈ રહ્યું છે…";
 
 /* Status message on new device when cancelling transfer. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CANCELLING" = "નવા iPhone સાથે કનેક્શન રદ કરી રહ્યાં છીએ…";
@@ -3257,7 +3257,7 @@
 "DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "નીચે \"નવા ડિવાઇસ સાથે પેર કરો\" ટેપ કરો";
 
 /* Label for a toast that confirms that local backups are disabled. */
-"DISABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "On-device backups are disabled. Turn backups on in Settings";
+"DISABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "ઓન-ડિવાઇસ બેકઅપ બંધ છે. સેટિંગ્સમાં બેકઅપ ચાલુ કરો";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "અદૃશ્ય થઈ રહેલા મેસેજ";
@@ -3788,7 +3788,7 @@
 "EMPTY_CONTACTS_LABEL_LINE2" = "તમે કેમ કોઈને આમંત્રણ આપતા નથી?";
 
 /* Label for a toast that confirms that local backups are enabled. */
-"ENABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "On-device backups enabled";
+"ENABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "ઓન-ડિવાઇસ બેકઅપ ચાલુ કર્યું";
 
 /* Call setup status label */
 "END_CALL_RESPONDER_IS_BUSY" = "વ્યસ્ત";
@@ -5486,7 +5486,7 @@
 "LOADING_VIEW_CONTROLLER_DONT_CLOSE_APP" = "Signal બંધ કરશો નહીં.";
 
 /* Body for a sheet warning users about creating a new Recovery Key. */
-"LOCAL_BACKUP_SETTINGS_CREATE_NEW_KEY_WARNING_SHEET_BODY" = "Creating a new key is only necessary if someone else knows your key. On-Device Backups must first be disabled to create a new key.\n\nAfter disabling On-Device Backups and creating a new key, you will need to re-enable On-Device Backups.";
+"LOCAL_BACKUP_SETTINGS_CREATE_NEW_KEY_WARNING_SHEET_BODY" = "જો કોઈ બીજાને તમારી કી ખબર પડી ગઈ હોય તો જ નવી કી બનાવવી જરૂરી છે. નવી કી બનાવવા માટે ઓન-ડિવાઇસ બેકઅપ પહેલા અક્ષમ હોવા જોઈએ.\n\nઓન-ડિવાઇસ અક્ષમ કર્યા પછી અને નવી કી બનાવ્યા પછી, તમારે ઓન-ડિવાઇસ બેકઅપને ફરીથી સક્ષમ કરવાની જરૂર પડશે.";
 
 /* Body for an error sheet shown when the user's folder choice does not contain a backup file. */
 "LOCAL_BACKUPS_MISSING_BACKUP_ACTION_SHEET_BODY" = "પસંદ કરેલા ફોલ્ડરમાં કોઈ Signal બેકઅપ મળ્યું નથી. કૃપા કરીને કોઈ અલગ ફોલ્ડર પસંદ કરો.";
@@ -7985,10 +7985,10 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_TITLE" = "બેકઅપ શોધી શકાતું નથી";
 
 /* Message for a sheet warning users about an invalid local backup location */
-"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_MESSAGE" = "Your on-device backup can’t be restored. This may be because you moved or deleted your backup folder.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_MESSAGE" = "તમારું ઓન-ડિવાઇસ બેકઅપ રિસ્ટોર થઈ શકતું નથી. તમે તમારું બેકઅપ ફોલ્ડર ખસેડયું અથવા ડિલીટ કર્યું હોય તો આવું બની શકે છે.";
 
 /* Title for a sheet warning users about an invalid local backup location */
-"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_TITLE" = "Can’t Restore Backup";
+"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_TITLE" = "બેકઅપ રિસ્ટોર કરી શકતા નથી";
 
 /* Body for a sheet warning users about a network error during backup restore. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_NETWORK_BODY" = "તમારું બેકઅપ હમણાં રિસ્ટોર કરી શકાતું નથી. તમારું ઇન્ટરનેટ તપાસો અને ફરી પ્રયાસ કરો.";
@@ -8273,16 +8273,16 @@
 "RESET" = "ફરીથી સેટ કરો";
 
 /* Button on a sheet prompting the user to pick a folder on their device where on-device backups will be saved */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_CHOOSE_FOLDER_BUTTON" = "Choose Folder";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_CHOOSE_FOLDER_BUTTON" = "ફોલ્ડર પસંદ કરો";
 
 /* Button for a sheet asking the user if they want to disable local backups */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_DISABLE_BUTTON" = "Disable Backups";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_DISABLE_BUTTON" = "બેકઅપ અક્ષમ કરો";
 
 /* Message for a sheet asking the user if they want to enable local file backups. */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_MESSAGE" = "To continue using on-device backups, choose a folder on your device where new backups will be saved.";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_MESSAGE" = "ઓન-ડિવાઇસ બેકઅપનો ઉપયોગ કરવાનું ચાલુ રાખવા માટે, તમારા ડિવાઇસ પરનું એ ફોલ્ડર પસંદ કરો જ્યાં નવા બેકઅપ સેવ કરવામાં આવશે.";
 
 /* Title for a sheet asking the user if they want to enable local file backups. */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_TITLE" = "Restore complete";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_TITLE" = "રિસ્ટોર પૂર્ણ થયું";
 
 /* Body for a sheet allowing users to cancel an in-progress media restore. */
 "RESTORING_MEDIA_BANNER_CANCEL_RESTORE_SHEET_1_BODY" = "તમારા મીડિયા રિસ્ટોર કરવાનું પૂર્ણ થયું નથી. જો તમે રદ કરવાનું પસંદ કરો છો, તો તમે આ ડિવાઇસને ફરીથી લિંક કરીને ફરીથી રિસ્ટોર કરી શકો છો.";
@@ -8375,7 +8375,7 @@
 "RING_ON_CONFIRMATION_TOAST_LABEL" = "રિંગ ચાલુ";
 
 /* Message shown in an action sheet when attempting to disable PIN, but Backups is enabled. */
-"ROTATE_AEP_ACTION_BACKUPS_DISABLE_REQUIRED" = "You must disable Signal Secure Backups before proceeding.";
+"ROTATE_AEP_ACTION_BACKUPS_DISABLE_REQUIRED" = "આગળ વધતા પહેલાં તમારે Signal સુરક્ષિત બેકઅપને અક્ષમ કરવું આવશ્યક છે.";
 
 /* button title to confirm adding a recipient when their safety number has recently changed */
 "SAFETY_NUMBER_CHANGED_CONFIRM_ADD_MEMBER_ACTION" = "કોઈપણ રીતે મોકલો";
@@ -9050,7 +9050,7 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_LOCAL_BACKUP_IN_PROGRESS_MESSAGE" = "ઓન-ડિવાઇસ બેકઅપની પ્રગતિ ચાલુ હોય ત્યારે Signal સુરક્ષિત બેકઅપ કરી શકતા નથી. પછી ફરી પ્રયાસ કરો.";
 
 /* Label for a progress bar while attachments are being copied for an on-device backup. Embeds 1:{{%1$@ completed bytes copied, %2$@ total bytes to copy, %3$@ percentage complete }}. */
-"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS" = "Creating on-device backup %1$@ of %2$@ (%3$@)";
+"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS" = "%2$@માંથી %1$@ (%3$@) ઓન-ડિવાઇસ બેકઅપ બનાવી રહ્યા છીએ";
 
 /* Label for a progress bar while the attachments are being prepared for an on-device backup. Embeds 1:{{ percentage complete }}. */
 "SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_ATTACHMENTS" = "જોડાણ તૈયાર થાય છે (%1$@)";
@@ -9059,7 +9059,7 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_BACKUP" = "બેકઅપ તૈયાર કરી રહ્યા છીએ (%1$@)";
 
 /* Label for a progress bar while attachments are being restored for an on-device backup. Embeds {{%1$@ completed bytes restored, %2$@ total bytes to restore  }}. */
-"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_RESTORING_ATTACHMENTS" = "Restoring on-device backup (%1$@ of %2$@)";
+"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_RESTORING_ATTACHMENTS" = "ઓન-ડિવાઇસ બેકઅપ રિસ્ટોર થાય છે (%2$@માંથી %1$@)";
 
 /* Message for an action sheet when a user cannot perform a local backup because a remote backup is in progress */
 "SETTINGS_LOCAL_FILE_BACKUPS_REMOTE_BACKUP_IN_PROGRESS_MESSAGE" = "Signal સુરક્ષિત બેકઅપની પ્રગતિ ચાલુ હોય ત્યારે ઓન-ડિવાઇસ બેકઅપ કરી શકતા નથી. પછી ફરી પ્રયાસ કરો.";
@@ -9083,10 +9083,10 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_MESSAGE_FORMAT" = "એક એરરને કારણે તમારા બેકઅપને ડિલીટ કરી શક્યા નથી. તમારે ફોલ્ડરને જાતે ડિલીટ કરવું પડશે. Files ઍપમાં, “%1$@” પર જાઓ અને ફોલ્ડર અને તેમાં રહેલ વસ્તુઓને જાતે ડિલીટ કરો. કોઈ નવા બેકઅપ બનાવવામાં આવશે નહીં.";
 
 /* Message shown on an action sheet when a user's backup fails to delete because the file isn't found. */
-"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_MESSAGE" = "We couldn't confirm your backup was deleted due to an error. This may be because you renamed or moved the folder. In the Files app, manually delete the folder and its contents. No new backups will be created.";
+"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_MESSAGE" = "એક એરરને કારણે તમારા બેકઅપને ડિલીટ કરી શક્યા નથી. તમે ફોલ્ડરનું નામ બદલ્યું હોય કે તેને ખસેડયું હોય તો આવું બની શકે. Files ઍપમાં, ફોલ્ડર અને તેમાં રહેલ વસ્તુઓને જાતે ડિલીટ કરો. કોઈ નવા બેકઅપ બનાવવામાં આવશે નહીં.";
 
 /* Title shown on an action sheet when a user's backup fails to delete because the file isn't found */
-"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_TITLE" = "Couldn’t Confirm Deletion";
+"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_TITLE" = "ડિલીટ કરવાની ખાતરી કરી શક્યા નહીં";
 
 /* Title shown on an action sheet when a user's backup fails to delete */
 "SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_TITLE" = "બેકઅપ ડિલીટ ન કરી શક્યા";

@@ -2132,19 +2132,19 @@
 "CHAT_LIST_FILTERED_BY_UNREAD_CLEAR_BUTTON" = "מסונן לפי צ׳אטים שלא נקראו";
 
 /* Title shown on chat list banner for restoring media from a backup is finished */
-"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_FINISHED_TITLE" = "Restore Complete";
+"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_FINISHED_TITLE" = "שחזור הושלם";
 
 /* Progress label showing bytes restored from an on-device backup. Embeds {{ %1$@ formatted bytes restored, %2$@ formatted total bytes to restore }}. */
 "CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_PROGRESS_FORMAT" = "%1$@ מתוך %2$@";
 
 /* Title shown on the chat list banner while restoring attachments from an on-device backup. */
-"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_TITLE" = "Restoring on-device backup";
+"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_TITLE" = "גיבוי במכשיר בשחזור";
 
 /* Progress label showing the amount uploaded out of the total. Embeds {{ %1$@ bytes uploaded, %2$@ total bytes to upload }}. */
 "CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_FORMAT" = "%1$@ מתוך %2$@";
 
 /* Title label shown in the chat list backup progress view while backup attachments are being uploaded. */
-"CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_TITLE" = "Creating on-device backup";
+"CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_TITLE" = "גיבוי במכשיר ביצירה";
 
 /* Title label shown in the chat list local file backup progress view while the attachments are being prepared */
 "CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_ATTACHMENTS" = "קבצים מצורפים בהכנה";
@@ -3185,7 +3185,7 @@
 "DEVICE_TRANSFER_RECEIVING_TITLE" = "מקבל נתונים";
 
 /* Description in the progress view displayed during device transfer finalization. */
-"DEVICE_TRANSFER_STATUS_DEVICE_FINISHING" = "Finalizing transfer…";
+"DEVICE_TRANSFER_STATUS_DEVICE_FINISHING" = "משלימים את ההעברה…";
 
 /* Status message on new device when cancelling transfer. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CANCELLING" = "מבטלים חיבור ל–iPhone ישן…";
@@ -3257,7 +3257,7 @@
 "DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "ללחוץ על ״צימוד עם מכשיר חדש״";
 
 /* Label for a toast that confirms that local backups are disabled. */
-"DISABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "On-device backups are disabled. Turn backups on in Settings";
+"DISABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "גיבויים במכשיר מושבתים. אפשר להפעיל גיבויים בהגדרות";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "הודעות נעלמות";
@@ -3788,7 +3788,7 @@
 "EMPTY_CONTACTS_LABEL_LINE2" = "למה אינך מזמין מישהו?";
 
 /* Label for a toast that confirms that local backups are enabled. */
-"ENABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "On-device backups enabled";
+"ENABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "גיבויים במכשיר מופעלים";
 
 /* Call setup status label */
 "END_CALL_RESPONDER_IS_BUSY" = "תפוס";
@@ -5486,7 +5486,7 @@
 "LOADING_VIEW_CONTROLLER_DONT_CLOSE_APP" = "אל תסגור Signal.";
 
 /* Body for a sheet warning users about creating a new Recovery Key. */
-"LOCAL_BACKUP_SETTINGS_CREATE_NEW_KEY_WARNING_SHEET_BODY" = "Creating a new key is only necessary if someone else knows your key. On-Device Backups must first be disabled to create a new key.\n\nAfter disabling On-Device Backups and creating a new key, you will need to re-enable On-Device Backups.";
+"LOCAL_BACKUP_SETTINGS_CREATE_NEW_KEY_WARNING_SHEET_BODY" = "יצירת מפתח חדש נחוצה רק אם מישהו אחר יודע את המפתח שלך. כדי ליצור מפתח חדש יש תחילה להשבית את הגיבויים במכשיר.\n\nלאחר השבתת הגיבויים במכשיר ויצירת מפתח חדש, יהיה עליך להפעיל מחדש גיבויים במכשיר.";
 
 /* Body for an error sheet shown when the user's folder choice does not contain a backup file. */
 "LOCAL_BACKUPS_MISSING_BACKUP_ACTION_SHEET_BODY" = "לא נמצא גיבוי של Signal בתיקייה שנבחרה. נא לנסות תיקייה אחרת.";
@@ -7985,10 +7985,10 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_TITLE" = "לא ניתן למצוא גיבוי";
 
 /* Message for a sheet warning users about an invalid local backup location */
-"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_MESSAGE" = "Your on-device backup can’t be restored. This may be because you moved or deleted your backup folder.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_MESSAGE" = "לא ניתן היה לשחזר את הגיבוי במכשיר שלך. ייתכן שזה בגלל שהעברת או מחקת את תיקיית הגיבוי שלך.";
 
 /* Title for a sheet warning users about an invalid local backup location */
-"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_TITLE" = "Can’t Restore Backup";
+"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_TITLE" = "לא ניתן לשחזר גיבוי";
 
 /* Body for a sheet warning users about a network error during backup restore. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_NETWORK_BODY" = "לא ניתן לשחזר את הגיבוי שלך כרגע. יש לבדוק את חיבור האינטרנט שלך ולנסות שוב.";
@@ -8273,16 +8273,16 @@
 "RESET" = "אפס";
 
 /* Button on a sheet prompting the user to pick a folder on their device where on-device backups will be saved */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_CHOOSE_FOLDER_BUTTON" = "Choose Folder";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_CHOOSE_FOLDER_BUTTON" = "בחר תיקייה";
 
 /* Button for a sheet asking the user if they want to disable local backups */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_DISABLE_BUTTON" = "Disable Backups";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_DISABLE_BUTTON" = "השבתת גיבויים";
 
 /* Message for a sheet asking the user if they want to enable local file backups. */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_MESSAGE" = "To continue using on-device backups, choose a folder on your device where new backups will be saved.";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_MESSAGE" = "כדי להמשיך להשתמש בגיבויים מקומיים במכשיר, צריך לבחור תיקיה במכשיר שלך שבה יישמרו הגיבויים החדשים.";
 
 /* Title for a sheet asking the user if they want to enable local file backups. */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_TITLE" = "Restore complete";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_TITLE" = "שחזור הושלם";
 
 /* Body for a sheet allowing users to cancel an in-progress media restore. */
 "RESTORING_MEDIA_BANNER_CANCEL_RESTORE_SHEET_1_BODY" = "שחזור המדיה שלך לא הושלם. אם תבחר/י לבטל, אפשר לבצע שחזור שוב באמצעות קישור מחדש של מכשיר זה.";
@@ -8375,7 +8375,7 @@
 "RING_ON_CONFIRMATION_TOAST_LABEL" = "צלצול מופעל";
 
 /* Message shown in an action sheet when attempting to disable PIN, but Backups is enabled. */
-"ROTATE_AEP_ACTION_BACKUPS_DISABLE_REQUIRED" = "You must disable Signal Secure Backups before proceeding.";
+"ROTATE_AEP_ACTION_BACKUPS_DISABLE_REQUIRED" = "יש להשבית גיבויי Signal מאובטחים לפני ההמשך.";
 
 /* button title to confirm adding a recipient when their safety number has recently changed */
 "SAFETY_NUMBER_CHANGED_CONFIRM_ADD_MEMBER_ACTION" = "להוסיף בכל זאת";
@@ -9050,7 +9050,7 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_LOCAL_BACKUP_IN_PROGRESS_MESSAGE" = "לא ניתן לבצע גיבוי Signal מאובטח כי גיבוי במכשיר נמצא כרגע בתהליך. יש לנסות שוב מאוחר יותר.";
 
 /* Label for a progress bar while attachments are being copied for an on-device backup. Embeds 1:{{%1$@ completed bytes copied, %2$@ total bytes to copy, %3$@ percentage complete }}. */
-"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS" = "Creating on-device backup %1$@ of %2$@ (%3$@)";
+"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS" = "גיבוי במכשיר ביצירה %1$@ מתוך %2$@ (%3$@)";
 
 /* Label for a progress bar while the attachments are being prepared for an on-device backup. Embeds 1:{{ percentage complete }}. */
 "SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_ATTACHMENTS" = "קבצים מצורפים בהכנה (%1$@)";
@@ -9059,7 +9059,7 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_BACKUP" = "גיבוי בהכנה (%1$@)";
 
 /* Label for a progress bar while attachments are being restored for an on-device backup. Embeds {{%1$@ completed bytes restored, %2$@ total bytes to restore  }}. */
-"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_RESTORING_ATTACHMENTS" = "Restoring on-device backup (%1$@ of %2$@)";
+"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_RESTORING_ATTACHMENTS" = "גיבוי במכשיר בשחזור (%1$@ מתוך %2$@)";
 
 /* Message for an action sheet when a user cannot perform a local backup because a remote backup is in progress */
 "SETTINGS_LOCAL_FILE_BACKUPS_REMOTE_BACKUP_IN_PROGRESS_MESSAGE" = "לא ניתן לבצע גיבוי במכשיר כי גיבוי Signal מאובטח נמצא כרגע בתהליך. יש לנסות שוב מאוחר יותר.";
@@ -9083,10 +9083,10 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_MESSAGE_FORMAT" = "לא ניתן היה למחוק את הגיבוי שלך עקב שגיאה. צריך למחוק את התיקייה באופן ידני. באפליקציית הקבצים, יש לעבור אל ״%1$@״ ולמחוק באופן ידני את התיקייה ואת הקבצים בה. לא ייווצרו גיבויים חדשים.";
 
 /* Message shown on an action sheet when a user's backup fails to delete because the file isn't found. */
-"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_MESSAGE" = "We couldn't confirm your backup was deleted due to an error. This may be because you renamed or moved the folder. In the Files app, manually delete the folder and its contents. No new backups will be created.";
+"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_MESSAGE" = "לא הצלחנו לאשר את מחיקת הגיבוי שלך עקב שגיאה. ייתכן שזה בגלל שהעברת את תיקיית הגיבוי שלך או שינית את שמה. באפליקציית הקבצים, יש למחוק ידנית את התיקייה ואת הקבצים בה. לא ייווצרו גיבויים חדשים.";
 
 /* Title shown on an action sheet when a user's backup fails to delete because the file isn't found */
-"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_TITLE" = "Couldn’t Confirm Deletion";
+"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_TITLE" = "לא ניתן לאשר מחיקה";
 
 /* Title shown on an action sheet when a user's backup fails to delete */
 "SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_TITLE" = "לא ניתן למחוק את הגיבוי";

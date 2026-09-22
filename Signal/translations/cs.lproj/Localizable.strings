@@ -2132,19 +2132,19 @@
 "CHAT_LIST_FILTERED_BY_UNREAD_CLEAR_BUTTON" = "Filtrováno podle nepřečtených";
 
 /* Title shown on chat list banner for restoring media from a backup is finished */
-"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_FINISHED_TITLE" = "Restore Complete";
+"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_FINISHED_TITLE" = "Obnovení dokončeno";
 
 /* Progress label showing bytes restored from an on-device backup. Embeds {{ %1$@ formatted bytes restored, %2$@ formatted total bytes to restore }}. */
 "CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_PROGRESS_FORMAT" = "%1$@ z %2$@";
 
 /* Title shown on the chat list banner while restoring attachments from an on-device backup. */
-"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_TITLE" = "Restoring on-device backup";
+"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_TITLE" = "Obnovení zálohy v zařízení";
 
 /* Progress label showing the amount uploaded out of the total. Embeds {{ %1$@ bytes uploaded, %2$@ total bytes to upload }}. */
 "CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_FORMAT" = "%1$@ z %2$@";
 
 /* Title label shown in the chat list backup progress view while backup attachments are being uploaded. */
-"CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_TITLE" = "Creating on-device backup";
+"CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_TITLE" = "Vytvoření zálohy v zařízení";
 
 /* Title label shown in the chat list local file backup progress view while the attachments are being prepared */
 "CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_ATTACHMENTS" = "Příprava příloh";
@@ -3185,7 +3185,7 @@
 "DEVICE_TRANSFER_RECEIVING_TITLE" = "Přijímám data";
 
 /* Description in the progress view displayed during device transfer finalization. */
-"DEVICE_TRANSFER_STATUS_DEVICE_FINISHING" = "Finalizing transfer…";
+"DEVICE_TRANSFER_STATUS_DEVICE_FINISHING" = "Dokončování přenosu…";
 
 /* Status message on new device when cancelling transfer. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CANCELLING" = "Rušení připojení ke starému iPhonu…";
@@ -3257,7 +3257,7 @@
 "DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Klepněte níže na Spárovat s novým zařízením";
 
 /* Label for a toast that confirms that local backups are disabled. */
-"DISABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "On-device backups are disabled. Turn backups on in Settings";
+"DISABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "Zálohy v zařízení jsou vypnuté. Zapněte zálohování v Nastavení";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "Mizející zprávy";
@@ -3788,7 +3788,7 @@
 "EMPTY_CONTACTS_LABEL_LINE2" = "Proč někoho nepozvete?";
 
 /* Label for a toast that confirms that local backups are enabled. */
-"ENABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "On-device backups enabled";
+"ENABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "Zálohy v zařízení jsou zapnuté";
 
 /* Call setup status label */
 "END_CALL_RESPONDER_IS_BUSY" = "Obsazeno";
@@ -5486,7 +5486,7 @@
 "LOADING_VIEW_CONTROLLER_DONT_CLOSE_APP" = "Nezavírejte aplikaci.";
 
 /* Body for a sheet warning users about creating a new Recovery Key. */
-"LOCAL_BACKUP_SETTINGS_CREATE_NEW_KEY_WARNING_SHEET_BODY" = "Creating a new key is only necessary if someone else knows your key. On-Device Backups must first be disabled to create a new key.\n\nAfter disabling On-Device Backups and creating a new key, you will need to re-enable On-Device Backups.";
+"LOCAL_BACKUP_SETTINGS_CREATE_NEW_KEY_WARNING_SHEET_BODY" = "Vytvoření nového klíče je nutné pouze v případě, že váš klíč zná někdo jiný. Chcete-li vytvořit nový klíč, musíte nejprve vypnout zálohy v zařízení.\n\nPo vypnutí záloh v zařízení a vytvoření nového klíče budete muset zálohy v zařízení znovu zapnout.";
 
 /* Body for an error sheet shown when the user's folder choice does not contain a backup file. */
 "LOCAL_BACKUPS_MISSING_BACKUP_ACTION_SHEET_BODY" = "Ve vybrané složce nebyla nalezena žádná záloha Signal. Zkuste prosím vybrat jinou složku.";
@@ -7985,10 +7985,10 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_TITLE" = "Zálohu nelze najít";
 
 /* Message for a sheet warning users about an invalid local backup location */
-"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_MESSAGE" = "Your on-device backup can’t be restored. This may be because you moved or deleted your backup folder.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_MESSAGE" = "Zálohu v zařízení nelze obnovit. Možná jste přesunuli nebo odstranili složku pro zálohy.";
 
 /* Title for a sheet warning users about an invalid local backup location */
-"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_TITLE" = "Can’t Restore Backup";
+"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_TITLE" = "Zálohu nelze obnovit";
 
 /* Body for a sheet warning users about a network error during backup restore. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_NETWORK_BODY" = "Vaši zálohu nyní nelze obnovit. Zkontrolujte připojení k internetu a zkuste to znovu.";
@@ -8273,16 +8273,16 @@
 "RESET" = "Obnovit";
 
 /* Button on a sheet prompting the user to pick a folder on their device where on-device backups will be saved */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_CHOOSE_FOLDER_BUTTON" = "Choose Folder";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_CHOOSE_FOLDER_BUTTON" = "Vybrat složku";
 
 /* Button for a sheet asking the user if they want to disable local backups */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_DISABLE_BUTTON" = "Disable Backups";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_DISABLE_BUTTON" = "Vypnout zálohování";
 
 /* Message for a sheet asking the user if they want to enable local file backups. */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_MESSAGE" = "To continue using on-device backups, choose a folder on your device where new backups will be saved.";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_MESSAGE" = "Chcete-li nadále používat zálohování v zařízení, vyberte v zařízení složku, do které se budou nové zálohy ukládat.";
 
 /* Title for a sheet asking the user if they want to enable local file backups. */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_TITLE" = "Restore complete";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_TITLE" = "Obnovení dokončeno";
 
 /* Body for a sheet allowing users to cancel an in-progress media restore. */
 "RESTORING_MEDIA_BANNER_CANCEL_RESTORE_SHEET_1_BODY" = "Obnova vašich médií nebyla dokončena. Pokud se rozhodnete obnovu zrušit, můžete ji znovu spustit opětovným propojením tohoto zařízení.";
@@ -8375,7 +8375,7 @@
 "RING_ON_CONFIRMATION_TOAST_LABEL" = "Vyzvánění zapnuto";
 
 /* Message shown in an action sheet when attempting to disable PIN, but Backups is enabled. */
-"ROTATE_AEP_ACTION_BACKUPS_DISABLE_REQUIRED" = "You must disable Signal Secure Backups before proceeding.";
+"ROTATE_AEP_ACTION_BACKUPS_DISABLE_REQUIRED" = "Než budete pokračovat, musíte vypnout zabezpečenou zálohu Signal.";
 
 /* button title to confirm adding a recipient when their safety number has recently changed */
 "SAFETY_NUMBER_CHANGED_CONFIRM_ADD_MEMBER_ACTION" = "Přesto přidat";
@@ -9050,7 +9050,7 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_LOCAL_BACKUP_IN_PROGRESS_MESSAGE" = "Zabezpečenou zálohu Signal nelze provést, protože právě probíhá zálohování v zařízení. Zkuste to znovu později.";
 
 /* Label for a progress bar while attachments are being copied for an on-device backup. Embeds 1:{{%1$@ completed bytes copied, %2$@ total bytes to copy, %3$@ percentage complete }}. */
-"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS" = "Creating on-device backup %1$@ of %2$@ (%3$@)";
+"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS" = "Vytváření zálohu v zařízení %1$@ z %2$@ (%3$@)";
 
 /* Label for a progress bar while the attachments are being prepared for an on-device backup. Embeds 1:{{ percentage complete }}. */
 "SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_ATTACHMENTS" = "Příprava příloh (%1$@)";
@@ -9059,7 +9059,7 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_BACKUP" = "Příprava zálohy (%1$@)";
 
 /* Label for a progress bar while attachments are being restored for an on-device backup. Embeds {{%1$@ completed bytes restored, %2$@ total bytes to restore  }}. */
-"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_RESTORING_ATTACHMENTS" = "Restoring on-device backup (%1$@ of %2$@)";
+"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_RESTORING_ATTACHMENTS" = "Obnovování zálohy v zařízení (%1$@ z %2$@)";
 
 /* Message for an action sheet when a user cannot perform a local backup because a remote backup is in progress */
 "SETTINGS_LOCAL_FILE_BACKUPS_REMOTE_BACKUP_IN_PROGRESS_MESSAGE" = "Zálohování v zařízení nelze provést, protože právě probíhá Zabezpečená záloha Signal. Zkuste to znovu později.";
@@ -9083,10 +9083,10 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_MESSAGE_FORMAT" = "Vaši zálohu se kvůli chybě nepodařilo odstranit. Složku musíte smazat ručně. Ve správci souborů přejděte do %1$@ a ručně odstraňte složku a její obsah. Žádné nové zálohy se nebudou vytvářet.";
 
 /* Message shown on an action sheet when a user's backup fails to delete because the file isn't found. */
-"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_MESSAGE" = "We couldn't confirm your backup was deleted due to an error. This may be because you renamed or moved the folder. In the Files app, manually delete the folder and its contents. No new backups will be created.";
+"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_MESSAGE" = "Smazání vaší zálohy nelze kvůli chybě potvrdit. Možná jste přejmenovali nebo přesunuli složku. Odstraňte složku a její obsah ručně ve správci souborů. Žádné nové zálohy se nebudou vytvářet.";
 
 /* Title shown on an action sheet when a user's backup fails to delete because the file isn't found */
-"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_TITLE" = "Couldn’t Confirm Deletion";
+"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_TITLE" = "Smazání nelze potvrdit";
 
 /* Title shown on an action sheet when a user's backup fails to delete */
 "SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_TITLE" = "Zálohu se nepodařilo odstranit";

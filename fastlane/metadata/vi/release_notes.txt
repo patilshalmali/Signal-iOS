@@ -1,1 +1,1 @@
-• In addition to the existing remote backup support, this update introduces a new on-device backup option too. Now you can export an encrypted copy of your Signal messages and save them to the storage location of your choice.
+• Bản cập nhật này bổ sung tùy chọn sao lưu trên thiết bị, cho phép bạn xuất một bản sao đã được mã hóa các tin nhắn Signal của mình và lưu vào vị trí lưu trữ tùy chọn.

@@ -1340,7 +1340,7 @@
 "BADGE_SUBSCRIPTION_EXPIRED_BECAUSE_OF_CHARGE_FAILURE_BODY_FORMAT" = "Deine wiederkehrende monatliche Spende wurde beendet. %1$@\n\nDein Abzeichen wird in deinem Profil nicht mehr sichtbar sein.";
 
 /* Body for a sheet explaining that a bank transfer donation is complete, and that you have received a badge. */
-"BADGE_THANKS_BANK_DONATION_COMPLETE_BODY" = "Deine Überweisung ist eingegangen. Du kannst dieses Abzeichen in deinem Profil anzeigen, um deine Unterstützung zu bekunden.";
+"BADGE_THANKS_BANK_DONATION_COMPLETE_BODY" = "Deine Spende ist eingegangen. Du kannst dieses Abzeichen in deinem Profil anzeigen, um deine Unterstützung zu bekunden.";
 
 /* Title for a sheet explaining that a bank transfer donation is complete, and that you have received a badge. */
 "BADGE_THANKS_BANK_DONATION_COMPLETE_TITLE" = "Spende abgeschlossen";
@@ -1376,7 +1376,7 @@
 "BANK_MANDATE_SUBTITLE" = "Stripe verarbeitet Spenden an Signal. Deine persönlichen Daten werden von Signal nicht erfasst oder gespeichert.";
 
 /* Users can donate to Signal with a bank account. We are required to show them a mandate with information about bank transfers. This is the title above that mandate. */
-"BANK_MANDATE_TITLE" = "Überweisung";
+"BANK_MANDATE_TITLE" = "Bankzahlung";
 
 /* Accessibility label for banner close button */
 "BANNER_CLOSE_ACCESSIBILITY_LABEL" = "Banner schließen";
@@ -2132,19 +2132,19 @@
 "CHAT_LIST_FILTERED_BY_UNREAD_CLEAR_BUTTON" = "Gefiltert nach: Ungelesen";
 
 /* Title shown on chat list banner for restoring media from a backup is finished */
-"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_FINISHED_TITLE" = "Restore Complete";
+"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_FINISHED_TITLE" = "Wiederherstellung abgeschlossen";
 
 /* Progress label showing bytes restored from an on-device backup. Embeds {{ %1$@ formatted bytes restored, %2$@ formatted total bytes to restore }}. */
 "CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_PROGRESS_FORMAT" = "%1$@ von %2$@";
 
 /* Title shown on the chat list banner while restoring attachments from an on-device backup. */
-"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_TITLE" = "Restoring on-device backup";
+"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_TITLE" = "Lokales Backup wird wiederhergestellt";
 
 /* Progress label showing the amount uploaded out of the total. Embeds {{ %1$@ bytes uploaded, %2$@ total bytes to upload }}. */
 "CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_FORMAT" = "%1$@ von %2$@";
 
 /* Title label shown in the chat list backup progress view while backup attachments are being uploaded. */
-"CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_TITLE" = "Creating on-device backup";
+"CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_TITLE" = "Lokales Backup wird erstellt";
 
 /* Title label shown in the chat list local file backup progress view while the attachments are being prepared */
 "CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_ATTACHMENTS" = "Anhänge werden vorbereitet";
@@ -3185,7 +3185,7 @@
 "DEVICE_TRANSFER_RECEIVING_TITLE" = "Daten werden empfangen";
 
 /* Description in the progress view displayed during device transfer finalization. */
-"DEVICE_TRANSFER_STATUS_DEVICE_FINISHING" = "Finalizing transfer…";
+"DEVICE_TRANSFER_STATUS_DEVICE_FINISHING" = "Übertragung wird abgeschlossen…";
 
 /* Status message on new device when cancelling transfer. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CANCELLING" = "Verbindung zu altem iPhone wird getrennt…";
@@ -3257,7 +3257,7 @@
 "DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Tippe unten auf »Mit neuem Gerät verbinden«";
 
 /* Label for a toast that confirms that local backups are disabled. */
-"DISABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "On-device backups are disabled. Turn backups on in Settings";
+"DISABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "Lokale Backups sind deaktiviert. Aktiviere Backups in Einstellungen.";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "Verschwindende Nachrichten";
@@ -3329,7 +3329,7 @@
 "DONATE_BUTTON_MONTHLY" = "Spende %1$@ monatlich";
 
 /* When users make donations, they can choose which payment method they want to use. This is the text on the button that lets them choose to pay with bank transfer. */
-"DONATE_CHOOSE_BANK_TRANSFER_AS_PAYMENT_METHOD" = "Überweisung";
+"DONATE_CHOOSE_BANK_TRANSFER_AS_PAYMENT_METHOD" = "Bankkonto";
 
 /* When users make donations, they can choose which payment method they want to use. This is the text on the button that lets them choose to pay with credit or debit card. */
 "DONATE_CHOOSE_CREDIT_OR_DEBIT_CARD_AS_PAYMENT_METHOD" = "Kredit- oder Debitkarte";
@@ -3374,13 +3374,13 @@
 "DONATE_SCREEN_ERROR_MESSAGE_BANK_PAYMENT_AWAITING_AUTHORIZATION" = "Deine Spende über iDEAL | Wero wird noch bearbeitet. Überprüfe deine Banking-App, um deine Zahlung zu bestätigen, bevor du eine weitere Spende vornimmst.";
 
 /* Message in an alert presented when the user tries to make a donation, but already has a donation that is currently processing via bank payment. */
-"DONATE_SCREEN_ERROR_MESSAGE_BANK_PAYMENT_PLEASE_WAIT_BEFORE_MAKING_ANOTHER_DONATION" = "Die Bearbeitung von Banküberweisungen kann 1 bis 14 Werktage dauern. Bitte warte, bis diese Spende abgeschlossen ist, bevor du eine weitere Spende vornimmst.";
+"DONATE_SCREEN_ERROR_MESSAGE_BANK_PAYMENT_PLEASE_WAIT_BEFORE_MAKING_ANOTHER_DONATION" = "Die Bearbeitung von Zahlungen per Bank kann 1 bis 14 Werktage dauern. Bitte warte, bis diese Spende abgeschlossen ist, bevor du eine weitere Spende vornimmst.";
 
 /* Message in an alert presented when the user tries to update their recurring donation, but already has a recurring donation that is currently processing via bank payment. */
-"DONATE_SCREEN_ERROR_MESSAGE_BANK_PAYMENT_PLEASE_WAIT_BEFORE_UPDATING_YOUR_SUBSCRIPTION" = "Die Bearbeitung von Banküberweisungen kann 1 bis 14 Werktage dauern. Bitte warte, bis diese Spende abgeschlossen ist, bevor du deine regelmäßige Spende aktualisierst.";
+"DONATE_SCREEN_ERROR_MESSAGE_BANK_PAYMENT_PLEASE_WAIT_BEFORE_UPDATING_YOUR_SUBSCRIPTION" = "Die Bearbeitung von Zahlungen per Bank kann 1 bis 14 Werktage dauern. Bitte warte, bis diese Spende abgeschlossen ist, bevor du deine regelmäßige Spende aktualisierst.";
 
 /* Message for an alert shown when the user tries to donate via bank transfer, but the amount they want to donate is too large. Embeds {{ the maximum allowed donation amount }}. */
-"DONATE_SCREEN_ERROR_MESSAGE_FORMAT_BANK_TRANSFER_AMOUNT_TOO_LARGE" = "Du kannst bis zu %1$@ per Banküberweisung senden. Versuche es mit einem anderen Betrag oder einer anderen Zahlungsmethode.";
+"DONATE_SCREEN_ERROR_MESSAGE_FORMAT_BANK_TRANSFER_AMOUNT_TOO_LARGE" = "Du kannst bis zu %1$@ per Bankzahlung senden. Versuche es mit einem anderen Betrag oder einer anderen Zahlungsmethode.";
 
 /* Message in an alert presented when the user tries to make a donation, but already has a donation that is currently processing via non-bank payment. */
 "DONATE_SCREEN_ERROR_MESSAGE_PLEASE_WAIT_BEFORE_MAKING_ANOTHER_DONATION" = "Deine Spende wird immer noch bearbeitet. Das kann abhängig von deiner Verbindung ein paar Minuten dauern. Bitte warte, bis diese Spende abgeschlossen ist, bevor du eine weitere Spende vornimmst.";
@@ -3428,7 +3428,7 @@
 "DONATE_SCREEN_UPDATE_MONTHLY_SUBSCRIPTION_BUTTON" = "Regelmäßige Spende aktualisieren";
 
 /* Message for a sheet explaining that a donation via bank payment has failed. Embeds {{ a specific, already-localized string describing the payment failure }}. */
-"DONATION_BADGE_ISSUE_SHEET_BANK_PAYMENT_FAILED_MESSAGE" = "Leider können wir deine Überweisung nicht bearbeiten. %1$@";
+"DONATION_BADGE_ISSUE_SHEET_BANK_PAYMENT_FAILED_MESSAGE" = "Leider können wir deine Bankzahlung nicht bearbeiten. %1$@";
 
 /* Title for a sheet explaining that a donation via bank payment has failed. */
 "DONATION_BADGE_ISSUE_SHEET_BANK_PAYMENT_FAILED_TITLE" = "Spende konnte nicht bearbeitet werden";
@@ -3437,10 +3437,10 @@
 "DONATION_BADGE_ISSUE_SHEET_BANK_PAYMENT_PROCESSING_TITLE" = "Spende ausstehend";
 
 /* Message for a sheet explaining that a one-time donation via bank payment is pending, and how that will affect the user's badge. Embeds {{ the name of the badge }}. Will have a 'learn more' link appended, when it is rendered. */
-"DONATION_BADGE_ISSUE_SHEET_ONE_TIME_BANK_PAYMENT_PROCESSING_MESSAGE" = "Deine einmalige Spende steht noch aus. Sobald deine Spende eingegangen ist, kannst du das %1$@-Abzeichen in deinem Profil anzeigen.\n\nDie Bearbeitung von Banküberweisungen kann 1 bis 14 Werktage dauern.";
+"DONATION_BADGE_ISSUE_SHEET_ONE_TIME_BANK_PAYMENT_PROCESSING_MESSAGE" = "Deine einmalige Spende steht noch aus. Sobald deine Spende eingegangen ist, kannst du das %1$@-Abzeichen in deinem Profil anzeigen.\n\nDie Bearbeitung von Zahlungen per Bank kann 1 bis 14 Werktage dauern.";
 
 /* Message for a sheet explaining that a recurring donation via bank payment is pending, and how that will affect the user's badge. Embeds {{ the name of the badge }}. Will have a 'learn more' link appended, when it is rendered. */
-"DONATION_BADGE_ISSUE_SHEET_RECURRING_BANK_PAYMENT_PROCESSING_MESSAGE" = "Deine monatliche Spende steht noch aus. Sobald deine Spende eingegangen ist, kannst du das %1$@-Abzeichen in deinem Profil anzeigen.\n\nDie Bearbeitung von Banküberweisungen kann 1 bis 14 Werktage dauern.";
+"DONATION_BADGE_ISSUE_SHEET_RECURRING_BANK_PAYMENT_PROCESSING_MESSAGE" = "Deine monatliche Spende steht noch aus. Sobald deine Spende eingegangen ist, kannst du das %1$@-Abzeichen in deinem Profil anzeigen.\n\nDie Bearbeitung von Zahlungen per Bank kann 1 bis 14 Werktage dauern.";
 
 /* Title for a button asking the user to renew their subscription, because it has expired. */
 "DONATION_BADGE_ISSUE_SHEET_RENEW_SUBSCRIPTION_BUTTON_TITLE" = "Regelmäßige Spende verlängern";
@@ -3617,7 +3617,7 @@
 "DONATION_SETTINGS_MY_SUPPORT_BANK_PAYMENT_AWAITING_AUTHORIZATION_MESSAGE" = "Deine Spende über iDEAL | Wero konnte nicht bestätigt werden. Überprüfe deine Banking-App, um deine Spende zu bestätigen, oder versuche es erneut.";
 
 /* Message for an alert explaining that a one-time payment made via bank transfer is being processed. */
-"DONATION_SETTINGS_MY_SUPPORT_BANK_PAYMENT_PROCESSING_MESSAGE" = "Deine Überweisung wurde noch nicht ausgeführt. Die Bearbeitung von Banküberweisungen kann 1 bis 14 Werktage dauern.";
+"DONATION_SETTINGS_MY_SUPPORT_BANK_PAYMENT_PROCESSING_MESSAGE" = "Deine Bankzahlung wurde noch nicht ausgeführt. Die Bearbeitung von Zahlungen per Bank kann 1 bis 14 Werktage dauern.";
 
 /* Title for an alert explaining that a one-time payment made via bank transfer is being processed. */
 "DONATION_SETTINGS_MY_SUPPORT_BANK_PAYMENT_PROCESSING_TITLE" = "Spende ausstehend";
@@ -3788,7 +3788,7 @@
 "EMPTY_CONTACTS_LABEL_LINE2" = "Warum lädst du nicht jemanden ein?";
 
 /* Label for a toast that confirms that local backups are enabled. */
-"ENABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "On-device backups enabled";
+"ENABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "Lokale Backups aktiviert";
 
 /* Call setup status label */
 "END_CALL_RESPONDER_IS_BUSY" = "Besetzt";
@@ -5486,7 +5486,7 @@
 "LOADING_VIEW_CONTROLLER_DONT_CLOSE_APP" = "Signal bitte nicht schließen.";
 
 /* Body for a sheet warning users about creating a new Recovery Key. */
-"LOCAL_BACKUP_SETTINGS_CREATE_NEW_KEY_WARNING_SHEET_BODY" = "Creating a new key is only necessary if someone else knows your key. On-Device Backups must first be disabled to create a new key.\n\nAfter disabling On-Device Backups and creating a new key, you will need to re-enable On-Device Backups.";
+"LOCAL_BACKUP_SETTINGS_CREATE_NEW_KEY_WARNING_SHEET_BODY" = "Das Erstellen eines neuen Schlüssels ist nur erforderlich, wenn jemand anderes den aktuellen kennt. Lokale Backups müssen zunächst deaktiviert werden, um einen neuen Schlüssel zu erstellen..\n\nNachdem du lokale Backups deaktiviert und einen neuen Schlüssel erstellt hast, musst du dein lokales Backup wieder aktivieren.";
 
 /* Body for an error sheet shown when the user's folder choice does not contain a backup file. */
 "LOCAL_BACKUPS_MISSING_BACKUP_ACTION_SHEET_BODY" = "Im ausgewählten Ordner wurde kein Signal-Backup gefunden. Bitte versuche es mit einem anderen Ordner.";
@@ -6833,7 +6833,7 @@
 "PASSWORD_MANAGER_SIGNAL_APP_NAME" = "Signal – Sicherer Messenger";
 
 /* Header title for bank payment details screen */
-"PAYMENT_DETAILS_BANK_TITLE" = "Überweisung";
+"PAYMENT_DETAILS_BANK_TITLE" = "Bankzahlung";
 
 /* Header title for card payment details screen */
 "PAYMENT_DETAILS_CARD_TITLE" = "Kredit- oder Debitkarte";
@@ -7985,10 +7985,10 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_TITLE" = "Backup nicht gefunden";
 
 /* Message for a sheet warning users about an invalid local backup location */
-"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_MESSAGE" = "Your on-device backup can’t be restored. This may be because you moved or deleted your backup folder.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_MESSAGE" = "Dein lokales Backup kann nicht wiederhergestellt werden. Das könnte daran liegen, dass du deinen Backup-Ordner verschoben oder gelöscht hast.";
 
 /* Title for a sheet warning users about an invalid local backup location */
-"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_TITLE" = "Can’t Restore Backup";
+"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_TITLE" = "Backup kann nicht wiederhergestellt werden";
 
 /* Body for a sheet warning users about a network error during backup restore. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_NETWORK_BODY" = "Dein Backup kann im Moment nicht wiederhergestellt werden. Überprüfe deine Internetverbindung und versuche es erneut.";
@@ -8273,16 +8273,16 @@
 "RESET" = "Zurücksetzen";
 
 /* Button on a sheet prompting the user to pick a folder on their device where on-device backups will be saved */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_CHOOSE_FOLDER_BUTTON" = "Choose Folder";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_CHOOSE_FOLDER_BUTTON" = "Ordner wählen";
 
 /* Button for a sheet asking the user if they want to disable local backups */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_DISABLE_BUTTON" = "Disable Backups";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_DISABLE_BUTTON" = "Backups deaktivieren";
 
 /* Message for a sheet asking the user if they want to enable local file backups. */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_MESSAGE" = "To continue using on-device backups, choose a folder on your device where new backups will be saved.";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_MESSAGE" = "Wähle, um weiterhin lokale Backups zu verwenden, einen Ordner auf deinem Gerät aus, in dem neue Backups gespeichert werden sollen.";
 
 /* Title for a sheet asking the user if they want to enable local file backups. */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_TITLE" = "Restore complete";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_TITLE" = "Wiederherstellung abgeschlossen";
 
 /* Body for a sheet allowing users to cancel an in-progress media restore. */
 "RESTORING_MEDIA_BANNER_CANCEL_RESTORE_SHEET_1_BODY" = "Die Wiederherstellung deiner Medien ist noch nicht abgeschlossen. Wenn du die Wiederherstellung beenden möchtest, kannst du sie wieder aktivieren, indem du dieses Gerät erneut koppelst.";
@@ -8375,7 +8375,7 @@
 "RING_ON_CONFIRMATION_TOAST_LABEL" = "Klingelton an";
 
 /* Message shown in an action sheet when attempting to disable PIN, but Backups is enabled. */
-"ROTATE_AEP_ACTION_BACKUPS_DISABLE_REQUIRED" = "You must disable Signal Secure Backups before proceeding.";
+"ROTATE_AEP_ACTION_BACKUPS_DISABLE_REQUIRED" = "Du musst Signal Secure Backups deaktivieren, bevor du fortfahren kannst.";
 
 /* button title to confirm adding a recipient when their safety number has recently changed */
 "SAFETY_NUMBER_CHANGED_CONFIRM_ADD_MEMBER_ACTION" = "Trotzdem hinzufügen";
@@ -9050,7 +9050,7 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_LOCAL_BACKUP_IN_PROGRESS_MESSAGE" = "Signal Secure Backups kann nicht durchgeführt werden, da gerade ein lokales Backup läuft. Versuche es später erneut.";
 
 /* Label for a progress bar while attachments are being copied for an on-device backup. Embeds 1:{{%1$@ completed bytes copied, %2$@ total bytes to copy, %3$@ percentage complete }}. */
-"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS" = "Creating on-device backup %1$@ of %2$@ (%3$@)";
+"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS" = "%1$@ von %2$@ (%3$@) des lokalen Backups wurden erstellt";
 
 /* Label for a progress bar while the attachments are being prepared for an on-device backup. Embeds 1:{{ percentage complete }}. */
 "SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_ATTACHMENTS" = "Anhänge werden vorbereitet (%1$@)";
@@ -9059,7 +9059,7 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_BACKUP" = "Backup wird vorbereitet (%1$@)";
 
 /* Label for a progress bar while attachments are being restored for an on-device backup. Embeds {{%1$@ completed bytes restored, %2$@ total bytes to restore  }}. */
-"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_RESTORING_ATTACHMENTS" = "Restoring on-device backup (%1$@ of %2$@)";
+"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_RESTORING_ATTACHMENTS" = "Lokales Backup wird wiederhergestellt (%1$@ von %2$@)";
 
 /* Message for an action sheet when a user cannot perform a local backup because a remote backup is in progress */
 "SETTINGS_LOCAL_FILE_BACKUPS_REMOTE_BACKUP_IN_PROGRESS_MESSAGE" = "Eine lokales Backup ist nicht möglich, da gerade Signal Secure Backups läuft. Versuche es später erneut.";
@@ -9083,10 +9083,10 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_MESSAGE_FORMAT" = "Dein Backup konnte aufgrund eines Fehlers nicht gelöscht werden. Du musst den Ordner manuell löschen. Gehe in der Dateien-App zu »%1$@« und lösche den Ordner sowie dessen Inhalt manuell. Es werden keine neuen Backups erstellt.";
 
 /* Message shown on an action sheet when a user's backup fails to delete because the file isn't found. */
-"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_MESSAGE" = "We couldn't confirm your backup was deleted due to an error. This may be because you renamed or moved the folder. In the Files app, manually delete the folder and its contents. No new backups will be created.";
+"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_MESSAGE" = "Aufgrund eines Fehlers konnten wir nicht bestätigen, dass dein Backup gelöscht wurde. Das könnte daran liegen, dass du deinen Backup-Ordner umbenannt oder verschoben hast. Lösche den Ordner und seinen Inhalt manuell in der Dateien-App. Es werden keine neuen Backups erstellt.";
 
 /* Title shown on an action sheet when a user's backup fails to delete because the file isn't found */
-"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_TITLE" = "Couldn’t Confirm Deletion";
+"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_TITLE" = "Löschvorgang konnte nicht bestätigt werden";
 
 /* Title shown on an action sheet when a user's backup fails to delete */
 "SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_TITLE" = "Backup konnte nicht gelöscht werden";

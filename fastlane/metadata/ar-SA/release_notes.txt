@@ -1,1 +1,1 @@
-• In addition to the existing remote backup support, this update introduces a new on-device backup option too. Now you can export an encrypted copy of your Signal messages and save them to the storage location of your choice.
+• بالإضافة إلى الدعم الحالي للنسخ الاحتياطي عن بُعد، يقدِّم هذا التحديث خيارًا جديدًا للنسخ الاحتياطي على الجهاز أيضًا. يمكنك الآن تصدير نسخة مُشفَّرة من رسائل سيجنال الخاصة بك وحفظها في موقع التخزين الذي تختاره.

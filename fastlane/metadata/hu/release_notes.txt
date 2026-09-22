@@ -1,1 +1,1 @@
-• In addition to the existing remote backup support, this update introduces a new on-device backup option too. Now you can export an encrypted copy of your Signal messages and save them to the storage location of your choice.
+• Ez a frissítés egy új, eszközön belüli biztonsági mentési lehetőséget vezet be, így exportálhatod a Signal-üzeneteid titkosított másolatát, és elmentheted azokat a választott tárolási helyre.

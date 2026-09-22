@@ -1,1 +1,1 @@
-• In addition to the existing remote backup support, this update introduces a new on-device backup option too. Now you can export an encrypted copy of your Signal messages and save them to the storage location of your choice.
+• Além do suporte já existente a backups remotos, esta atualização também apresenta uma nova opção de backup no dispositivo. Agora você pode exportar uma cópia criptografada das suas mensagens do Signal e salvá-la no local de armazenamento de sua preferência.

@@ -1,1 +1,1 @@
-• In addition to the existing remote backup support, this update introduces a new on-device backup option too. Now you can export an encrypted copy of your Signal messages and save them to the storage location of your choice.
+• 除了現有的遠端備份功能支援外，此更新還新增了一項裝置上備份選項。現在，你可以匯出 Signal 訊息的加密副本，並將其儲存至你所選的儲存空間位置。

@@ -1,1 +1,1 @@
-• In addition to the existing remote backup support, this update introduces a new on-device backup option too. Now you can export an encrypted copy of your Signal messages and save them to the storage location of your choice.
+• ریموٹ بیک اپ سپورٹ کے موجودہ اپشن کے ساتھ، اس اپ ڈیٹ میں آن ڈیوائس بیک اپ کا ایک نیا آپشن متعارف کروایا گیا ہے تاکہ آپ اپنے Signal کے میسجز کی ایک انکرپٹ کردہ کاپی برآمد کر سکیں اور انہیں اپنی پسند کے اسٹوریج کے مقام میں محفوظ کر سکیں۔

@@ -2132,19 +2132,19 @@
 "CHAT_LIST_FILTERED_BY_UNREAD_CLEAR_BUTTON" = "'অপঠিত ম্যাসেজ' অনুযায়ী ফিল্টার করা হয়েছে";
 
 /* Title shown on chat list banner for restoring media from a backup is finished */
-"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_FINISHED_TITLE" = "Restore Complete";
+"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_FINISHED_TITLE" = "পুনরুদ্ধার সম্পূর্ণ";
 
 /* Progress label showing bytes restored from an on-device backup. Embeds {{ %1$@ formatted bytes restored, %2$@ formatted total bytes to restore }}. */
 "CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_PROGRESS_FORMAT" = "%1$@ এর %2$@";
 
 /* Title shown on the chat list banner while restoring attachments from an on-device backup. */
-"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_TITLE" = "Restoring on-device backup";
+"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_TITLE" = "ডিভাইসের ব্যাকআপ পুনর্বহাল করা হচ্ছে";
 
 /* Progress label showing the amount uploaded out of the total. Embeds {{ %1$@ bytes uploaded, %2$@ total bytes to upload }}. */
 "CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_FORMAT" = "%1$@ এর %2$@";
 
 /* Title label shown in the chat list backup progress view while backup attachments are being uploaded. */
-"CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_TITLE" = "Creating on-device backup";
+"CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_TITLE" = "ডিভাইসে ব্যাকআপ তৈরি করা হচ্ছে";
 
 /* Title label shown in the chat list local file backup progress view while the attachments are being prepared */
 "CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_ATTACHMENTS" = "সংযুক্তি প্রস্তুত করা হচ্ছে";
@@ -3185,7 +3185,7 @@
 "DEVICE_TRANSFER_RECEIVING_TITLE" = "ডেটা গ্রহণ করা হচ্ছে";
 
 /* Description in the progress view displayed during device transfer finalization. */
-"DEVICE_TRANSFER_STATUS_DEVICE_FINISHING" = "Finalizing transfer…";
+"DEVICE_TRANSFER_STATUS_DEVICE_FINISHING" = "ট্রান্সফার করার প্রক্রিয়া সম্পন্ন করা হচ্ছে…";
 
 /* Status message on new device when cancelling transfer. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CANCELLING" = "পুরোনো iPhone-এর সাথে সংযোগ বাতিল করা হচ্ছে…";
@@ -3257,7 +3257,7 @@
 "DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "নিচে \"নতুন ডিভাইসের সাথে পেয়ার করুন\" অপশনে ট্যাপ করুন";
 
 /* Label for a toast that confirms that local backups are disabled. */
-"DISABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "On-device backups are disabled. Turn backups on in Settings";
+"DISABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "ডিভাইসে ব্যাকআপ সুবিধা বন্ধ রয়েছে। সেটিংস-এ গিয়ে ব্যাকআপ চালু করুন";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "অদৃশ্য বার্তা";
@@ -3788,7 +3788,7 @@
 "EMPTY_CONTACTS_LABEL_LINE2" = "আপনি কাউকে আমন্ত্রণ করছেন না কেন?";
 
 /* Label for a toast that confirms that local backups are enabled. */
-"ENABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "On-device backups enabled";
+"ENABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "ডিভাইসে ব্যাকআপ সুবিধা চালু করা হয়েছে";
 
 /* Call setup status label */
 "END_CALL_RESPONDER_IS_BUSY" = "ব্যস্ত";
@@ -5486,7 +5486,7 @@
 "LOADING_VIEW_CONTROLLER_DONT_CLOSE_APP" = "সিগন্যাল বন্ধ করবেন না।";
 
 /* Body for a sheet warning users about creating a new Recovery Key. */
-"LOCAL_BACKUP_SETTINGS_CREATE_NEW_KEY_WARNING_SHEET_BODY" = "Creating a new key is only necessary if someone else knows your key. On-Device Backups must first be disabled to create a new key.\n\nAfter disabling On-Device Backups and creating a new key, you will need to re-enable On-Device Backups.";
+"LOCAL_BACKUP_SETTINGS_CREATE_NEW_KEY_WARNING_SHEET_BODY" = "অন্য কেউ যদি আপনার 'কি' জেনে যায়, শুধুমাত্র তখনই একটি নতুন 'কি' তৈরি করার প্রয়োজন হয়। নতুন 'কি' তৈরি করার জন্য প্রথমে ডিভাইসে ব্যাকআপ সুবিধাটি বন্ধ করতে হবে।\n\nডিভাইসে ব্যাকআপ সুবিধা বন্ধ করে নতুন 'কি' তৈরি করার পর, আপনাকে পুনরায় ডিভাইসে ব্যাকআপ সুবিধাটি চালু করতে হবে।";
 
 /* Body for an error sheet shown when the user's folder choice does not contain a backup file. */
 "LOCAL_BACKUPS_MISSING_BACKUP_ACTION_SHEET_BODY" = "নির্বাচিত ফোল্ডারে কোনো Signal ব্যাকআপ পাওয়া যায়নি। অনুগ্রহ করে অন্য একটি ফোল্ডার দিয়ে চেষ্টা করুন।";
@@ -7985,10 +7985,10 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_TITLE" = "ব্যাকআপ খুঁজে পাওয়া যাচ্ছে না";
 
 /* Message for a sheet warning users about an invalid local backup location */
-"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_MESSAGE" = "Your on-device backup can’t be restored. This may be because you moved or deleted your backup folder.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_MESSAGE" = "আপনার ডিভাইসের ব্যাকআপটি পুনর্বহাল করা যাচ্ছে না। এর কারণ হতে পারে আপনি আপনার ব্যাকআপ ফোল্ডারটি সরিয়ে ফেলেছেন বা মুছে ফেলেছেন।";
 
 /* Title for a sheet warning users about an invalid local backup location */
-"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_TITLE" = "Can’t Restore Backup";
+"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_TITLE" = "ব্যাকআপ পুনর্বহাল করা যায়নি";
 
 /* Body for a sheet warning users about a network error during backup restore. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_NETWORK_BODY" = "আপনার ব্যাকআপ এখনই পুনর্বহাল করা যাবে না। আপনার ইন্টারনেট সংযোগ ঠিক আছে কি না দেখুন এবং আবার চেষ্টা করুন।";
@@ -8273,16 +8273,16 @@
 "RESET" = "রিসেট করুন";
 
 /* Button on a sheet prompting the user to pick a folder on their device where on-device backups will be saved */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_CHOOSE_FOLDER_BUTTON" = "Choose Folder";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_CHOOSE_FOLDER_BUTTON" = "ফোল্ডার চয়ন করুন";
 
 /* Button for a sheet asking the user if they want to disable local backups */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_DISABLE_BUTTON" = "Disable Backups";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_DISABLE_BUTTON" = "ব্যাকআপ নিষ্ক্রিয় করুন";
 
 /* Message for a sheet asking the user if they want to enable local file backups. */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_MESSAGE" = "To continue using on-device backups, choose a folder on your device where new backups will be saved.";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_MESSAGE" = "অন-ডিভাইসে থাকা ব্যাকআপ ব্যবহার করা চালিয়ে যেতে, আপনার ডিভাইসে একটি ফোল্ডার বেছে নিন যেখানে নতুন ব্যাকআপগুলো সংরক্ষিত হবে।";
 
 /* Title for a sheet asking the user if they want to enable local file backups. */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_TITLE" = "Restore complete";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_TITLE" = "পুনরুদ্ধার সম্পূর্ণ";
 
 /* Body for a sheet allowing users to cancel an in-progress media restore. */
 "RESTORING_MEDIA_BANNER_CANCEL_RESTORE_SHEET_1_BODY" = "আপনার মিডিয়া পুনর্বহাল সম্পন্ন হয়নি। যদি আপনি বাতিল করতে চান, তাহলে এই ডিভাইসটি পুনরায় লিংক করে এটি আবার পুনর্বহাল করতে পারবেন।";
@@ -8375,7 +8375,7 @@
 "RING_ON_CONFIRMATION_TOAST_LABEL" = "রিং চালু করুন";
 
 /* Message shown in an action sheet when attempting to disable PIN, but Backups is enabled. */
-"ROTATE_AEP_ACTION_BACKUPS_DISABLE_REQUIRED" = "You must disable Signal Secure Backups before proceeding.";
+"ROTATE_AEP_ACTION_BACKUPS_DISABLE_REQUIRED" = "এগিয়ে যাওয়ার আগে আপনাকে অবশ্যই Signal নিরাপদ ব্যাকআপ নিষ্ক্রিয় করতে হবে।";
 
 /* button title to confirm adding a recipient when their safety number has recently changed */
 "SAFETY_NUMBER_CHANGED_CONFIRM_ADD_MEMBER_ACTION" = "যাই হোক যোগ করুন";
@@ -9050,7 +9050,7 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_LOCAL_BACKUP_IN_PROGRESS_MESSAGE" = "ডিভাইসে একটি ব্যাকআপ চলমান থাকায় Signal নিরাপদ ব্যাকআপ সম্পন্ন করা সম্ভব হচ্ছে না। পরে আবার চেষ্টা করুন।";
 
 /* Label for a progress bar while attachments are being copied for an on-device backup. Embeds 1:{{%1$@ completed bytes copied, %2$@ total bytes to copy, %3$@ percentage complete }}. */
-"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS" = "Creating on-device backup %1$@ of %2$@ (%3$@)";
+"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS" = "ডিভাইসে ব্যাকআপ তৈরি করা হচ্ছে: %2$@-এর মধ্যে %1$@ (%3$@)";
 
 /* Label for a progress bar while the attachments are being prepared for an on-device backup. Embeds 1:{{ percentage complete }}. */
 "SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_ATTACHMENTS" = "সংযুক্তি প্রস্তুত করা হচ্ছে (%1$@)";
@@ -9059,7 +9059,7 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_BACKUP" = "ব্যাকআপ প্রস্তুত করা হচ্ছে (%1$@)";
 
 /* Label for a progress bar while attachments are being restored for an on-device backup. Embeds {{%1$@ completed bytes restored, %2$@ total bytes to restore  }}. */
-"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_RESTORING_ATTACHMENTS" = "Restoring on-device backup (%1$@ of %2$@)";
+"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_RESTORING_ATTACHMENTS" = "ডিভাইসের ব্যাকআপ পুনর্বহাল করা হচ্ছে (%2$@-এর মধ্যে %1$@)";
 
 /* Message for an action sheet when a user cannot perform a local backup because a remote backup is in progress */
 "SETTINGS_LOCAL_FILE_BACKUPS_REMOTE_BACKUP_IN_PROGRESS_MESSAGE" = "একটি Signal নিরাপদ ব্যাকআপ চালু থাকায় ডিভাইসে ব্যাকআপ নেওয়া সম্ভব নয়। পরে আবার চেষ্টা করুন।";
@@ -9083,10 +9083,10 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_MESSAGE_FORMAT" = "একটি ত্রুটির কারণে আপনার ব্যাকআপটি মুছে ফেলা যায়নি। আপনাকে অবশ্যই ফোল্ডারটি ম্যানুয়ালি মুছতে হবে। ফাইলস অ্যাপে, “%1$@”-এ যান এবং ফোল্ডার ও এর ভেতরের সবকিছু ম্যানুয়ালি মুছে ফেলুন। কোনো নতুন ব্যাকআপ তৈরি করা হবে না।";
 
 /* Message shown on an action sheet when a user's backup fails to delete because the file isn't found. */
-"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_MESSAGE" = "We couldn't confirm your backup was deleted due to an error. This may be because you renamed or moved the folder. In the Files app, manually delete the folder and its contents. No new backups will be created.";
+"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_MESSAGE" = "কোনো ত্রুটির কারণে আপনার ব্যাকআপটি মুছে ফেলা হয়েছে কি না, তা আমরা নিশ্চিত করতে পারিনি। এর কারণ হতে পারে যে আপনি ফোল্ডারটির নাম পরিবর্তন করেছেন বা সেটি অন্য কোথাও সরিয়ে নিয়েছেন। ফাইল অ্যাপে গিয়ে ফোল্ডারটি এবং এর ভেতরের সবকিছু ম্যানুয়ালি মুছে ফেলুন। কোনো নতুন ব্যাকআপ তৈরি করা হবে না।";
 
 /* Title shown on an action sheet when a user's backup fails to delete because the file isn't found */
-"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_TITLE" = "Couldn’t Confirm Deletion";
+"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_TITLE" = "মুছে ফেলার বিষয়টি নিশ্চিত করা যায়নি";
 
 /* Title shown on an action sheet when a user's backup fails to delete */
 "SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_TITLE" = "ব্যাকআপ মুছে ফেলা যায়নি";

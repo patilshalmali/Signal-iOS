@@ -1,1 +1,1 @@
-• In addition to the existing remote backup support, this update introduces a new on-device backup option too. Now you can export an encrypted copy of your Signal messages and save them to the storage location of your choice.
+• เพิ่มตัวเลือกใหม่อย่างการสำรองข้อมูลไว้บนอุปกรณ์ ให้คุณสามารถส่งออกข้อความ Signal เป็นโฟลเดอร์ที่ถูกเข้ารหัสแล้วบันทึกไว้ในพื้นที่จัดเก็บบนเครื่อง

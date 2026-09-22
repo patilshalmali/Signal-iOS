@@ -2132,19 +2132,19 @@
 "CHAT_LIST_FILTERED_BY_UNREAD_CLEAR_BUTTON" = "Адфільтравана па непрачытаных";
 
 /* Title shown on chat list banner for restoring media from a backup is finished */
-"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_FINISHED_TITLE" = "Restore Complete";
+"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_FINISHED_TITLE" = "Аднаўленне завершана";
 
 /* Progress label showing bytes restored from an on-device backup. Embeds {{ %1$@ formatted bytes restored, %2$@ formatted total bytes to restore }}. */
 "CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_PROGRESS_FORMAT" = "%1$@ з %2$@";
 
 /* Title shown on the chat list banner while restoring attachments from an on-device backup. */
-"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_TITLE" = "Restoring on-device backup";
+"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_TITLE" = "Аднаўленне рэзервовай копіі на прыладзе";
 
 /* Progress label showing the amount uploaded out of the total. Embeds {{ %1$@ bytes uploaded, %2$@ total bytes to upload }}. */
 "CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_FORMAT" = "%1$@ з %2$@";
 
 /* Title label shown in the chat list backup progress view while backup attachments are being uploaded. */
-"CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_TITLE" = "Creating on-device backup";
+"CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_TITLE" = "Стварэнне рэзервовай копіі на прыладзе";
 
 /* Title label shown in the chat list local file backup progress view while the attachments are being prepared */
 "CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_ATTACHMENTS" = "Падрыхтоўка далучэнняў";
@@ -3185,7 +3185,7 @@
 "DEVICE_TRANSFER_RECEIVING_TITLE" = "Атрыманне даных";
 
 /* Description in the progress view displayed during device transfer finalization. */
-"DEVICE_TRANSFER_STATUS_DEVICE_FINISHING" = "Finalizing transfer…";
+"DEVICE_TRANSFER_STATUS_DEVICE_FINISHING" = "Завяршэнне пераносу…";
 
 /* Status message on new device when cancelling transfer. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CANCELLING" = "Скасуем падключэнне да старога iPhone…";
@@ -3257,7 +3257,7 @@
 "DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "Нацiснiце «Спалучыць з новай прыладай» ніжэй";
 
 /* Label for a toast that confirms that local backups are disabled. */
-"DISABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "On-device backups are disabled. Turn backups on in Settings";
+"DISABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "Рэзервовае капіраванне на прыладзе адключана. Уключыце рэзервовае капіраванне ў наладах";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "Знікаючыя паведамленні";
@@ -3788,7 +3788,7 @@
 "EMPTY_CONTACTS_LABEL_LINE2" = "Чаму вам не запрасіць каго-небудзь з іх?";
 
 /* Label for a toast that confirms that local backups are enabled. */
-"ENABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "On-device backups enabled";
+"ENABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "Рэзервовае капіраванне на прыладзе ўключана";
 
 /* Call setup status label */
 "END_CALL_RESPONDER_IS_BUSY" = "Занята";
@@ -5270,7 +5270,7 @@
 "KEY_TRANSPARENCY_SELF_CHECK_FAILED_SHEET_SECONDARY_BUTTON_TITLE" = "Не, дзякуй";
 
 /* Title for a sheet shown when a Key Transparency self-check fails. */
-"KEY_TRANSPARENCY_SELF_CHECK_FAILED_SHEET_TITLE" = "Аўтаматычная праверка шыфравання ключоў зараз недаступная для вашай прылады.";
+"KEY_TRANSPARENCY_SELF_CHECK_FAILED_SHEET_TITLE" = "Аўтаматычная праверка ключоў зараз недаступная для вашай прылады.";
 
 /* Label for the 'learn more' button. */
 "LEARN_MORE" = "Даведацца больш";
@@ -5486,7 +5486,7 @@
 "LOADING_VIEW_CONTROLLER_DONT_CLOSE_APP" = "Не зачыняйце Signal.";
 
 /* Body for a sheet warning users about creating a new Recovery Key. */
-"LOCAL_BACKUP_SETTINGS_CREATE_NEW_KEY_WARNING_SHEET_BODY" = "Creating a new key is only necessary if someone else knows your key. On-Device Backups must first be disabled to create a new key.\n\nAfter disabling On-Device Backups and creating a new key, you will need to re-enable On-Device Backups.";
+"LOCAL_BACKUP_SETTINGS_CREATE_NEW_KEY_WARNING_SHEET_BODY" = "Ствараць новы код неабходна толькі тады, калі нехта ведае ваш код. Каб стварыць новы код, спачатку трэба адключыць рэзервовае капіраванне на прыладзе.\n\nПасля адключэння рэзервовага капіравання на прыладзе і стварэння новага кода вам патрэбна будзе зноў уключыць рэзервовае капіраванне на прыладзе.";
 
 /* Body for an error sheet shown when the user's folder choice does not contain a backup file. */
 "LOCAL_BACKUPS_MISSING_BACKUP_ACTION_SHEET_BODY" = "Рэзервовая копія Signal не знойдзена ў выбранай папцы. Выберыце іншую папку.";
@@ -7985,10 +7985,10 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_TITLE" = "Не атрымалася знайсці рэзервовую копію";
 
 /* Message for a sheet warning users about an invalid local backup location */
-"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_MESSAGE" = "Your on-device backup can’t be restored. This may be because you moved or deleted your backup folder.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_MESSAGE" = "Немагчыма аднавіць вашу рэзервовую копію на прыладзе. Магчыма, гэта адбылося таму, што папка з рэзервовай копіяй была перамешчана або выдалена.";
 
 /* Title for a sheet warning users about an invalid local backup location */
-"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_TITLE" = "Can’t Restore Backup";
+"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_TITLE" = "Не атрымалася аднавіць рэзервовую копію";
 
 /* Body for a sheet warning users about a network error during backup restore. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_NETWORK_BODY" = "Зараз немагчыма аднавіць вашу рэзервовую копію. Праверце падключэнне да інтэрнэту і паўтарыце спробу.";
@@ -8273,16 +8273,16 @@
 "RESET" = "Скінуць";
 
 /* Button on a sheet prompting the user to pick a folder on their device where on-device backups will be saved */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_CHOOSE_FOLDER_BUTTON" = "Choose Folder";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_CHOOSE_FOLDER_BUTTON" = "Выбраць папку";
 
 /* Button for a sheet asking the user if they want to disable local backups */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_DISABLE_BUTTON" = "Disable Backups";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_DISABLE_BUTTON" = "Адключыць рэзервовае капіраванне";
 
 /* Message for a sheet asking the user if they want to enable local file backups. */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_MESSAGE" = "To continue using on-device backups, choose a folder on your device where new backups will be saved.";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_MESSAGE" = "Каб працягваць выкарыстоўваць рэзервовыя копіі на прыладзе, выберыце на сваёй прыладзе папку, дзе будуць захоўвацца новыя рэзервовыя копіі.";
 
 /* Title for a sheet asking the user if they want to enable local file backups. */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_TITLE" = "Restore complete";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_TITLE" = "Аднаўленне завершана";
 
 /* Body for a sheet allowing users to cancel an in-progress media restore. */
 "RESTORING_MEDIA_BANNER_CANCEL_RESTORE_SHEET_1_BODY" = "Аднаўленне вашых медыяфайлаў не завершана. Вы можаце скасаваць аднаўленне, але ж потым, каб аднавіць медыяфайлы, вам патрэбна нанова прывязаць гэту прыладу.";
@@ -8375,7 +8375,7 @@
 "RING_ON_CONFIRMATION_TOAST_LABEL" = "Званок уключаны";
 
 /* Message shown in an action sheet when attempting to disable PIN, but Backups is enabled. */
-"ROTATE_AEP_ACTION_BACKUPS_DISABLE_REQUIRED" = "You must disable Signal Secure Backups before proceeding.";
+"ROTATE_AEP_ACTION_BACKUPS_DISABLE_REQUIRED" = "Вам трэба адключыць бяспечнае рэзервовае капіраванне Signal, перш чым працягнуць.";
 
 /* button title to confirm adding a recipient when their safety number has recently changed */
 "SAFETY_NUMBER_CHANGED_CONFIRM_ADD_MEMBER_ACTION" = "Дадаць у любым выпадку";
@@ -8432,7 +8432,7 @@
 "SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_FOOTER" = "Аўтаматычная праверка недаступная для ўсіх чатаў.";
 
 /* Header for automatic key verification */
-"SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_HEADER" = "Аўтаматычная праверка кода";
+"SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_HEADER" = "Аўтаматычная праверка ключоў";
 
 /* Body for a sheet explaining that encryption auto-verification is not available. */
 "SAFETY_NUMBERS_AUTOMATIC_VERIFICATION_NOT_AVAILABLE_SHEET_BODY" = "Signal можа аўтаматычна правяраць шыфраванне толькі ў тых чатах, дзе вы падключаны да кагосьці праз нумар тэлефона. Калі чат пачынаецца з агульным імем карыстальніка або агульнай групай, праверце ўручную скразное шыфраванне: для гэтага трэба параўнаць лічбы на папярэднім экране або прасканаваць код на прыладзе суразмоўцы.";
@@ -9002,7 +9002,7 @@
 "SETTINGS_KEY_TRANSPARENCY_OPT_OUT_FOOTER" = "Калі гэта функцыя ўключана, Signal будзе спрабаваць аўтаматычна правяраць шыфраванне прыватных чатаў.";
 
 /* Title for for a settings option describing that Key Transparency is enabled. */
-"SETTINGS_KEY_TRANSPARENCY_OPT_OUT_SWITCH_TITLE" = "Аўтаматычная праверка кода";
+"SETTINGS_KEY_TRANSPARENCY_OPT_OUT_SWITCH_TITLE" = "Аўтаматычная праверка ключоў";
 
 /* No comment provided by engineer. */
 "SETTINGS_LEGAL_TERMS_CELL" = "Умовы & Палітыка канфідэнцыйнасці";
@@ -9050,7 +9050,7 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_LOCAL_BACKUP_IN_PROGRESS_MESSAGE" = "Немагчыма выканаць бяспечнае рэзервовае капіраванне Signal, бо выконваецца рэзервовае капіраванне на прыладзе. Паўтарыце спробу пазней.";
 
 /* Label for a progress bar while attachments are being copied for an on-device backup. Embeds 1:{{%1$@ completed bytes copied, %2$@ total bytes to copy, %3$@ percentage complete }}. */
-"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS" = "Creating on-device backup %1$@ of %2$@ (%3$@)";
+"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS" = "Стварэнне рэзервовай копіі на прыладзе: %1$@ з %2$@ (%3$@)";
 
 /* Label for a progress bar while the attachments are being prepared for an on-device backup. Embeds 1:{{ percentage complete }}. */
 "SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_ATTACHMENTS" = "Падрыхтоўка далучэнняў (%1$@)";
@@ -9059,7 +9059,7 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_BACKUP" = "Падрыхтоўка рэзервовай копіі: (%1$@)";
 
 /* Label for a progress bar while attachments are being restored for an on-device backup. Embeds {{%1$@ completed bytes restored, %2$@ total bytes to restore  }}. */
-"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_RESTORING_ATTACHMENTS" = "Restoring on-device backup (%1$@ of %2$@)";
+"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_RESTORING_ATTACHMENTS" = "Аднаўленне рэзервовай копіі на прыладзе: (%1$@ з %2$@)";
 
 /* Message for an action sheet when a user cannot perform a local backup because a remote backup is in progress */
 "SETTINGS_LOCAL_FILE_BACKUPS_REMOTE_BACKUP_IN_PROGRESS_MESSAGE" = "Немагчыма выканаць рэзервовае капіраванне на прыладзе, бо выконваецца бяспечнае рэзервовае капіраванне Signal. Паўтарыце спробу пазней.";
@@ -9083,10 +9083,10 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_MESSAGE_FORMAT" = "Адбылася памылка, таму вашу рэзервовую копію немагчыма выдалiць. Вам трэба выдаліць гэту папку ўручную. У праграме для кіравання файламі перайдзіце да «%1$@» і ўручную выдаліце гэту папку і яе змесціва. Новае рэзервовае капіраванне не адбудзецца.";
 
 /* Message shown on an action sheet when a user's backup fails to delete because the file isn't found. */
-"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_MESSAGE" = "We couldn't confirm your backup was deleted due to an error. This may be because you renamed or moved the folder. In the Files app, manually delete the folder and its contents. No new backups will be created.";
+"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_MESSAGE" = "З-за памылкі мы не змаглі пацвердзіць выдаленне вашай рэзервовай копіі. Магчыма, гэта адбылося таму, што вы перайменавалі або перамясцілі папку. У праграме для кіравання файламі выдаліце ўручную гэту папку і яе змесціва. Новае рэзервовае капіраванне не адбудзецца.";
 
 /* Title shown on an action sheet when a user's backup fails to delete because the file isn't found */
-"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_TITLE" = "Couldn’t Confirm Deletion";
+"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_TITLE" = "Не атрымалася пацвердзіць выдаленне";
 
 /* Title shown on an action sheet when a user's backup fails to delete */
 "SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_TITLE" = "Не атрымалася выдаліць рэзервовую копію";

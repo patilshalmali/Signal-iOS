@@ -1,1 +1,1 @@
-• In addition to the existing remote backup support, this update introduces a new on-device backup option too. Now you can export an encrypted copy of your Signal messages and save them to the storage location of your choice.
+• Bu güncelleme yeni bir cihazda yedekleme seçeneği sunar. Böylece Signal mesajlarının şifrelenmiş bir kopyasını aktarabilir ve bu mesajları istediğin bir depolama konumuna kaydedebilirsin.

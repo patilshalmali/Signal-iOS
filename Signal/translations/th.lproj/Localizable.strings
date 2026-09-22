@@ -2132,19 +2132,19 @@
 "CHAT_LIST_FILTERED_BY_UNREAD_CLEAR_BUTTON" = "กรองตามแชทที่ยังไม่ได้อ่าน";
 
 /* Title shown on chat list banner for restoring media from a backup is finished */
-"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_FINISHED_TITLE" = "Restore Complete";
+"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_FINISHED_TITLE" = "กู้คืนเสร็จสิ้น";
 
 /* Progress label showing bytes restored from an on-device backup. Embeds {{ %1$@ formatted bytes restored, %2$@ formatted total bytes to restore }}. */
 "CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_PROGRESS_FORMAT" = "%1$@ จาก %2$@";
 
 /* Title shown on the chat list banner while restoring attachments from an on-device backup. */
-"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_TITLE" = "Restoring on-device backup";
+"CHAT_LIST_LOCAL_FILE_BACKUP_RESTORE_PROGRESS_VIEW_TITLE" = "กำลังกู้คืนจากการสำรองข้อมูลไว้บนอุปกรณ์";
 
 /* Progress label showing the amount uploaded out of the total. Embeds {{ %1$@ bytes uploaded, %2$@ total bytes to upload }}. */
 "CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_FORMAT" = "%1$@ จาก %2$@";
 
 /* Title label shown in the chat list backup progress view while backup attachments are being uploaded. */
-"CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_TITLE" = "Creating on-device backup";
+"CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS_TITLE" = "กำลังสร้างข้อมูลสำรองบนอุปกรณ์";
 
 /* Title label shown in the chat list local file backup progress view while the attachments are being prepared */
 "CHAT_LIST_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_ATTACHMENTS" = "กำลังเตรียมไฟล์แนบ";
@@ -3185,7 +3185,7 @@
 "DEVICE_TRANSFER_RECEIVING_TITLE" = "รับข้อมูล";
 
 /* Description in the progress view displayed during device transfer finalization. */
-"DEVICE_TRANSFER_STATUS_DEVICE_FINISHING" = "Finalizing transfer…";
+"DEVICE_TRANSFER_STATUS_DEVICE_FINISHING" = "กำลังดำเนินการถ่ายโอนให้เสร็จสิ้น…";
 
 /* Status message on new device when cancelling transfer. */
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_CANCELLING" = "กำลังยกเลิกการเชื่อมต่อกับ iPhone เครื่องเก่า…";
@@ -3257,7 +3257,7 @@
 "DEVICE_TRANSFER_TUTORIAL_TAP_PAIR_NEW_DEVICE_MESSAGE" = "แตะ “จับคู่กับอุปกรณ์เครื่องใหม่” ที่ด้านล่าง";
 
 /* Label for a toast that confirms that local backups are disabled. */
-"DISABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "On-device backups are disabled. Turn backups on in Settings";
+"DISABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "การสำรองข้อมูลไว้บนอุปกรณ์ถูกปิดใช้งานอยู่ โปรดไปที่การตั้งค่าเพื่อเปิดใช้งานการสำรองข้อมูล";
 
 /* table cell label in conversation settings */
 "DISAPPEARING_MESSAGES" = "ข้อความที่ลบตัวเองได้";
@@ -3788,7 +3788,7 @@
 "EMPTY_CONTACTS_LABEL_LINE2" = "ทำไมคุณไม่เชิญใครสักคนล่ะ?";
 
 /* Label for a toast that confirms that local backups are enabled. */
-"ENABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "On-device backups enabled";
+"ENABLE_LOCAL_FILE_BACKUPS_TOAST_CONFIRM" = "เปิดใช้งานการสำรองข้อมูลไว้บนอุปกรณ์แล้ว";
 
 /* Call setup status label */
 "END_CALL_RESPONDER_IS_BUSY" = "ไม่ว่าง";
@@ -5486,7 +5486,7 @@
 "LOADING_VIEW_CONTROLLER_DONT_CLOSE_APP" = "อย่าปิดแอป";
 
 /* Body for a sheet warning users about creating a new Recovery Key. */
-"LOCAL_BACKUP_SETTINGS_CREATE_NEW_KEY_WARNING_SHEET_BODY" = "Creating a new key is only necessary if someone else knows your key. On-Device Backups must first be disabled to create a new key.\n\nAfter disabling On-Device Backups and creating a new key, you will need to re-enable On-Device Backups.";
+"LOCAL_BACKUP_SETTINGS_CREATE_NEW_KEY_WARNING_SHEET_BODY" = "คุณมีความจำเป็นที่จะต้องสร้างกุญแจใหม่เฉพาะแค่ในกรณีที่มีบุคคลอื่นทราบกุญแจของคุณเท่านั้น โดยคุณจะต้องปิดใช้งานการสำรองข้อมูลไว้บนอุปกรณ์ก่อนจึงจะสามารถสร้างกุญแจใหม่ได้\n\nหลังจากที่คุณปิดใช้งานการสำรองข้อมูลไว้บนอุปกรณ์และสร้างกุญแจใหม่เรียบร้อยแล้ว คุณจะต้องเปิดใช้งานการสำรองข้อมูลไว้บนอุปกรณ์อีกครั้ง";
 
 /* Body for an error sheet shown when the user's folder choice does not contain a backup file. */
 "LOCAL_BACKUPS_MISSING_BACKUP_ACTION_SHEET_BODY" = "ไม่พบข้อมูลสำรองของ Signal ในโฟลเดอร์ที่คุณเลือก โปรดเลือกโฟลเดอร์อื่น";
@@ -7985,10 +7985,10 @@
 "REGISTRATION_BACKUP_RESTORE_ERROR_INCORRECT_KEY_TITLE" = "ไม่พบข้อมูลสำรอง";
 
 /* Message for a sheet warning users about an invalid local backup location */
-"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_MESSAGE" = "Your on-device backup can’t be restored. This may be because you moved or deleted your backup folder.";
+"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_MESSAGE" = "ไม่สามารถกู้คืนจากการสำรองข้อมูลไว้บนอุปกรณ์ของคุณได้ เหตุนี้อาจเกิดขึ้นเนื่องจากคุณเคลื่อนย้ายหรือลบโฟลเดอร์ข้อมูลสำรองนั้น";
 
 /* Title for a sheet warning users about an invalid local backup location */
-"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_TITLE" = "Can’t Restore Backup";
+"REGISTRATION_BACKUP_RESTORE_ERROR_LOCAL_BACKUP_LOCATION_TITLE" = "ไม่สามารถกู้คืนข้อมูลสำรอง";
 
 /* Body for a sheet warning users about a network error during backup restore. */
 "REGISTRATION_BACKUP_RESTORE_ERROR_NETWORK_BODY" = "ไม่สามารถกู้คืนข้อมูลสำรองของคุณได้ในขณะนี้ โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ตแล้วลองอีกครั้ง";
@@ -8273,16 +8273,16 @@
 "RESET" = "รีเซ็ต";
 
 /* Button on a sheet prompting the user to pick a folder on their device where on-device backups will be saved */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_CHOOSE_FOLDER_BUTTON" = "Choose Folder";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_CHOOSE_FOLDER_BUTTON" = "เลือกโฟลเดอร์";
 
 /* Button for a sheet asking the user if they want to disable local backups */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_DISABLE_BUTTON" = "Disable Backups";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_DISABLE_BUTTON" = "ปิดใช้งานการสำรองข้อมูล";
 
 /* Message for a sheet asking the user if they want to enable local file backups. */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_MESSAGE" = "To continue using on-device backups, choose a folder on your device where new backups will be saved.";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_MESSAGE" = "หากต้องการใช้การสำรองข้อมูลไว้บนอุปกรณ์ต่อไป โปรดเลือกโฟลเดอร์สำหรับเก็บข้อมูลสำรองใหม่บนอุปกรณ์ของคุณ";
 
 /* Title for a sheet asking the user if they want to enable local file backups. */
-"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_TITLE" = "Restore complete";
+"RESTORE_COMPLETE_LOCAL_FILE_BACKUPS_HERO_SHEET_TITLE" = "กู้คืนเสร็จสิ้น";
 
 /* Body for a sheet allowing users to cancel an in-progress media restore. */
 "RESTORING_MEDIA_BANNER_CANCEL_RESTORE_SHEET_1_BODY" = "ระบบยังกู้คืนไฟล์สื่อของคุณไม่เสร็จสมบูรณ์ โดยหากยกเลิก คุณจะยังสามารถกู้คืนไฟล์ได้อีกด้วยการเชื่อมโยงอุปกรณ์นี้อีกครั้ง";
@@ -8375,7 +8375,7 @@
 "RING_ON_CONFIRMATION_TOAST_LABEL" = "การส่งเสียงเรียกสายเปิดอยู่";
 
 /* Message shown in an action sheet when attempting to disable PIN, but Backups is enabled. */
-"ROTATE_AEP_ACTION_BACKUPS_DISABLE_REQUIRED" = "You must disable Signal Secure Backups before proceeding.";
+"ROTATE_AEP_ACTION_BACKUPS_DISABLE_REQUIRED" = "คุณต้องปิดใช้งานการสำรองข้อมูลที่ปลอดภัยของ Signal ก่อนจึงจะสามารถดำเนินการต่อได้";
 
 /* button title to confirm adding a recipient when their safety number has recently changed */
 "SAFETY_NUMBER_CHANGED_CONFIRM_ADD_MEMBER_ACTION" = "ยืนยันที่จะเพิ่ม";
@@ -9050,7 +9050,7 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_LOCAL_BACKUP_IN_PROGRESS_MESSAGE" = "ไม่สามารถใช้งานการสำรองข้อมูลที่ปลอดภัยของ Signal ได้เนื่องจากกำลังดำเนินการสำรองข้อมูลไว้บนอุปกรณ์ โปรดลองอีกครั้งในภายหลัง";
 
 /* Label for a progress bar while attachments are being copied for an on-device backup. Embeds 1:{{%1$@ completed bytes copied, %2$@ total bytes to copy, %3$@ percentage complete }}. */
-"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS" = "Creating on-device backup %1$@ of %2$@ (%3$@)";
+"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_COPYING_ATTACHMENTS" = "กำลังสร้างข้อมูลสำรองบนอุปกรณ์ %1$@ จาก %2$@ (%3$@)";
 
 /* Label for a progress bar while the attachments are being prepared for an on-device backup. Embeds 1:{{ percentage complete }}. */
 "SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_ATTACHMENTS" = "กำลังเตรียมไฟล์แนบ (%1$@)";
@@ -9059,7 +9059,7 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_PREPARING_BACKUP" = "กำลังเตรียมการสำรองข้อมูล (%1$@)";
 
 /* Label for a progress bar while attachments are being restored for an on-device backup. Embeds {{%1$@ completed bytes restored, %2$@ total bytes to restore  }}. */
-"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_RESTORING_ATTACHMENTS" = "Restoring on-device backup (%1$@ of %2$@)";
+"SETTINGS_LOCAL_FILE_BACKUPS_PROGRESS_RESTORING_ATTACHMENTS" = "กำลังกู้คืนจากการสำรองข้อมูลไว้บนอุปกรณ์ (%1$@ จาก %2$@)";
 
 /* Message for an action sheet when a user cannot perform a local backup because a remote backup is in progress */
 "SETTINGS_LOCAL_FILE_BACKUPS_REMOTE_BACKUP_IN_PROGRESS_MESSAGE" = "ไม่สามารถใช้งานการสำรองข้อมูลไว้บนอุปกรณ์ได้เนื่องจากกำลังดำเนินการสำรองข้อมูลที่ปลอดภัยของ Signal โปรดลองอีกครั้งในภายหลัง";
@@ -9083,10 +9083,10 @@
 "SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_MESSAGE_FORMAT" = "ไม่สามารถลบข้อมูลสำรองของคุณได้เนื่องจากมีข้อผิดพลาดเกิดขึ้น โปรดลบโฟลเดอร์ดังกล่าวด้วยตัวเอง โดยเปิดแอปไฟล์แล้วไปที่ “%1$@” จากนั้นให้ลบโฟลเดอร์และไฟล์ทั้งหมด ซึ่งระบบจะไม่สำรองข้อมูลใหม่ขึ้นอีก";
 
 /* Message shown on an action sheet when a user's backup fails to delete because the file isn't found. */
-"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_MESSAGE" = "We couldn't confirm your backup was deleted due to an error. This may be because you renamed or moved the folder. In the Files app, manually delete the folder and its contents. No new backups will be created.";
+"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_MESSAGE" = "เราไม่สามารถยืนยันการลบข้อมูลสำรองของคุณได้เนื่องด้วยข้อผิดพลาดบางประการ เหตุนี้อาจเกิดขึ้นเนื่องจากคุณเคลื่อนย้ายหรือเปลี่ยนชื่อโฟลเดอร์ โปรดไปที่แอปไฟล์แล้วลบโฟลเดอร์และไฟล์ทั้งหมดด้วยตัวเอง โดยระบบจะไม่สำรองข้อมูลใหม่ขึ้นอีก";
 
 /* Title shown on an action sheet when a user's backup fails to delete because the file isn't found */
-"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_TITLE" = "Couldn’t Confirm Deletion";
+"SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_NO_FILE_TITLE" = "ไม่สามารถยืนยันการลบได้";
 
 /* Title shown on an action sheet when a user's backup fails to delete */
 "SETTINGS_LOCAL_FILE_BACKUPS_TURNING_OFF_ERROR_TITLE" = "ไม่สามารถลบข้อมูลสำรอง";
